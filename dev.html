@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Scaled Motion Path Example</title>
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="/public/js/index.js"></script>
+    <script src="/public/js/service-cards-animate.js"></script>
+    <script src="/public/js/home.js"></script>
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/home.css"> -->
+
+    <!-- gsap -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script> -->
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            background: #f0f0f0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* This scales the path without affecting the circle's size */
+        .path-scaler {
+            transform: scale(20);
+            /* Adjust this value to control size */
+            transform-origin: top left;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .circle {
+            width: 130px;
+            /* Small size, will look bigger after scaling */
+            height: 130px;
+            background: red;
+            border-radius: 50%;
+            position: absolute;
+            offset-path: path("M178 92A1 1 0 00148 214H271");
+            offset-rotate: auto;
+            animation: move 15s linear infinite;
+        }
+
+        @keyframes move {
+            from {
+                offset-distance: 0%;
+            }
+
+            to {
+                offset-distance: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="path-scaler">
+            <div class="circle"></div>
+        </div>
+    </div>
+</body>
+
+</html>

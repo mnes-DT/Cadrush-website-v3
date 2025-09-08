@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Card Grid with Animations</title>
+    <script src="public/js/tailwind.js"></script>
+    <style>
+      .our-service-card {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      }
+
+      .our-service-card.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-100 min-h-screen py-10 px-4 sm:px-6">
+    <div class="max-w-7xl mx-auto">
+      <h1 class="text-3xl font-bold text-center mb-12 text-gray-800">
+        Our Services
+      </h1>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <a
+          href="/paper-to-cad"
+          class="block group relative w-full min-h-[300px] md:min-h-[420px] bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-purple-400"
+        >
+          <div class="our-service-card h-full">
+            <!-- Default State -->
+            <div
+              class="absolute inset-0 w-full h-full flex flex-col justify-center items-center p-8 transition-opacity duration-300 group-hover:opacity-0 text-center gap-4"
+            >
+              <h3
+                class="text-xl md:text-2xl font-medium text-center mb-4 md:mb-8"
+              >
+                Paper to CAD Conversion
+              </h3>
+              <div
+                class="w-full h-[100px] md:h-[120px] flex justify-center items-center mb-6"
+              >
+                <img
+                  src="/public/assets/paper-to-cad.webp"
+                  alt="CAD Drawing"
+                  class="max-h-full max-w-full object-contain rounded-md"
+                />
+              </div>
+              <div
+                class="flex items-center justify-center text-blue-500 hover:text-blue-700 transition-colors decoration-none"
+              >
+                <div class="mr-2 border rounded-full border-blue-500 p-1">
+                  <span class="text-md font-semibold m-4"
+                    ><img
+                      src="/public/assets/cross-arrow.svg"
+                      alt="Cross Arrow"
+                      class="w-3 h-3 inline"
+                  /></span>
+                </div>
+                <span class="mr-2 text-md font-semibold text-black"
+                  >Explore More</span
+                >
+              </div>
+            </div>
+            <!-- Hover State -->
+            <div
+              class="absolute inset-0 w-full h-full flex flex-col justify-center items-center bg-black text-white p-8 opacity-0 transition-opacity duration-300 group-hover:opacity-100 text-center"
+            >
+              <h3 class="text-base md:text-xl text-center mb-4">
+                Paper to CAD Conversion
+              </h3>
+              <div
+                class="w-full h-[180px] flex justify-center items-center mb-6"
+              >
+                <img
+                  src="/public/assets/paper-to-cad.webp"
+                  alt="Blueprint"
+                  class="max-h-full max-w-full object-contain rounded-md"
+                />
+              </div>
+              <p
+                class="text-center text-gray-300 mb-6 text-sm md:text-base leading-relaxed"
+              >
+                Digitized paper blueprints into precise CAD models, streamlining
+                workflows and modernizing legacy designs.
+              </p>
+              <div class="flex justify-center">
+                <div class="mr-2 border rounded-full border-blue-500 p-1">
+                  <span class="text-md font-semibold m-4"
+                    ><img
+                      src="/public/assets/cross-arrow.svg"
+                      alt="Cross Arrow"
+                      class="w-3 h-3 inline brightness-0 invert"
+                  /></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="/2d-cad-to-3d-model"
+          class="block group relative w-full min-h-[300px] md:min-h-[420px] bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-purple-400"
+        >
+          <div class="our-service-card h-full">
+            <!-- Default State -->
+            <div
+              class="absolute inset-0 w-full h-full flex flex-col justify-center items-center p-8 transition-opacity duration-300 group-hover:opacity-0 text-center gap-4"
+            >
+              <h3
+                class="text-xl md:text-2xl font-medium text-center mb-4 md:mb-8"
+              >
+                2D CAD to 3D Model
+              </h3>
+              <div
+                class="w-full h-[100px] md:h-[120px] flex justify-center items-center mb-6"
+              >
+                <img
+                  src="/public/assets/2d-cad-to-3d-model.webp"
+                  alt="CAD Drawing"
+                  class="max-h-full max-w-full object-contain rounded-md"
+                />
+              </div>
+              <div
+                class="flex items-center justify-center text-blue-500 hover:text-blue-700 transition-colors decoration-none"
+              >
+                <div class="mr-2 border rounded-full border-blue-500 p-1">
+                  <span class="text-md font-semibold m-4"
+                    ><img
+                      src="/public/assets/cross-arrow.svg"
+                      alt="Cross Arrow"
+                      class="w-3 h-3 inline"
+                  /></span>
+                </div>
+                <span class="mr-2 text-md font-semibold text-black"
+                  >Explore More</span
+                >
+              </div>
+            </div>
+            <!-- Hover State -->
+            <div
+              class="absolute inset-0 w-full h-full flex flex-col justify-center items-center bg-black text-white p-8 opacity-0 transition-opacity duration-300 group-hover:opacity-100 text-center"
+            >
+              <h3 class="text-base md:text-xl text-center mb-4">
+                2D CAD to 3D Model
+              </h3>
+              <div
+                class="w-full h-[180px] flex justify-center items-center mb-6"
+              >
+                <img
+                  src="/public/assets/2d-cad-to-3d-model.webp"
+                  alt="Blueprint"
+                  class="max-h-full max-w-full object-contain rounded-md"
+                />
+              </div>
+              <p
+                class="text-center text-gray-300 mb-6 text-sm md:text-base leading-relaxed"
+              >
+                Convert 2D CAD drawings into 3D models, enabling detailed
+                visualization and accurate manufacturing.
+              </p>
+              <div class="flex justify-center">
+                <div class="mr-2 border rounded-full border-blue-500 p-1">
+                  <span class="text-md font-semibold m-4"
+                    ><img
+                      src="/public/assets/cross-arrow.svg"
+                      alt="Cross Arrow"
+                      class="w-3 h-3 inline brightness-0 invert"
+                  /></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="/electrical-drawing-panel-layout"
+          class="block group relative w-full min-h-[300px] md:min-h-[420px] bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-purple-400"
+        >
+          <div class="our-service-card h-full">
+            <!-- Default State -->
+            <div
+              class="absolute inset-0 w-full h-full flex flex-col justify-center items-center p-8 transition-opacity duration-300 group-hover:opacity-0 text-center gap-4"
+            >
+              <h3
+                class="text-xl md:text-2xl font-medium text-center mb-4 md:mb-8"
+              >
+                Electrical Drawing & Panel Layout
+              </h3>
+              <div
+                class="w-full h-[100px] md:h-[120px] flex justify-center items-center mb-6"
+              >
+                <img
+                  src="/public/assets/3d-modeling.webp"
+                  alt="CAD Drawing"
+                  class="max-h-full max-w-full object-contain rounded-md"
+                />
+              </div>
+              <div
+                class="flex items-center justify-center text-blue-500 hover:text-blue-700 transition-colors decoration-none"
+              >
+                <div class="mr-2 border rounded-full border-blue-500 p-1">
+                  <span class="text-md font-semibold m-4"
+                    ><img
+                      src="/public/assets/cross-arrow.svg"
+                      alt="Cross Arrow"
+                      class="w-3 h-3 inline"
+                  /></span>
+                </div>
+                <span class="mr-2 text-md font-semibold text-black"
+                  >Explore More</span
+                >
+              </div>
+            </div>
+            <!-- Hover State -->
+            <div
+              class="absolute inset-0 w-full h-full flex flex-col justify-center items-center bg-black text-white p-8 opacity-0 transition-opacity duration-300 group-hover:opacity-100 text-center"
+            >
+              <h3 class="text-base md:text-xl text-center mb-4">
+                Electrical Drawing & Panel Layout
+              </h3>
+              <div
+                class="w-full h-[180px] flex justify-center items-center mb-6"
+              >
+                <img
+                  src="/public/assets/3d-modeling.webp"
+                  alt="Blueprint"
+                  class="max-h-full max-w-full object-contain rounded-md"
+                />
+              </div>
+              <p
+                class="text-center text-gray-300 mb-6 text-sm md:text-base leading-relaxed"
+              >
+                Create detailed 3D models from CAD drawings, enabling accurate
+                manufacturing and visualization.
+              </p>
+              <div class="flex justify-center">
+                <div class="mr-2 border rounded-full border-blue-500 p-1">
+                  <span class="text-md font-semibold m-4"
+                    ><img
+                      src="/public/assets/cross-arrow.svg"
+                      alt="Cross Arrow"
+                      class="w-3 h-3 inline brightness-0 invert"
+                  /></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="/plc-programming-migration"
+          class="block group relative w-full min-h-[300px] md:min-h-[420px] bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-purple-400"
+        >
+          <div class="our-service-card h-full">
+            <!-- Default State -->
+            <div
+              class="absolute inset-0 w-full h-full flex flex-col justify-center items-center p-8 transition-opacity duration-300 group-hover:opacity-0 text-center gap-4"
+            >
+              <h3
+                class="text-xl md:text-2xl font-medium text-center mb-4 md:mb-8"
+              >
+                PLC
+              </h3>
+              <div
+                class="w-full h-[100px] md:h-[120px] flex justify-center items-center mb-6"
+              >
+                <img
+                  src="/public/assets/cfd.webp"
+                  alt="CAD Drawing"
+                  class="max-h-full max-w-full object-contain rounded-md"
+                />
+              </div>
+              <div
+                class="flex items-center justify-center text-blue-500 hover:text-blue-700 transition-colors decoration-none"
+              >
+                <div class="mr-2 border rounded-full border-blue-500 p-1">
+                  <span class="text-md font-semibold m-4"
+                    ><img
+                      src="/public/assets/cross-arrow.svg"
+                      alt="Cross Arrow"
+                      class="w-3 h-3 inline"
+                  /></span>
+                </div>
+                <span class="mr-2 text-md font-semibold text-black"
+                  >Explore More</span
+                >
+              </div>
+            </div>
+            <!-- Hover State -->
+            <div
+              class="absolute inset-0 w-full h-full flex flex-col justify-center items-center bg-black text-white p-8 opacity-0 transition-opacity duration-300 group-hover:opacity-100 text-center"
+            >
+              <h3 class="text-base md:text-xl text-center mb-4"></h3>
+              <div
+                class="w-full h-[180px] flex justify-center items-center mb-6"
+              >
+                <img
+                  src="/public/assets/cfd.webp"
+                  alt="Blueprint"
+                  class="max-h-full max-w-full object-contain rounded-md"
+                />
+              </div>
+              <p
+                class="text-center text-gray-300 mb-6 text-sm md:text-base leading-relaxed"
+              >
+                Create detailed CFD models from CAD drawings, enabling accurate
+                manufacturing and visualization.
+              </p>
+              <div class="flex justify-center">
+                <div class="mr-2 border rounded-full border-blue-500 p-1">
+                  <span class="text-md font-semibold m-4"
+                    ><img
+                      src="/public/assets/cross-arrow.svg"
+                      alt="Cross Arrow"
+                      class="w-3 h-3 inline brightness-0 invert"
+                  /></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="/fea-cfd.html"
+          class="block group relative w-full min-h-[300px] md:min-h-[420px] bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-purple-400"
+        >
+          <div class="our-service-card h-full">
+            <!-- Default State -->
+            <div
+              class="absolute inset-0 w-full h-full flex flex-col justify-center items-center p-8 transition-opacity duration-300 group-hover:opacity-0 text-center gap-4"
+            >
+              <h3
+                class="text-xl md:text-2xl font-medium text-center mb-4 md:mb-8"
+              >
+                FEA
+              </h3>
+              <div
+                class="w-full h-[100px] md:h-[120px] flex justify-center items-center mb-6"
+              >
+                <img
+                  src="/public/assets/fea.webp"
+                  alt="CAD Drawing"
+                  class="max-h-full max-w-full object-contain rounded-md"
+                />
+              </div>
+              <div
+                class="flex items-center justify-center text-blue-500 hover:text-blue-700 transition-colors decoration-none"
+              >
+                <div class="mr-2 border rounded-full border-blue-500 p-1">
+                  <span class="text-md font-semibold m-4"
+                    ><img
+                      src="/public/assets/cross-arrow.svg"
+                      alt="Cross Arrow"
+                      class="w-3 h-3 inline"
+                  /></span>
+                </div>
+                <span class="mr-2 text-md font-semibold text-black"
+                  >Explore More</span
+                >
+              </div>
+            </div>
+            <!-- Hover State -->
+            <div
+              class="absolute inset-0 w-full h-full flex flex-col justify-center items-center bg-black text-white p-8 opacity-0 transition-opacity duration-300 group-hover:opacity-100 text-center"
+            >
+              <h3 class="text-base md:text-xl text-center mb-4">FEA</h3>
+              <div
+                class="w-full h-[180px] flex justify-center items-center mb-6"
+              >
+                <img
+                  src="/public/assets/fea.webp"
+                  alt="Blueprint"
+                  class="max-h-full max-w-full object-contain rounded-md"
+                />
+              </div>
+              <p
+                class="text-center text-gray-300 mb-6 text-sm md:text-base leading-relaxed"
+              >
+                Create detailed FEA models from CAD drawings, enabling accurate
+                manufacturing and visualization.
+              </p>
+              <div class="flex justify-center">
+                <div class="mr-2 border rounded-full border-blue-500 p-1">
+                  <span class="text-md font-semibold m-4"
+                    ><img
+                      src="/public/assets/cross-arrow.svg"
+                      alt="Cross Arrow"
+                      class="w-3 h-3 inline brightness-0 invert"
+                  /></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="/manufacturing-drawing"
+          class="block group relative w-full min-h-[300px] md:min-h-[420px] bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-purple-400"
+        >
+          <div class="our-service-card h-full">
+            <!-- Default State -->
+            <div
+              class="absolute inset-0 w-full h-full flex flex-col justify-center items-center p-8 transition-opacity duration-300 group-hover:opacity-0 text-center gap-4"
+            >
+              <h3
+                class="text-xl md:text-2xl font-medium text-center mb-4 md:mb-8"
+              >
+                Manufacturing Drawing
+              </h3>
+              <div
+                class="w-full h-[100px] md:h-[120px] flex justify-center items-center mb-6"
+              >
+                <img
+                  src="/public/assets/manufacturing-drawing.webp"
+                  alt="CAD Drawing"
+                  class="max-h-full max-w-full object-contain rounded-md"
+                />
+              </div>
+              <div
+                class="flex items-center justify-center text-blue-500 hover:text-blue-700 transition-colors decoration-none"
+              >
+                <div class="mr-2 border rounded-full border-blue-500 p-1">
+                  <span class="text-md font-semibold m-4"
+                    ><img
+                      src="/public/assets/cross-arrow.svg"
+                      alt="Cross Arrow"
+                      class="w-3 h-3 inline"
+                  /></span>
+                </div>
+                <span class="mr-2 text-md font-semibold text-black"
+                  >Explore More</span
+                >
+              </div>
+            </div>
+            <!-- Hover State -->
+            <div
+              class="absolute inset-0 w-full h-full flex flex-col justify-center items-center bg-black text-white p-8 opacity-0 transition-opacity duration-300 group-hover:opacity-100 text-center"
+            >
+              <h3 class="text-base md:text-xl text-center mb-4">
+                Manufacturing Drawing
+              </h3>
+              <div
+                class="w-full h-[180px] flex justify-center items-center mb-6"
+              >
+                <img
+                  src="/public/assets/manufacturing-drawing.webp"
+                  alt="Blueprint"
+                  class="max-h-full max-w-full object-contain rounded-md"
+                />
+              </div>
+              <p
+                class="text-center text-gray-300 mb-6 text-sm md:text-base leading-relaxed"
+              >
+                Create detailed manufacturing drawings from CAD drawings,
+                enabling accurate manufacturing and visualization.
+              </p>
+              <div class="flex justify-center">
+                <div class="mr-2 border rounded-full border-blue-500 p-1">
+                  <span class="text-md font-semibold m-4"
+                    ><img
+                      src="/public/assets/cross-arrow.svg"
+                      alt="Cross Arrow"
+                      class="w-3 h-3 inline brightness-0 invert"
+                  /></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <script>
+      // Intersection Observer for scroll animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, observerOptions);
+
+      // Observe all cards
+      document.querySelectorAll(".our-service-card").forEach((card, index) => {
+        // Add delay based on index for staggered animation
+        card.style.transitionDelay = `${index * 0.1}s`;
+        observer.observe(card);
+      });
+    </script>
+  </body>
+</html>

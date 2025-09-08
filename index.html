@@ -1,0 +1,1566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CADRush - From Concept to Manufacturing</title>
+    <meta
+      name="description"
+      content="CADRush offers innovative CAD solutions from concept to manufacturing. Efficient, transparent, and high-quality services for your business needs."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.cadrush.com/" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="manifest" href="/manifest.json" />
+    <!-- Open Graph / Facebook -->
+    <meta
+      property="og:title"
+      content="CADRush - From Concept to Manufacturing"
+    />
+    <meta
+      property="og:description"
+      content="CADRush offers innovative CAD solutions from concept to manufacturing. Efficient, transparent, and high-quality services for your business needs."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.cadrush.com/" />
+    <meta property="og:image" content="/public/assets/logo.svg" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="CADRush - From Concept to Manufacturing"
+    />
+    <meta
+      name="twitter:description"
+      content="CADRush offers innovative CAD solutions from concept to manufacturing. Efficient, transparent, and high-quality services for your business needs."
+    />
+    <meta name="twitter:image" content="/public/assets/logo.svg" />
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- css -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="/public/css/style.css" />
+    <link rel="stylesheet" href="/public/css/home.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="/public/js/tailwind.js"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              funnel: ['"Funnel Sans"', "sans-serif"],
+              outfit: ['"Outfit"', "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-K25BHMETBS"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-K25BHMETBS");
+    </script>
+  </head>
+
+  <body class="bg-white h-dvh md:h-screen font-outfit">
+    <!-- Header -->
+    <header
+      id="main-header"
+      class="fixed top-0 left-0 w-full z-50 bg-transparent transition-colors duration-300"
+    >
+      <!-- Desktop Navbar -->
+      <div
+        class="hidden md:flex items-center justify-between py-4 px-8 w-full z-40"
+      >
+        <!-- Logo at far left -->
+        <a href="https://cadrush.com/" class="flex items-center">
+          <img src="/public/assets/logo.svg" alt="CADRush Logo" class="h-6" />
+        </a>
+        <!-- Centered Nav -->
+        <div class="flex items-center bg-white text-black py-2 px-12 rounded">
+          <nav class="flex py-2 space-x-12 mx-auto items-center">
+            <!-- Services Dropdown -->
+            <div class="relative group">
+              <button
+                class="flex items-center text-black font-medium hover:text-blue-800 focus:outline-none"
+              >
+                SERVICES
+                <svg
+                  class="w-4 h-4 ml-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                class="absolute left-0 mt-2 w-56 bg-white rounded-md shadow-lg py-1 z-50 hidden group-hover:block"
+                style="pointer-events: auto"
+              >
+                <!-- Invisible padding to prevent dropdown from closing when moving cursor -->
+                <div class="absolute -top-4 left-0 right-0 h-4"></div>
+                <a
+                  href="https://cadrush.com/paper-to-cad"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >Paper to CAD Conversion</a
+                >
+                <a
+                  href="https://cadrush.com/2d-cad-to-3d-model"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >2D CAD to 3D Model</a
+                >
+                <a
+                  href="https://cadrush.com/electrical-drawing-panel-layout"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >Electrical Drawing & Panel Layout</a
+                >
+                <a
+                  href="https://cadrush.com/plc-programming-migration"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >PLC Programming & Migration</a
+                >
+                <a
+                  href="https://cadrush.com/fea-cfd"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >FEA & CFD</a
+                >
+                <a
+                  href="https://cadrush.com/manufacturing-drawing"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >Manufacturing Drawing</a
+                >
+                <!-- Invisible padding to prevent dropdown from closing when moving cursor -->
+                <div class="absolute -bottom-4 left-0 right-0 h-4"></div>
+              </div>
+            </div>
+            <!-- <a href="https://cadrush.com/case-studies"
+                        class="text-black font-medium hover:text-blue-800">CASE STUDIES</a>
+                    <a href="https://cadrush.com/faq"
+                        class="text-black font-medium hover:text-blue-800">FAQ</a> -->
+            <button
+              id="contactBtn-menu"
+              class="text-black font-medium hover:text-blue-800"
+            >
+              CONTACT
+            </button>
+          </nav>
+        </div>
+        <!-- Register button at far right -->
+        <button
+          class="bg-black text-white px-6 py-2 rounded-lg font-semibold shadow hover:bg-gray-800 transition"
+        >
+          <a href="https://cadrush.com/app/#/signin" target="_blank">
+            REGISTER
+          </a>
+        </button>
+      </div>
+      <!-- Mobile Navbar -->
+      <div class="flex md:hidden justify-between items-center py-3 px-3 z-40">
+        <a href="https://cadrush.com/" class="text-white font-bold text-xl"
+          ><img src="/public/assets/logo.svg" alt="CADRush Logo" class="h-3"
+        /></a>
+        <div class="flex flex-row space-x-2">
+          <button
+            class="bg-black text-white px-4 py-1 rounded-lg font-normal text-sm shadow hover:bg-gray-800 transition"
+            href="https://cadrush.com/app/#/signin"
+            target="_blank"
+          >
+            REGISTER
+          </button>
+          <button id="hamburger" onclick="openDrawer()">
+            <img
+              src="/public/assets/hamburger.svg"
+              alt="Open menu"
+              class="w-8 h-8"
+            />
+          </button>
+        </div>
+      </div>
+      <!-- Right Side Drawer for Mobile -->
+      <div
+        id="mobile-drawer"
+        class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg z-50 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden"
+      >
+        <div class="flex justify-end p-4">
+          <button onclick="closeDrawer()">
+            <img
+              src="/public/assets/close-x.svg"
+              alt="Close menu"
+              class="w-6 h-6"
+            />
+          </button>
+        </div>
+        <nav class="flex flex-col space-y-4 px-8 mt-8">
+          <div class="relative">
+            <button
+              id="mobile-services-toggle"
+              class="flex items-center w-full py-2 text-gray-700 font-medium hover:text-blue-800 justify-between"
+            >
+              <span>SERVICES</span>
+              <svg
+                class="w-4 h-4 ml-2 transform transition-transform"
+                id="services-arrow"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+            <div id="mobile-services-menu" class="hidden pl-4 mt-1 space-y-2">
+              <a
+                href="https://cadrush.com/paper-to-cad"
+                class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
+                >Paper to CAD</a
+              >
+              <a
+                href="https://cadrush.com/2d-cad-to-3d-model"
+                class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
+                >2D CAD to 3D Model</a
+              >
+              <a
+                href="https://cadrush.com/electrical-drawing-panel-layout"
+                class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
+                >Electrical Drawing & Panel Layout</a
+              >
+              <a
+                href="https://cadrush.com/plc-programming-migration"
+                class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
+              >
+                PLC Programming & Migration</a
+              >
+              <a
+                href="https://cadrush.com/fea-cfd"
+                class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
+                >FEA & CFD</a
+              >
+              <a
+                href="https://cadrush.com/manufacturing-drawing"
+                class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
+                >Manufacturing Drawing</a
+              >
+            </div>
+          </div>
+          <button
+            id="contactBtn-menu"
+            class="text-black font-medium hover:text-blue-800"
+          >
+            CONTACT
+          </button>
+        </nav>
+      </div>
+      <!-- Overlay for Drawer (optional, improves UX) -->
+      <div
+        id="drawer-overlay"
+        class="fixed inset-0 bg-black bg-opacity-30 z-40 hidden md:hidden"
+        onclick="closeDrawer()"
+      ></div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="h-vh md:h-[calc(100vh-5rem)] bg-gradient-to-br from-[#4b9adb] to-[#9747ff] animated-gradient header-scrolled py-10 md:py-12 lg:py-12 2xl:bg-black"
+    >
+      <div
+        class="flex items-center justify-center flex-col py-2 md:py-4 lg:py-12 xl:py-18 2xl:py-28 md:flex-row w-full px-2 md:px-10 lg:px-12 xl:px-24"
+      >
+        <div class="flex flex-col w-full md:w-3/4 p-2 md:p-8 lg:p-4">
+          <h1
+            class="max-w-screen-lg mx-auto px-2 md:px-4 lg:px-4 xl:px-6 py-2 md:py-6 lg:py-8 text-2xl md:text-3xl lg:text-4xl xl:text-6xl font-medium text-white text-center"
+          >
+            From Concept to
+            <br class="block md:hidden lg:hidden xl:hidden" />
+            Manufacturing<br class="md:block hidden lg:hidden xl:hidden" />—Made
+            Simple
+          </h1>
+          <p
+            class="max-w-screen-lg mx-auto px-2 md:px-2 lg:px-12 xl:px-36 py-2 text-sm md:text-xl text-white text-center font-light desktop-px-48"
+          >
+            Bring your ideas to life without the hassle of complex software. Our
+            experienced team delivers precision, efficiency, and unwavering
+            support at every stage of your project.
+          </p>
+          <div
+            class="hidden md:flex items-center justify-center flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 py-8 md:py-12"
+          >
+            <a
+              href="https://cadrush.com/app/#/signin"
+              class="bg-black text-white px-6 py-2 rounded-lg font-light shadow hover:bg-gray-800 transition w-[200px] text-sm"
+              >START YOUR PROJECT</a
+            >
+
+            <button
+              class="bg-transparent text-white flex items-center space-x-2 px-6 py-1.5 justify-between rounded-lg font-light border border-white hover:bg-gray-800/50 transition w-[200px] text-sm my-2"
+            >
+              LEARN MORE
+              <img
+                src="/public/assets/down.svg"
+                alt="down"
+                class="w-6 h-4 animate-bounce"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="w-2/3 md:w-1/4 lg:w-1/3 my-4 md:my-0 relative">
+          <!-- Pulse Circles Behind -->
+          <div class="absolute inset-0 flex justify-center items-center z-0">
+            <!-- Larger white circle -->
+            <div
+              class="absolute w-40 h-40 md:w-60 md:h-60 bg-white rounded-full animate-ping-custom"
+            ></div>
+            <!-- Smaller white circle with delay -->
+            <div
+              class="absolute w-24 h-24 bg-white rounded-full animate-ping-custom2"
+            ></div>
+          </div>
+
+          <!-- Hero Image on top -->
+          <img
+            src="/public/assets/home-hero.webp"
+            alt="Hero Image"
+            class="relative z-10 mx-auto"
+          />
+        </div>
+
+        <!-- Mobile -->
+        <div
+          class="md:hidden flex items-center justify-center flex-col-reverse md:flex-row space-y-4 md:space-y-0 md:space-x-8 py-8 md:py-12"
+        >
+          <a
+            href="https://cadrush.com/app/#/signin"
+            class="bg-black text-white px-6 py-2 md:py-4 rounded-lg font-light shadow hover:bg-gray-800 transition w-[200px] text-sm"
+            >START YOUR PROJECT</a
+          >
+
+          <button
+            class="bg-transparent text-white flex items-center space-x-2 px-6 py-2 justify-between rounded-lg font-light border border-white hover:bg-gray-800/50 transition w-[200px] text-sm animate-bounce"
+            style="margin-left: 0px"
+          >
+            LEARN MORE
+            <img src="/public/assets/down.svg" alt="down" class="w-6 h-4" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- why cadrush mobile -->
+    <section class="max-w-7xl mx-auto py-16 px-6 md:hidden block">
+      <!-- Section Title -->
+      <div class="text-center">
+        <h2 class="font-bold text-center mb-4 md:mb-8 text-[#7c6ee6] text-3xl">
+          Why CADRush
+        </h2>
+        <p
+          class="text-center text-xs max-w-[500px] mx-auto my-4 md:my-8 md:text-base"
+        >
+          Innovative Problem-Solving for Your Business Needs
+        </p>
+      </div>
+
+      <!-- Content Layout -->
+      <div class="flex flex-col md:flex-row items-start gap-12 my-6">
+        <!-- Image -->
+        <div class="md:w-1/2 w-full">
+          <img
+            src="/public/assets/home_image1.webp"
+            alt="Why CADRush?"
+            class="w-full h-auto rounded-lg shadow-md"
+          />
+        </div>
+
+        <!-- Timeline -->
+        <div class="md:w-1/2 w-full relative pl-4">
+          <!-- Vertical Line -->
+          <div
+            class="absolute top-0 md:-top-10 left-9 right-9 h-[calc(100%+60px)] md:h-[calc(100%+90px)] w-[1px] bg-gray-500 z-0"
+          ></div>
+
+          <!-- Step 1 -->
+          <div class="relative mb-10 pl-12">
+            <div
+              class="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-gray-500 bg-white text-[#7c6ee6] font-bold text-lg"
+            >
+              01
+            </div>
+            <h3 class="text-lg font-bold text-gray-800">
+              Efficiency and Productivity
+            </h3>
+            <p class="mt-2 text-sm text-gray-600">
+              <strong>CADRush</strong> brings everything together—design,
+              management, and progress tracking—into a single, easy-to-use
+              workspace. With a clean, intuitive interface, you can stay in
+              control of every detail, keep your team aligned, and ensure
+              projects move forward on time and on budget.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="relative mb-10 pl-12">
+            <div
+              class="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-gray-500 bg-white text-[#7c6ee6] font-bold text-lg"
+            >
+              02
+            </div>
+            <h3 class="text-lg font-bold text-gray-800">
+              Competitive and Transparent Pricing
+            </h3>
+            <p class="mt-2 text-sm text-gray-600">
+              We offer cost-effective solutions without compromising on quality.
+              Our transparent pricing model ensures you understand the value
+              you're receiving, with no hidden fees.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="relative pl-12">
+            <div
+              class="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-gray-500 bg-white text-[#7c6ee6] font-bold text-lg"
+            >
+              03
+            </div>
+            <h3 class="text-lg font-bold text-gray-800">
+              Quality Assurance and Confidentiality
+            </h3>
+            <p class="mt-2 text-sm text-gray-600">
+              <strong>CADRush</strong> brings everything together—design,
+              management, and progress tracking—into a single, easy-to-use
+              workspace. With a clean, intuitive interface, you can stay in
+              control of every detail, keep your team aligned, and ensure
+              projects move forward on time and on budget.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why CADRush Desktop -->
+    <section
+      class="panel bg-gray-50 h-[calc(100vh)] flex-col items-center justify-center hidden md:flex"
+    >
+      <div class="text-center mb-10">
+        <h2 class="font-bold text-center mb-4 text-[#7c6ee6] text-3xl">
+          Why CADRush
+        </h2>
+        <p
+          class="text-center text-sm max-w-[500px] mx-auto mb-2 md:mb-4 md:text-base"
+        >
+          Innovative Problem-Solving for Your Business Needs
+        </p>
+      </div>
+      <div class="content-container">
+        <div class="image-container">
+          <img
+            id="image1"
+            src="/public/assets/home_image1.webp"
+            alt="Image 1"
+            class="active rounded-md w-[800px]"
+          />
+          <img
+            id="image2"
+            src="/public/assets/home_image2.webp"
+            alt="Image 2"
+            class="rounded-md"
+          />
+          <img
+            id="image3"
+            src="/public/assets/home_image3.webp"
+            alt="Image 3"
+            class="rounded-md"
+          />
+        </div>
+
+        <div class="static-container">
+          <div
+            class="absolute top-0 md:-top-12 left-1/2 h-[calc(100%+60px)] md:h-[calc(100%+120px)] w-[1px] bg-gray-500 z-0"
+            id="vertical-line"
+          ></div>
+
+          <!-- steps container -->
+          <div class="steps-container">
+            <div
+              class="step-number flex h-10 w-10 items-center justify-center rounded-full font-bold text-lg"
+              id="step1"
+              data-index="0"
+              style="top: 20%"
+            >
+              01
+            </div>
+            <div
+              class="step-number flex h-10 w-10 items-center justify-center rounded-full font-bold text-lg"
+              id="step2"
+              data-index="1"
+              style="top: 50%"
+            >
+              02
+            </div>
+            <div
+              class="step-number flex h-10 w-10 items-center justify-center rounded-full font-bold text-lg"
+              id="step3"
+              data-index="2"
+              style="top: 80%"
+            >
+              03
+            </div>
+          </div>
+        </div>
+
+        <div class="text-container">
+          <div class="text-item active" id="text1">
+            <h2 class="text-2xl font-bold mb-4">Efficiency and Productivity</h2>
+            <p class="mt-2 text-sm text-gray-600">
+              <strong>CADRush</strong> brings everything together—design,
+              management, and progress tracking—into a single, easy-to-use
+              workspace. With a clean, intuitive interface, you can stay in
+              control of every detail, keep your team aligned, and ensure
+              projects move forward on time and on budget.
+            </p>
+          </div>
+          <div class="text-item" id="text2">
+            <h2 class="text-2xl font-bold mb-4">
+              Competitive and Transparent Pricing
+            </h2>
+            <p class="mt-2 text-sm text-gray-600">
+              We offer cost-effective solutions without compromising on quality.
+              Our transparent pricing model ensures you understand the value
+              you're receiving, with no hidden fees.
+            </p>
+          </div>
+          <div class="text-item" id="text3">
+            <h2 class="text-2xl font-bold mb-4">
+              Quality Assurance and Confidentiality
+            </h2>
+            <p class="mt-2 text-sm text-gray-600">
+              <strong>CADRush</strong> brings everything together—design,
+              management, and progress tracking—into a single, easy-to-use
+              workspace. With a clean, intuitive interface, you can stay in
+              control of every detail, keep your team aligned, and ensure
+              projects move forward on time and on budget.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section
+      class="w-full bg-gradient-to-b from-white to-[#f5f3ff] py-8 px-4 md:py-12 lg:py-16"
+    >
+      <h2 class="font-bold text-center mb-4 text-[#7c6ee6] text-3xl">
+        About CADRush
+      </h2>
+      <p
+        class="text-center text-sm max-w-[500px] mx-auto my-2 md:my-4 md:text-base"
+      >
+        <strong>CADRush</strong> connects you with experienced engineering
+        professionals ready to support every stage of your project from initial
+        concept to final delivery.
+      </p>
+      <!-- video block for mobile-->
+      <div class="w-full h-auto my-12 block md:hidden mx-auto">
+        <!-- lazy load video -->
+        <video
+          src="/public/assets/intro.mov"
+          alt="About Video"
+          class="w-full h-auto"
+          muted
+          autoplay
+          controls
+        ></video>
+      </div>
+
+      <!-- video block for desktop-->
+      <div
+        class="about-video-desktop w-[100px] h-auto my-4 hidden md:block mx-auto"
+      >
+        <!-- lazy load video -->
+        <video
+          src="/public/assets/intro.mov"
+          alt="About Video"
+          class="w-full h-auto"
+          controls
+        ></video>
+      </div>
+      <div
+        class="flex flex-row md:flex-row justify-center items-center my-4 md:my-12 explore-btn"
+      >
+        <a
+          href="https://cadrush.com/app/#/signin"
+          class="flex items-center justify-center text-blue-500 hover:text-blue-700 transition-colors decoration-none"
+        >
+          <div
+            class="mr-2 border rounded-full border-blue-500 p-1 arrow-container"
+          >
+            <img
+              src="public/assets/cross-arrow.svg"
+              alt="cross arrow"
+              class="size-4 my-1 mx-4 arrow-img"
+            />
+          </div>
+          <span class="mr-2 text-md font-semibold text-black"
+            >Explore more</span
+          >
+        </a>
+      </div>
+    </section>
+
+    <!-- How Cadrush Works -->
+    <section
+      class="w-full bg-gradient-to-b from-white to-[#f5f3ff] py-8 px-4 md:py-12 lg:py-16"
+    >
+      <h2 class="font-bold text-center mb-4 text-[#7c6ee6] text-3xl">
+        How CADRush Works?
+      </h2>
+      <div class="w-full px-2 md:px-12 lg:px-24 hidden md:block">
+        <div class="flex items-center justify-between relative w-full">
+          <!-- Progress line background -->
+          <div
+            class="absolute top-1/2 left-0 right-0 h-1 bg-gray-300 z-0 rounded-full transform -translate-y-1/2"
+          ></div>
+          <!-- Progress line fill -->
+          <div
+            id="progress-line"
+            class="absolute top-1/2 left-0 h-2 bg-purple-500 z-10 rounded-full transform -translate-y-1/2 transition-all duration-500 ease-in-out"
+            style="width: 0%"
+          ></div>
+
+          <!-- Steps -->
+          <div
+            class="step w-10 h-10 rounded-full border-4 border-purple-500 bg-white z-20"
+          ></div>
+          <div
+            class="step w-10 h-10 rounded-full border-4 border-gray-300 bg-white z-20"
+          ></div>
+          <div
+            class="step w-10 h-10 rounded-full border-4 border-gray-300 bg-white z-20"
+          ></div>
+          <div
+            class="step w-10 h-10 rounded-full border-4 border-gray-300 bg-white z-20"
+          ></div>
+        </div>
+      </div>
+      <div class="w-full overflow-x-auto my-8">
+        <div
+          class="flex flex-col md:flex-row flex-nowrap gap-2 w-full max-w-none mx-auto md:gap-8 lg:gap-8 xl:px-10"
+        >
+          <div
+            class="flex flex-row items-center md:w-1/2 lg:w-1/4 xl:w-1/4 md:mx-4 md:mb-8 space-x-2 mt-4"
+          >
+            <div
+              class="flex flex-row justify-center space-x-2 items-center mr-4"
+            >
+              <span class="text-2xl font-semibold text-[#7c6ee6]">01</span>
+              <div
+                class="w-px flex-1 bg-gray-300 my-1 min-h-20 md:min-h-28 lg:min-h-36 ml-4 md:ml-0"
+              ></div>
+            </div>
+            <div class="max-h-28">
+              <h3 class="text-lg font-semibold text-gray-700 mb-1">
+                Create New Project
+              </h3>
+              <p class="text-sm text-gray-700">
+                Initiate your project with ease. Enter essential details, set
+                timelines, and allocate resources.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-row items-center md:w-1/2 lg:w-1/4 xl:w-1/4 md:mx-4 md:mb-8"
+          >
+            <div
+              class="flex flex-row justify-center space-x-2 items-center mr-4"
+            >
+              <span class="text-2xl font-semibold text-[#7c6ee6]">02</span>
+              <div
+                class="w-px flex-1 bg-gray-300 my-1 min-h-20 md:min-h-28 lg:min-h-36"
+              ></div>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-700 mb-1">
+                Existing Project
+              </h3>
+              <p class="text-sm text-gray-700">
+                Keep track of your ongoing projects. Monitor progress, update
+                milestones, and ensure all team members are aligned. Our tools
+                help you maintain project momentum and achieve your goals.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-row items-center md:w-1/2 lg:w-1/4 xl:w-1/4 md:mx-4 md:mb-8"
+          >
+            <div
+              class="flex flex-row justify-center space-x-2 items-center mr-4"
+            >
+              <span class="text-2xl font-semibold text-[#7c6ee6]">03</span>
+              <div
+                class="w-px flex-1 bg-gray-300 my-1 min-h-20 md:min-h-28 lg:min-h-36"
+              ></div>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-700 mb-1">
+                Schedule a Call
+              </h3>
+              <p class="text-sm text-gray-700">
+                Need expert advice or planning assistance? Schedule a call with
+                our seasoned engineers. We offer personalized support to help
+                you design and plan your projects effectively.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-row items-center md:w-1/2 lg:w-1/4 xl:w-1/4 md:mx-4 md:mb-8"
+          >
+            <div
+              class="flex flex-row justify-center space-x-2 items-center mr-4"
+            >
+              <span class="text-2xl font-semibold text-[#7c6ee6]">04</span>
+              <div
+                class="w-px flex-1 bg-gray-300 my-1 min-h-20 md:min-h-28 lg:min-h-36"
+              ></div>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-700 mb-1">
+                Block an Engineer
+              </h3>
+              <p class="text-sm text-gray-700">
+                For projects requiring specialized skills, block an engineer
+                exclusively for your needs. Ensure you have dedicated support to
+                address complex engineering challenges and deliver high-quality
+                results.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our services -->
+    <section class="py-12 px-4 max-w-7xl mx-auto">
+      <h2 class="font-bold text-center mb-4 text-[#7c6ee6] text-3xl py-8">
+        Our Services
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <a
+          href="https://cadrush.com/paper-to-cad"
+          class="block group relative w-full min-h-[300px] md:min-h-[420px] bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-purple-400"
+        >
+          <div class="our-service-card h-full">
+            <!-- Default State -->
+            <div
+              class="absolute inset-0 w-full h-full flex flex-col justify-center items-center p-8 transition-opacity duration-300 group-hover:opacity-0 text-center gap-4"
+            >
+              <h3
+                class="text-xl md:text-2xl font-medium text-center mb-4 md:mb-8"
+              >
+                Paper to CAD Parametric Conversion
+              </h3>
+              <div
+                class="w-full h-[100px] md:h-[120px] flex justify-center items-center mb-6"
+              >
+                <img
+                  src="/public/assets/paper-to-cad.webp"
+                  alt="CAD Drawing"
+                  class="max-h-full max-w-full object-contain rounded-md"
+                />
+              </div>
+              <div
+                class="flex items-center justify-center text-blue-500 hover:text-blue-700 transition-colors decoration-none explore-btn"
+              >
+                <div
+                  class="mr-2 border rounded-full border-blue-500 p-1 arrow-container"
+                >
+                  <span class="text-md font-semibold m-4"
+                    ><img
+                      src="/public/assets/cross-arrow.svg"
+                      alt="Cross Arrow"
+                      class="w-3 h-3 inline arrow-img"
+                  /></span>
+                </div>
+                <span class="mr-2 text-md font-semibold text-black"
+                  >Explore More</span
+                >
+              </div>
+            </div>
+            <!-- Hover State -->
+            <div
+              class="absolute inset-0 w-full h-full flex flex-col justify-center items-center bg-black text-white p-8 opacity-0 transition-opacity duration-300 group-hover:opacity-100 text-center"
+            >
+              <h3 class="text-base md:text-xl text-center mb-4">
+                Paper to CAD Parametric Conversion
+              </h3>
+              <div
+                class="w-full h-[180px] flex justify-center items-center mb-6"
+              >
+                <img
+                  src="/public/assets/paper-to-cad.webp"
+                  alt="Blueprint"
+                  class="max-h-full max-w-full object-contain rounded-md"
+                />
+              </div>
+              <p
+                class="text-center text-gray-300 mb-6 text-sm md:text-base leading-relaxed"
+              >
+                Digitized paper blueprints into precise CAD models, streamlining
+                workflows and modernizing legacy designs.
+              </p>
+              <div class="flex justify-center explore-btn">
+                <div
+                  class="mr-2 border rounded-full border-blue-500 p-1 arrow-container"
+                >
+                  <span class="text-md font-semibold m-4"
+                    ><img
+                      src="/public/assets/cross-arrow.svg"
+                      alt="Cross Arrow"
+                      class="w-3 h-3 inline brightness-0 invert arrow-img"
+                  /></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="https://cadrush.com/2d-cad-to-3d-model"
+          class="block group relative w-full min-h-[300px] md:min-h-[420px] bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-purple-400"
+        >
+          <div class="our-service-card h-full">
+            <!-- Default State -->
+            <div
+              class="absolute inset-0 w-full h-full flex flex-col justify-center items-center p-8 transition-opacity duration-300 group-hover:opacity-0 text-center gap-4"
+            >
+              <h3
+                class="text-xl md:text-2xl font-medium text-center mb-4 md:mb-8"
+              >
+                2D to 3D CAD Modeling
+              </h3>
+              <div
+                class="w-full h-[100px] md:h-[120px] flex justify-center items-center mb-6"
+              >
+                <img
+                  src="/public/assets/2d-cad-to-3d-model.webp"
+                  alt="CAD Drawing"
+                  class="max-h-full max-w-full object-contain rounded-md"
+                />
+              </div>
+              <div
+                class="flex items-center justify-center text-blue-500 hover:text-blue-700 transition-colors decoration-none explore-btn"
+              >
+                <div
+                  class="mr-2 border rounded-full border-blue-500 p-1 arrow-container"
+                >
+                  <span class="text-md font-semibold m-4"
+                    ><img
+                      src="/public/assets/cross-arrow.svg"
+                      alt="Cross Arrow"
+                      class="w-3 h-3 inline arrow-img"
+                  /></span>
+                </div>
+                <span class="mr-2 text-md font-semibold text-black"
+                  >Explore More</span
+                >
+              </div>
+            </div>
+            <!-- Hover State -->
+            <div
+              class="absolute inset-0 w-full h-full flex flex-col justify-center items-center bg-black text-white p-8 opacity-0 transition-opacity duration-300 group-hover:opacity-100 text-center"
+            >
+              <h3 class="text-base md:text-xl text-center mb-4">
+                2D to 3D CAD Modeling
+              </h3>
+              <div
+                class="w-full h-[180px] flex justify-center items-center mb-6"
+              >
+                <img
+                  src="/public/assets/2d-cad-to-3d-model.webp"
+                  alt="Blueprint"
+                  class="max-h-full max-w-full object-contain rounded-md"
+                />
+              </div>
+              <p
+                class="text-center text-gray-300 mb-6 text-sm md:text-base leading-relaxed"
+              >
+                Convert 2D CAD drawings into 3D models, enabling detailed
+                visualization and accurate manufacturing.
+              </p>
+              <div class="flex justify-center explore-btn">
+                <div
+                  class="mr-2 border rounded-full border-blue-500 p-1 arrow-container"
+                >
+                  <span class="text-md font-semibold m-4"
+                    ><img
+                      src="/public/assets/cross-arrow.svg"
+                      alt="Cross Arrow"
+                      class="w-3 h-3 inline brightness-0 invert arrow-img"
+                  /></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="https://cadrush.com/electrical-drawing-panel-layout"
+          class="block group relative w-full min-h-[300px] md:min-h-[420px] bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-purple-400"
+        >
+          <div class="our-service-card h-full">
+            <!-- Default State -->
+            <div
+              class="absolute inset-0 w-full h-full flex flex-col justify-center items-center p-8 transition-opacity duration-300 group-hover:opacity-0 text-center gap-4"
+            >
+              <h3
+                class="text-xl md:text-2xl font-medium text-center mb-4 md:mb-8"
+              >
+                Electrical Drawing & Panel Layout
+              </h3>
+              <div
+                class="w-full h-[100px] md:h-[120px] flex justify-center items-center mb-6"
+              >
+                <img
+                  src="/public/assets/3d-modeling.webp"
+                  alt="CAD Drawing"
+                  class="max-h-full max-w-full object-contain rounded-md"
+                />
+              </div>
+              <div
+                class="flex items-center justify-center text-blue-500 hover:text-blue-700 transition-colors decoration-none explore-btn"
+              >
+                <div
+                  class="mr-2 border rounded-full border-blue-500 p-1 arrow-container"
+                >
+                  <span class="text-md font-semibold m-4"
+                    ><img
+                      src="/public/assets/cross-arrow.svg"
+                      alt="Cross Arrow"
+                      class="w-3 h-3 inline arrow-img"
+                  /></span>
+                </div>
+                <span class="mr-2 text-md font-semibold text-black"
+                  >Explore More</span
+                >
+              </div>
+            </div>
+            <!-- Hover State -->
+            <div
+              class="absolute inset-0 w-full h-full flex flex-col justify-center items-center bg-black text-white p-8 opacity-0 transition-opacity duration-300 group-hover:opacity-100 text-center"
+            >
+              <h3 class="text-base md:text-xl text-center mb-4">
+                Electrical Drawing & Panel Layout
+              </h3>
+              <div
+                class="w-full h-[180px] flex justify-center items-center mb-6"
+              >
+                <img
+                  src="/public/assets/3d-modeling.webp"
+                  alt="Blueprint"
+                  class="max-h-full max-w-full object-contain rounded-md"
+                />
+              </div>
+              <p
+                class="text-center text-gray-300 mb-6 text-sm md:text-base leading-relaxed"
+              >
+                Create detailed 3D models from CAD drawings, enabling accurate
+                manufacturing and visualization.
+              </p>
+              <div class="flex justify-center explore-btn">
+                <div
+                  class="mr-2 border rounded-full border-blue-500 p-1 arrow-container"
+                >
+                  <span class="text-md font-semibold m-4"
+                    ><img
+                      src="/public/assets/cross-arrow.svg"
+                      alt="Cross Arrow"
+                      class="w-3 h-3 inline brightness-0 invert arrow-img"
+                  /></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="https://cadrush.com/plc-programming-migration"
+          class="block group relative w-full min-h-[300px] md:min-h-[420px] bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-purple-400"
+        >
+          <div class="our-service-card h-full">
+            <!-- Default State -->
+            <div
+              class="absolute inset-0 w-full h-full flex flex-col justify-center items-center p-8 transition-opacity duration-300 group-hover:opacity-0 text-center gap-4"
+            >
+              <h3
+                class="text-xl md:text-2xl font-medium text-center mb-4 md:mb-8"
+              >
+                PLC Programming/Migration
+              </h3>
+              <div
+                class="w-full h-[100px] md:h-[120px] flex justify-center items-center mb-6"
+              >
+                <img
+                  src="/public/assets/cfd.webp"
+                  alt="CAD Drawing"
+                  class="max-h-full max-w-full object-contain rounded-md"
+                />
+              </div>
+              <div
+                class="flex items-center justify-center text-blue-500 hover:text-blue-700 transition-colors decoration-none explore-btn"
+              >
+                <div
+                  class="mr-2 border rounded-full border-blue-500 p-1 arrow-container"
+                >
+                  <span class="text-md font-semibold m-4"
+                    ><img
+                      src="/public/assets/cross-arrow.svg"
+                      alt="Cross Arrow"
+                      class="w-3 h-3 inline arrow-img"
+                  /></span>
+                </div>
+                <span class="mr-2 text-md font-semibold text-black"
+                  >Explore More</span
+                >
+              </div>
+            </div>
+            <!-- Hover State -->
+            <div
+              class="absolute inset-0 w-full h-full flex flex-col justify-center items-center bg-black text-white p-8 opacity-0 transition-opacity duration-300 group-hover:opacity-100 text-center"
+            >
+              <h3 class="text-base md:text-xl text-center mb-4">
+                PLC Programming/Migration
+              </h3>
+              <div
+                class="w-full h-[180px] flex justify-center items-center mb-6"
+              >
+                <img
+                  src="/public/assets/cfd.webp"
+                  alt="Blueprint"
+                  class="max-h-full max-w-full object-contain rounded-md"
+                />
+              </div>
+              <p
+                class="text-center text-gray-300 mb-6 text-sm md:text-base leading-relaxed"
+              >
+                CADRush offers PLC Programming and Migration Services modernize
+                legacy systems, enhance control performance, and prepare
+                industries for future-ready automation.
+              </p>
+              <div class="flex justify-center explore-btn">
+                <div
+                  class="mr-2 border rounded-full border-blue-500 p-1 arrow-container"
+                >
+                  <span class="text-md font-semibold m-4"
+                    ><img
+                      src="/public/assets/cross-arrow.svg"
+                      alt="Cross Arrow"
+                      class="w-3 h-3 inline brightness-0 invert arrow-img"
+                  /></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="https://cadrush.com/fea-cfd"
+          class="block group relative w-full min-h-[300px] md:min-h-[420px] bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-purple-400"
+        >
+          <div class="our-service-card h-full">
+            <!-- Default State -->
+            <div
+              class="absolute inset-0 w-full h-full flex flex-col justify-center items-center p-8 transition-opacity duration-300 group-hover:opacity-0 text-center gap-4"
+            >
+              <h3
+                class="text-xl md:text-2xl font-medium text-center mb-4 md:mb-8"
+              >
+                FEA/CFD
+              </h3>
+              <div
+                class="w-full h-[100px] md:h-[120px] flex justify-center items-center mb-6"
+              >
+                <img
+                  src="/public/assets/fea.webp"
+                  alt="CAD Drawing"
+                  class="max-h-full max-w-full object-contain rounded-md"
+                />
+              </div>
+              <div
+                class="flex items-center justify-center text-blue-500 hover:text-blue-700 transition-colors decoration-none explore-btn"
+              >
+                <div
+                  class="mr-2 border rounded-full border-blue-500 p-1 arrow-container"
+                >
+                  <span class="text-md font-semibold m-4"
+                    ><img
+                      src="/public/assets/cross-arrow.svg"
+                      alt="Cross Arrow"
+                      class="w-3 h-3 inline arrow-img"
+                  /></span>
+                </div>
+                <span class="mr-2 text-md font-semibold text-black"
+                  >Explore More</span
+                >
+              </div>
+            </div>
+            <!-- Hover State -->
+            <div
+              class="absolute inset-0 w-full h-full flex flex-col justify-center items-center bg-black text-white p-8 opacity-0 transition-opacity duration-300 group-hover:opacity-100 text-center"
+            >
+              <h3 class="text-base md:text-xl text-center mb-4">FEA/CFD</h3>
+              <div
+                class="w-full h-[180px] flex justify-center items-center mb-6"
+              >
+                <img
+                  src="/public/assets/fea.webp"
+                  alt="Blueprint"
+                  class="max-h-full max-w-full object-contain rounded-md"
+                />
+              </div>
+              <p
+                class="text-center text-gray-300 mb-6 text-sm md:text-base leading-relaxed"
+              >
+                CADRush provides FEA & CFD Analysis Services to simulate
+                real-world conditions, validate performance, and optimize
+                designs.
+              </p>
+              <div class="flex justify-center explore-btn">
+                <div
+                  class="mr-2 border rounded-full border-blue-500 p-1 arrow-container"
+                >
+                  <span class="text-md font-semibold m-4"
+                    ><img
+                      src="/public/assets/cross-arrow.svg"
+                      alt="Cross Arrow"
+                      class="w-3 h-3 inline brightness-0 invert arrow-img"
+                  /></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="https://cadrush.com/manufacturing-drawing"
+          class="block group relative w-full min-h-[300px] md:min-h-[420px] bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-purple-400"
+        >
+          <div class="our-service-card h-full">
+            <!-- Default State -->
+            <div
+              class="absolute inset-0 w-full h-full flex flex-col justify-center items-center p-8 transition-opacity duration-300 group-hover:opacity-0 text-center gap-4"
+            >
+              <h3
+                class="text-xl md:text-2xl font-medium text-center mb-4 md:mb-8"
+              >
+                DFM/Manufacturing Drawing
+              </h3>
+              <div
+                class="w-full h-[100px] md:h-[120px] flex justify-center items-center mb-6"
+              >
+                <img
+                  src="/public/assets/manufacturing-drawing.webp"
+                  alt="CAD Drawing"
+                  class="max-h-full max-w-full object-contain rounded-md"
+                />
+              </div>
+              <div
+                class="flex items-center justify-center text-blue-500 hover:text-blue-700 transition-colors decoration-none explore-btn"
+              >
+                <div
+                  class="mr-2 border rounded-full border-blue-500 p-1 arrow-container"
+                >
+                  <span class="text-md font-semibold m-4"
+                    ><img
+                      src="/public/assets/cross-arrow.svg"
+                      alt="Cross Arrow"
+                      class="w-3 h-3 inline arrow-img"
+                  /></span>
+                </div>
+                <span class="mr-2 text-md font-semibold text-black"
+                  >Explore More</span
+                >
+              </div>
+            </div>
+            <!-- Hover State -->
+            <div
+              class="absolute inset-0 w-full h-full flex flex-col justify-center items-center bg-black text-white p-8 opacity-0 transition-opacity duration-300 group-hover:opacity-100 text-center"
+            >
+              <h3 class="text-base md:text-xl text-center mb-4">
+                DFM/Manufacturing Drawing
+              </h3>
+              <div
+                class="w-full h-[180px] flex justify-center items-center mb-6"
+              >
+                <img
+                  src="/public/assets/manufacturing-drawing.webp"
+                  alt="Blueprint"
+                  class="max-h-full max-w-full object-contain rounded-md"
+                />
+              </div>
+              <p
+                class="text-center text-gray-300 mb-6 text-sm md:text-base leading-relaxed"
+              >
+                Create detailed manufacturing drawings from CAD drawings,
+                enabling accurate manufacturing and visualization.
+              </p>
+              <div class="flex justify-center explore-btn">
+                <div
+                  class="mr-2 border rounded-full border-blue-500 p-1 arrow-container"
+                >
+                  <span class="text-md font-semibold m-4"
+                    ><img
+                      src="/public/assets/cross-arrow.svg"
+                      alt="Cross Arrow"
+                      class="w-3 h-3 inline brightness-0 invert arrow-img"
+                  /></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section
+      class="w-full h-[350px] md:h-[250px] bg-gradient-to-r from-[#4b9adb] to-[#9747ff] animated-gradient relative flex justify-center items-center overflow-hidden py-2 md:py-4 lg:py-6 xl:py-8"
+    >
+      <!-- Wave background overlay -->
+      <img
+        src="/public/assets/wave.svg"
+        alt="Wave"
+        class="absolute inset-0 hidden md:block w-full h-full object-cover pointer-events-none z-0"
+      />
+      <img
+        src="/public/assets/wave-mob.svg"
+        alt="Wave"
+        class="absolute inset-0 md:hidden w-full h-full object-cover pointer-events-none z-0"
+      />
+      <!-- Content over the wave -->
+      <div
+        class="relative z-10 w-full h-full flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto px-4 md:px-0"
+      >
+        <div
+          class="flex flex-col items-center justify-center gap-4 py-4 md:w-1/2 w-full"
+        >
+          <h2 class="text-2xl md:text-3xl font-bold text-white mb-2">
+            Not sure of right plan?
+          </h2>
+          <div
+            class="flex flex-col md:w-80 md:h-28 h-28 w-64 border border-white rounded-md text-white"
+          >
+            <div class="w-full h-full justify-end items-start p-2 flex">
+              <span
+                id="contactBtn"
+                class="rounded-full bg-white p-1 cursor-pointer"
+                ><img
+                  src="/public/assets/arrow.svg"
+                  alt="arrow svg"
+                  class="w-8 h-8 content-center"
+              /></span>
+            </div>
+            <div
+              class="w-full h-full justify-start items-end p-2 flex font-light"
+            >
+              <span class="cursor-pointer mb-4 ml-4">Let's Chat</span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-center md:items-end gap-4 md:w-1/2 mt-6 md:mt-0 justify-center"
+        >
+          <p class="text-white text-sm max-w-xs text-center md:text-left">
+            We are available to help you with any questions or concerns.
+          </p>
+          <a
+            href="https://cadrush.com/app/#/signin"
+            target="_blank"
+            class="flex md:w-1/2 w-full justify-center md:justify-start mb-8"
+          >
+            <button
+              class="bg-white text-[#7c6ee6] font-bold px-6 py-2 rounded-md shadow hover:bg-blue-100 transition-colors mt-2 mb-4"
+            >
+              GET STARTED
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10 w-full md:pl-[10%]">
+      <div
+        class="container mx-auto px-6 md:px-12 lg:px-20 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left"
+      >
+        <div class="space-y-4 flex flex-col items-center md:items-start">
+          <img src="/public/assets/logo.svg" alt="CADRush Logo" class="w-32" />
+          <p class="text-[14px] text-gray-400 inter font-bold">
+            A product of MN Engineering Solutions.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="text-lg font-semibold">Contact</h3>
+          <div
+            class="flex items-center justify-center md:justify-start space-x-3"
+          >
+            <img src="/public/assets/mail.svg" class="w-5" />
+            <p class="font-normal">hello@cadrush.com</p>
+          </div>
+          <div
+            class="flex items-center justify-center md:justify-start space-x-1"
+          >
+            <img src="/public/assets/location.svg" class="w-5" />
+            <p class="font-normal">
+              MN Engineering Solutions Inc.<br />
+              332 Michigan Avenue, Chicago, IL 60604, USA
+            </p>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="text-lg font-semibold">Follow Us</h3>
+          <div class="flex justify-center md:justify-start space-x-4">
+            <a
+              href="https://www.instagram.com/cadrush_mnes?igsh=MXZ5cTk0eTJsa2FtcQ==&utm_source=ig_contact_invite"
+              class="bg-white w-10 h-10 flex items-center justify-center rounded-full shadow-md"
+            >
+              <img src="/public/assets/instagram.svg" class="w-5" />
+            </a>
+            <a
+              href="https://www.facebook.com/share/1D9pVsDCYJ/?mibextid=wwXIfr"
+              class="bg-white w-10 h-10 flex items-center justify-center rounded-full shadow-md"
+            >
+              <img src="/public/assets/facebook.svg" class="w-5" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/cadrush/"
+              class="bg-white w-10 h-10 flex items-center justify-center rounded-full shadow-md"
+            >
+              <img src="/public/assets/linkedin.svg" class="w-5" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Horizontal Line -->
+      <hr class="border-gray-700 my-2" />
+
+      <!-- Copyright -->
+      <div
+        class="text-center md:text-right text-sm text-gray-400 px-6 inter font-normal"
+      >
+        Copyright &copy; 2024 Cadrush. All rights reserved.
+      </div>
+    </footer>
+
+    <!-- Floating Scroll-to-Top Button -->
+    <button
+      id="scrollToTopBtn"
+      onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+      class="fixed bottom-6 right-6 z-50 bg-white border border-gray-300 shadow-lg rounded-full p-3 flex items-center justify-center transition-opacity duration-300 opacity-0 hover:bg-blue-100 hover:border-blue-400"
+      aria-label="Scroll to top"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-6 h-6 text-blue-600"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M5 15l7-7 7 7"
+        />
+      </svg>
+    </button>
+    <script src="/public/js/home.js"></script>
+    <script src="/public/js/index.js"></script>
+    <script src="/public/js/service-cards-animate.js"></script>
+
+    <!-- Contact Form Popup -->
+    <div
+      id="contactPopup"
+      class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 p-4"
+    >
+      <div
+        class="bg-white rounded-xl shadow-2xl w-full max-w-md relative overflow-hidden"
+      >
+        <!-- Header -->
+        <div class="bg-[#7c6ee6] text-white p-6">
+          <div class="flex justify-between items-center">
+            <h3 class="text-xl font-bold">Get in Touch</h3>
+            <button
+              id="closeContact"
+              class="text-white hover:text-gray-200 focus:outline-none"
+            >
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+          <p class="text-sm mt-1 text-gray-100">
+            We'll get back to you as soon as possible
+          </p>
+        </div>
+
+        <!-- Form -->
+        <form id="contactForm" class="p-6 space-y-4">
+          <!-- Success Message -->
+          <div
+            id="successMessage"
+            class="hidden bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative"
+          >
+            Thank you! Your message has been sent successfully.
+          </div>
+
+          <!-- Error Message -->
+          <div
+            id="errorMessage"
+            class="hidden bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative"
+          ></div>
+
+          <!-- Form Fields -->
+          <div id="formFields">
+            <!-- Name Field -->
+            <div class="mb-4">
+              <label
+                for="name"
+                class="block text-gray-700 text-sm font-medium mb-2"
+                >Name*</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#7c6ee6] focus:border-transparent"
+              />
+              <p id="nameError" class="hidden text-red-500 text-xs mt-1"></p>
+            </div>
+
+            <!-- Email Field -->
+            <div class="mb-4">
+              <label
+                for="email"
+                class="block text-gray-700 text-sm font-medium mb-2"
+                >Email*</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#7c6ee6] focus:border-transparent"
+              />
+              <p id="emailError" class="hidden text-red-500 text-xs mt-1"></p>
+            </div>
+
+            <!-- Phone Field -->
+            <div class="mb-6">
+              <label
+                for="phone"
+                class="block text-gray-700 text-sm font-medium mb-2"
+                >Contact Number*</label
+              >
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#7c6ee6] focus:border-transparent"
+              />
+              <p id="phoneError" class="hidden text-red-500 text-xs mt-1"></p>
+            </div>
+
+            <!-- Submit Button -->
+            <button
+              type="submit"
+              id="submitBtn"
+              class="w-full bg-[#7c6ee6] hover:bg-[#6a5acd] text-white font-medium py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#7c6ee6] disabled:opacity-50 disabled:cursor-not-allowed transition duration-150 ease-in-out"
+            >
+              <span id="submitText">Send Message</span>
+              <span id="loadingSpinner" class="hidden">
+                <svg
+                  class="animate-spin -ml-1 mr-3 h-5 w-5 text-white inline-block"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <circle
+                    class="opacity-25"
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="currentColor"
+                    stroke-width="4"
+                  ></circle>
+                  <path
+                    class="opacity-75"
+                    fill="currentColor"
+                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                  ></path>
+                </svg>
+                Sending...
+              </span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="/public/js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CADRush - 2D to 3D Conversion</title>
+    <meta
+      name="description"
+      content="CADRush offers innovative CAD solutions 2D to 3D Conversion. Efficient, transparent, and high-quality services for your business needs."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.cadrush.com/" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="manifest" href="/manifest.json" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="CADRush - 2D to 3D Conversion" />
+    <meta
+      property="og:description"
+      content="CADRush offers innovative CAD solutions 2D to 3D Conversion. Efficient, transparent, and high-quality services for your business needs."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.cadrush.com/" />
+    <meta property="og:image" content="/public/assets/logo.svg" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CADRush - 2D to 3D Conversion" />
+    <meta
+      name="twitter:description"
+      content="CADRush offers innovative CAD solutions 2D to 3D Conversion. Efficient, transparent, and high-quality services for your business needs."
+    />
+    <meta name="twitter:image" content="/public/assets/logo.svg" />
+
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
+
+    <link rel="stylesheet" href="/public/css/style.css" />
+    <link rel="stylesheet" href="/public/css/services.css" />
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .animate-fadeInUp {
+        animation: fadeInUp 0.6s ease-out forwards;
+      }
+
+      .card-hover-effect {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .card-hover-effect:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+
+      .gradient-text {
+        background: linear-gradient(90deg, #4b9adb 0%, #9747ff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    </style>
+    <script src="/public/js/services.js"></script>
+    <script src="/public/js/tailwind.js"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              funnel: ['"Funnel Sans"', "sans-serif"],
+              outfit: ['"Outfit"', "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-K25BHMETBS"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-K25BHMETBS");
+    </script>
+  </head>
+
+  <body class="bg-white h-dvh md:h-screen">
+    <!-- Header -->
+    <header
+      id="main-header"
+      class="fixed top-0 left-0 w-full z-50 bg-transparent transition-colors duration-300"
+    >
+      <!-- Desktop Navbar -->
+      <div
+        class="hidden md:flex items-center justify-between py-4 px-8 w-full z-40"
+      >
+        <!-- Logo at far left -->
+        <a href="https://cadrush.com/" class="flex items-center">
+          <img src="/public/assets/logo.svg" alt="CADRush Logo" class="h-6" />
+        </a>
+        <!-- Centered Nav -->
+        <div class="flex items-center bg-white text-black py-2 px-12 rounded">
+          <nav class="flex py-2 space-x-12 mx-auto items-center">
+            <!-- Services Dropdown -->
+            <div class="relative group">
+              <button
+                class="flex items-center text-black font-medium hover:text-blue-800 focus:outline-none"
+              >
+                SERVICES
+                <svg
+                  class="w-4 h-4 ml-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                class="absolute left-0 mt-2 w-56 bg-white rounded-md shadow-lg py-1 z-50 hidden group-hover:block"
+                style="pointer-events: auto"
+              >
+                <!-- Invisible padding to prevent dropdown from closing when moving cursor -->
+                <div class="absolute -top-4 left-0 right-0 h-4"></div>
+                <a
+                  href="https://cadrush.com/paper-to-cad"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >Paper to CAD Conversion</a
+                >
+                <a
+                  href="https://cadrush.com/2d-cad-to-3d-model"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >2D CAD to 3D Model</a
+                >
+                <a
+                  href="https://cadrush.com/electrical-drawing-panel-layout"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >Electrical Drawing & Panel Layout</a
+                >
+                <a
+                  href="https://cadrush.com/plc-programming-migration"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >
+                  PLC Programming & Migration</a
+                >
+                <a
+                  href="https://cadrush.com/fea-cfd"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >FEA & CFD</a
+                >
+                <a
+                  href="https://cadrush.com/manufacturing-drawing"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >Manufacturing Drawing</a
+                >
+                <!-- Invisible padding to prevent dropdown from closing when moving cursor -->
+                <div class="absolute -bottom-4 left-0 right-0 h-4"></div>
+              </div>
+            </div>
+            <!-- <a href="https://cadrush.com/case-studies"
+                        class="text-black font-medium hover:text-blue-800">CASE STUDIES</a>
+                    <a href="https://cadrush.com/faq"
+                        class="text-black font-medium hover:text-blue-800">FAQ</a> -->
+            <button
+              id="contactBtn-menu"
+              class="text-black font-medium hover:text-blue-800"
+            >
+              CONTACT
+            </button>
+          </nav>
+        </div>
+        <!-- Register button at far right -->
+
+        <a
+          class="bg-black text-white px-6 py-2 rounded-lg font-semibold shadow hover:bg-gray-800 transition"
+          href="https://cadrush.com/app/#/signin"
+          target="_blank"
+          ><button>REGISTER</button>
+        </a>
+      </div>
+      <!-- Mobile Navbar -->
+      <div class="flex md:hidden justify-between items-center py-3 px-3 z-40">
+        <a href="https://cadrush.com/" class="text-white font-bold text-xl"
+          ><img src="/public/assets/logo.svg" alt="CADRush Logo" class="h-3"
+        /></a>
+        <div class="flex flex-row space-x-2">
+          <button
+            class="bg-black text-white px-4 py-1 rounded-lg font-normal text-sm shadow hover:bg-gray-800 transition"
+          >
+            <a href="https://cadrush.com/app/#/signin" target="_blank"
+              >REGISTER</a
+            >
+          </button>
+          <button id="hamburger" onclick="openDrawer()">
+            <img
+              src="/public/assets/hamburger.svg"
+              alt="Open menu"
+              class="w-8 h-8"
+            />
+          </button>
+        </div>
+      </div>
+      <!-- Right Side Drawer for Mobile -->
+      <div
+        id="mobile-drawer"
+        class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg z-50 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden"
+      >
+        <div class="flex justify-end p-4">
+          <button onclick="closeDrawer()">
+            <img
+              src="/public/assets/close-x.svg"
+              alt="Close menu"
+              class="w-6 h-6"
+            />
+          </button>
+        </div>
+        <nav class="flex flex-col space-y-6 px-8 mt-8">
+          <div class="relative">
+            <button
+              id="mobile-services-toggle"
+              class="flex items-center text-gray-700 font-medium hover:text-blue-800 w-full justify-between"
+            >
+              Services
+              <svg
+                class="w-4 h-4 ml-1 transform transition-transform"
+                id="services-arrow"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+            <div id="mobile-services-menu" class="hidden pl-4 mt-2 space-y-2">
+              <a
+                href="https://cadrush.com/paper-to-cad"
+                class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
+                >Paper to CAD</a
+              >
+              <a
+                href="https://cadrush.com/2d-cad-to-3d-model"
+                class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
+                >2D CAD to 3D Model</a
+              >
+              <a
+                href="https://cadrush.com/electrical-drawing-panel-layout"
+                class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
+                >Electrical Drawing & Panel Layout</a
+              >
+              <a
+                href="https://cadrush.com/plc-programming-migration"
+                class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
+              >
+                PLC Programming & Migration</a
+              >
+              <a
+                href="https://cadrush.com/fea-cfd"
+                class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
+                >FEA & CFD</a
+              >
+              <a
+                href="https://cadrush.com/manufacturing-drawing"
+                class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
+                >Manufacturing Drawing</a
+              >
+            </div>
+          </div>
+          <!-- <a href="https://cadrush.com/case-studies"
+                    class="text-gray-700 font-medium hover:text-blue-800">CASE STUDIES</a>
+                <a href="https://cadrush.com/faq"
+                    class="text-gray-700 font-medium hover:text-blue-800">FAQ</a> -->
+          <button
+            id="contactBtn-menu"
+            class="text-gray-700 font-medium hover:text-blue-800"
+          >
+            CONTACT
+          </button>
+        </nav>
+      </div>
+      <!-- Overlay for Drawer (optional, improves UX) -->
+      <div
+        id="drawer-overlay"
+        class="fixed inset-0 bg-black bg-opacity-30 z-40 hidden md:hidden"
+        onclick="closeDrawer()"
+      ></div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="h-[60vh] bg-gradient-to-br from-[#4b9adb] to-[#9747ff] animated-gradient header-scrolled py-10 md:py-12 lg:py-12 md:px-10"
+    >
+      <div
+        class="flex flex-col md:flex-row items-center justify-between h-full"
+      >
+        <!-- Left: Text Content -->
+        <div class="max-w-5xl">
+          <h1
+            class="text-2xl md:text-3xl font-bold text-white mt-10 md:mt-1 text-center md:text-left"
+          >
+            2D to 3D CAD Modeling
+          </h1>
+          <!-- bouncing down arrow
+            <span class="animate-bounce relative top-12 md:top-20">
+                <img src="/public/assets/down.svg" alt="Bounce down arrow" class="w-12 h-12">
+            </span> -->
+          <!-- <div
+                class="flex items-center justify-center flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-12 relative top-20">
+                <button
+                    class="bg-transparent text-white flex items-center px-6 py-2 justify-between rounded-lg font-light border border-white hover:bg-gray-800/50 transition w-[200px] text-sm animate-bounce"><span
+                        id="learn-more">LEARN
+                        MORE </span><img src="/public/assets/down.svg" alt="down" class="w-6 h-4"></button>
+                <button
+                    class="bg-black text-white py-2 px-6 rounded-lg font-light shadow hover:bg-gray-800 transition w-[200px] text-sm"><a
+                        href="https://cadrush.com/app/#/signin" target="_blank" rel="noopener noreferrer">START YOUR
+                        PROJECT</a></button>
+
+            </div> -->
+          <p class="text-white mt-5 text-center md:text-left">
+            2D to 3D CAD Conversion Services transform legacy drawings into
+            precise, intelligent 3D models that enhance visualization,
+            validation, and production readiness. Our expertise ensures
+            compliance with global standards while accelerating product
+            development and streamlining workflows.
+          </p>
+        </div>
+        <!-- Right: Image -->
+        <div class="mt-6 md:mt-20 md:ml-10 flex-shrink-0">
+          <img
+            src="/public/assets/2d-cad-to-3d-model.webp"
+            alt="FEA Hero"
+            class="w-64 md:w-70 lg:w-[24rem]"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions Mobile -->
+    <section
+      class="py-10 md:py-16 lg:py-20 bg-gradient-to-b from-white to-gray-50 overflow-hidden"
+    >
+      <h2 class="font-bold text-center mb-4 text-[#7c6ee6] text-3xl">
+        2D to 3D Modeling
+      </h2>
+      <p
+        class="text-center text-sm max-w-[500px] mx-auto my-2 md:my-4 md:text-base"
+      >
+        We support diverse sectors with customized modeling and conversion
+        services, including:
+      </p>
+    </section>
+
+    <!-- services -->
+    <section
+      class="py-10 md:py-16 lg:py-20 bg-gradient-to-b from-white to-gray-50 overflow-hidden"
+    >
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- FEA Services Grid -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 px-4 justify-center"
+        >
+          <!-- Card 1 -->
+          <div
+            class="card-hover-effect group hover:bg-black relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
+            x-data="{ show: false }"
+            x-init="setTimeout(() => show = true, 100)"
+            x-transition:enter="transition ease-out duration-700 transform"
+            x-transition:enter-start="opacity-0 translate-y-10"
+            x-transition:enter-end="opacity-100 translate-y-0"
+            x-show="show"
+          >
+            <div
+              class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            ></div>
+            <div class="relative p-10 h-full flex flex-col">
+              <div class="flex items-center mb-4">
+                <div
+                  class="w-12 h-12 rounded-full bg-[#EDEDED] group-hover:bg-gray-400 flex items-center justify-center text-white text-xl font-bold mr-4"
+                >
+                  <img
+                    src="/public/assets/fea/automobile.svg"
+                    alt="Img"
+                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200"
+                  />
+                </div>
+                <h3
+                  class="text-xl font-bold text-gray-900 group-hover:text-white transition-colors duration-300"
+                >
+                  Automotive
+                </h3>
+              </div>
+              <p
+                class="text-gray-600 flex-grow group-hover:text-white transition-colors duration-300"
+              >
+                Designing precision components and converting legacy data to
+                modern CAD platforms compliance to standards for prototyping.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="card-hover-effect group hover:bg-black relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
+            x-data="{ show: false }"
+            x-init="setTimeout(() => show = true, 200)"
+            x-transition:enter="transition ease-out duration-700 transform"
+            x-transition:enter-start="opacity-0 translate-y-10"
+            x-transition:enter-end="opacity-100 translate-y-0"
+            x-show="show"
+          >
+            <div
+              class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            ></div>
+            <div class="relative p-10 h-full flex flex-col">
+              <div class="flex items-center mb-4">
+                <div
+                  class="w-12 h-12 rounded-full bg-[#EDEDED] group-hover:bg-gray-400 flex items-center justify-center text-white text-xl font-bold mr-4"
+                >
+                  <img
+                    src="/public/assets/fea/heavy-equipment.svg"
+                    alt="Img"
+                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200"
+                  />
+                </div>
+                <h3
+                  class="text-xl font-bold text-gray-900 group-hover:text-white transition-colors duration-300"
+                >
+                  Heavy Equipment and Industrial Machinery
+                </h3>
+              </div>
+              <p
+                class="text-gray-600 flex-grow group-hover:text-white transition-colors duration-300"
+              >
+                Developing robust machine and load-bearing structures,
+                converting and processing units and converting 2D mechanical
+                drawings to 3D models in modern CAD tools for manufacturing,
+                stress, motion, and durability analysis.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="card-hover-effect group hover:bg-black relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
+            x-data="{ show: false }"
+            x-init="setTimeout(() => show = true, 300)"
+            x-transition:enter="transition ease-out duration-700 transform"
+            x-transition:enter-start="opacity-0 translate-y-10"
+            x-transition:enter-end="opacity-100 translate-y-0"
+            x-show="show"
+          >
+            <div
+              class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            ></div>
+            <div class="relative p-10 h-full flex flex-col">
+              <div class="flex items-center mb-4">
+                <div
+                  class="w-12 h-12 rounded-full bg-[#EDEDED] group-hover:bg-gray-400 flex items-center justify-center text-white text-xl font-bold mr-4"
+                >
+                  <img
+                    src="/public/assets/fea/machine-parts.svg"
+                    alt="Img"
+                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200"
+                  />
+                </div>
+                <h3
+                  class="text-xl font-bold text-gray-900 group-hover:text-white transition-colors duration-300"
+                >
+                  Machine Parts & Tools:
+                </h3>
+              </div>
+              <p
+                class="text-gray-600 flex-grow group-hover:text-white transition-colors duration-300"
+              >
+                Delivering detailed component models, jigs, and fixtures
+                optimized for strength, accuracy, and fabrication.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="card-hover-effect group hover:bg-black relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
+            x-data="{ show: false }"
+            x-init="setTimeout(() => show = true, 400)"
+            x-transition:enter="transition ease-out duration-700 transform"
+            x-transition:enter-start="opacity-0 translate-y-10"
+            x-transition:enter-end="opacity-100 translate-y-0"
+            x-show="show"
+          >
+            <div
+              class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            ></div>
+            <div class="relative p-10 h-full flex flex-col">
+              <div class="flex items-center mb-4">
+                <div
+                  class="w-12 h-12 rounded-full bg-[#EDEDED] group-hover:bg-gray-400 flex items-center justify-center text-white text-xl font-bold mr-4"
+                >
+                  <img
+                    src="/public/assets/fea/medical-devices.svg"
+                    alt="Img"
+                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200"
+                  />
+                </div>
+                <h3
+                  class="text-xl font-bold text-gray-900 group-hover:text-white transition-colors duration-300"
+                >
+                  Medical Devices
+                </h3>
+              </div>
+              <p
+                class="text-gray-600 flex-grow group-hover:text-white transition-colors duration-300"
+              >
+                Creating high-precision models that comply with regulatory
+                standards while ensuring functionality and manufacturability.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div
+            class="card-hover-effect group hover:bg-black relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
+            x-data="{ show: false }"
+            x-init="setTimeout(() => show = true, 500)"
+            x-transition:enter="transition ease-out duration-700 transform"
+            x-transition:enter-start="opacity-0 translate-y-10"
+            x-transition:enter-end="opacity-100 translate-y-0"
+            x-show="show"
+          >
+            <div
+              class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            ></div>
+            <div class="relative p-10 h-full flex flex-col">
+              <div class="flex items-center mb-4">
+                <div
+                  class="w-12 h-12 rounded-full bg-[#EDEDED] group-hover:bg-gray-400 flex items-center justify-center text-white text-xl font-bold mr-4"
+                >
+                  <img
+                    src="/public/assets/fea/speciality-car.svg"
+                    alt="Img"
+                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200"
+                  />
+                </div>
+                <h3
+                  class="text-xl font-bold text-gray-900 group-hover:text-white transition-colors duration-300"
+                >
+                  Speciality Vehicles
+                </h3>
+              </div>
+              <p
+                class="text-gray-600 flex-grow group-hover:text-white transition-colors duration-300"
+              >
+                Designing and modernizing structures, subsystems, and assemblies
+                for emergency, defense, and custom-built vehicles.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- our expertise -->
+    <section
+      class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 md:gap-8 px-4 md:px-20 py-8 md:mt-12"
+    >
+      <!-- Left text block -->
+      <div class="flex-1 text-center md:text-left">
+        <h1
+          class="text-2xl md:text-3xl font-bold bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent"
+        >
+          Our Software Expertise
+        </h1>
+        <p class="mt-4 text-[#747474]">
+          We leverage industry-leading platforms for reliable and accurate
+          results:
+        </p>
+      </div>
+
+      <!-- Right bordered div -->
+      <div class="flex-1 border-2 p-10 rounded-xl md:py-16">
+        <div class="flex items-center mt-2">
+          <img
+            src="/public//assets//fea//tick.svg"
+            alt="tick"
+            class="w-5 h-5 mr-2"
+          />
+          <h2 class="font-semibold text-xl">FEA Tools</h2>
+        </div>
+        <h3 class="ml-7 mt-1">
+          ANYSYS, Abaqus, NASTRAN, SolidWorks Simulation, Creo, Inventor.
+        </h3>
+
+        <div class="flex items-center mt-6">
+          <img
+            src="/public//assets//fea//tick.svg"
+            alt="tick"
+            class="w-5 h-5 mr-2"
+          />
+          <h2 class="font-semibold text-xl">CFD Tools</h2>
+        </div>
+        <h3 class="ml-7 mt-1">
+          ANSYS Fluent, ANSYS CFX, STAR-CCM+, COMSOL Multiphysics, Autodesk CFD,
+          SolidWorks Flow Simulation.
+        </h3>
+
+        <p class="mt-10 text-[#747474]">
+          This flexibility ensures seamless integration with your CAD ecosystem
+          and compatibility with your design-to-production workflows.
+        </p>
+      </div>
+    </section>
+
+    <!-- Why Choose cadrush -->
+    <section
+      class="max-w-md mx-auto my-4 md:my-8 md:p-6 p-10 md:max-w-full md:mx-52 md:mt-20"
+    >
+      <h2
+        class="font-bold text-center mb-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent text-2xl md:text-3xl"
+      >
+        Why Choose MN CADRush?
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 md:gap-12 gap-6 md:mt-12">
+        <!-- Card 1 -->
+        <div class="flip-card rounded-xl relative h-[400px]">
+          <div class="flip-inner">
+            <div
+              class="flip-front border border-[#c3b7fd] px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400"
+            >
+              <div class="flex flex-col items-center h-full gap-2">
+                <div
+                  class="self-start bg-white text-[#7c6ee6] font-bold text-xl"
+                >
+                  01
+                </div>
+                <h3 class="text-lg font-semibold text-center mt-8">
+                  Engineering Expertise
+                </h3>
+                <img
+                  src="/public/assets/fea/expertise.svg"
+                  alt="Experience Icon"
+                  class="w-22 h-22 my-10"
+                />
+                <p class="text-center text-sm text-gray-700">
+                  A team of experienced mechanical engineers skilled in robust
+                  CAD modeling and precise 2D-to-3D conversion.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="flip-card rounded-xl relative h-[400px]">
+          <div class="flip-inner">
+            <div
+              class="flip-front border border-[#c3b7fd] px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400"
+            >
+              <div class="flex flex-col items-center h-full gap-2">
+                <div
+                  class="self-start bg-white text-[#7c6ee6] font-bold text-xl"
+                >
+                  02
+                </div>
+                <h3 class="text-lg font-semibold text-center mt-8">
+                  Accuracy and Integrity
+                </h3>
+                <img
+                  src="/public/assets/fea/accuracy.svg"
+                  alt="Experience Icon"
+                  class="w-22 h-22 my-10"
+                />
+                <p class="text-center text-sm text-gray-700">
+                  Every model is checked for dimensional correctness,
+                  tolerances, and functional intent, ensuring manufacturability.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="flip-card rounded-xl relative h-[400px]">
+          <div class="flip-inner">
+            <div
+              class="flip-front border border-[#c3b7fd] px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400"
+            >
+              <div class="flex flex-col items-center h-full gap-2">
+                <div
+                  class="self-start bg-white text-[#7c6ee6] font-bold text-xl"
+                >
+                  03
+                </div>
+                <h3 class="text-lg font-semibold text-center mt-8">
+                  Cross-Industry Knowledge
+                </h3>
+                <img
+                  src="/public/assets/fea/design-optimization.svg"
+                  alt="Experience Icon"
+                  class="w-22 h-22 my-10"
+                />
+                <p class="text-center text-sm text-gray-700">
+                  Proven experience across automotive, industrial machinery,
+                  medical devices, tooling, and specialty vehicles.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="flip-card rounded-xl relative h-[400px]">
+          <div class="flip-inner">
+            <div
+              class="flip-front border border-[#c3b7fd] px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400"
+            >
+              <div class="flex flex-col items-center h-full gap-2">
+                <div
+                  class="self-start bg-white text-[#7c6ee6] font-bold text-xl"
+                >
+                  04
+                </div>
+                <h3 class="text-lg font-semibold text-center mt-8">
+                  Software Versatility
+                </h3>
+                <img
+                  src="/public/assets/fea/fatser-time.svg"
+                  alt="Experience Icon"
+                  class="w-22 h-22 my-10 lg:my-8"
+                />
+                <p class="text-center text-sm text-gray-700">
+                  Proficiency across leading CAD platforms for maximum
+                  flexibility and compatibility.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="flip-card rounded-xl relative h-[400px]">
+          <div class="flip-inner">
+            <div
+              class="flip-front border border-[#c3b7fd] px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400"
+            >
+              <div class="flex flex-col items-center h-full gap-2">
+                <div
+                  class="self-start bg-white text-[#7c6ee6] font-bold text-xl"
+                >
+                  05
+                </div>
+                <h3 class="text-lg font-semibold text-center mt-8">
+                  Quality and Efficiency
+                </h3>
+                <img
+                  src="/public/assets/fea/cost-efficiency.svg"
+                  alt="Experience Icon"
+                  class="w-22 h-22 my-8"
+                />
+                <p class="text-center text-sm text-gray-700">
+                  Verified deliverables that reduce errors, minimize rework, and
+                  accelerate time-to-market.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="flip-card rounded-xl relative h-[400px]">
+          <div class="flip-inner">
+            <div
+              class="flip-front border border-[#c3b7fd] px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400"
+            >
+              <div class="flex flex-col items-center h-full gap-2">
+                <div
+                  class="self-start bg-white text-[#7c6ee6] font-bold text-xl"
+                >
+                  06
+                </div>
+                <h3 class="text-lg font-semibold text-center mt-8">
+                  Collaborative Engagement
+                </h3>
+                <img
+                  src="/public/assets/fea/collaborative.svg"
+                  alt="Experience Icon"
+                  class="w-22 h-22 my-8"
+                />
+                <p class="text-center text-sm text-gray-700">
+                  We work closely with your team to align simulations with your
+                  technical and commercial goals.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why FEA & CFD -->
+    <section
+      class="max-w-md mx-auto my-4 md:my-8 p-6 md:max-w-full md:mx-44 md:mt-20"
+    >
+      <h2
+        class="font-bold text-center mb-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent text-3xl"
+      >
+        Benefits of CAD Modeling and Conversion
+      </h2>
+      <!-- <p
+        class="text-center text-sm max-w-[500px] mx-auto my-2 md:my-4 md:text-base"
+      >
+        FEA offers a multitude of advantages that make it indispensable for
+        today’s engineering challenges
+      </p> -->
+
+      <!-- grid container -->
+      <div class="grid grid-cols-1 md:grid-cols-3 md:gap-6 mt-8">
+        <!-- Card 1 -->
+        <div
+          id="card-1"
+          class="flip-card rounded-xl relative h-[300px] md:max-w-[350px] xl:w-[450px]"
+        >
+          <div class="flip-inner">
+            <div
+              class="flip-front border-2 border-gray-300 px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400"
+            >
+              <div class="flex flex-col items-center h-full gap-2">
+                <img
+                  src="/public/assets/fea/comprehensive.svg"
+                  alt="Experience Icon"
+                  class="w-20"
+                />
+                <h3
+                  class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent"
+                >
+                  Design Precision
+                </h3>
+                <p class="text-center text-sm text-gray-700 mt-4 md:my-4">
+                  Parametric and feature-based 3D models preserve exact
+                  dimensions, tolerances, and design intent.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          id="card-2"
+          class="flip-card rounded-xl relative h-[300px] md:max-w-[350px] xl:w-[450px]"
+        >
+          <div class="flip-inner">
+            <div
+              class="flip-front border-2 border-gray-300 px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400"
+            >
+              <div class="flex flex-col items-center h-full gap-2">
+                <img
+                  src="/public/assets/fea/failure-spot.svg"
+                  alt="Experience Icon"
+                  class="w-20"
+                />
+                <h3
+                  class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent"
+                >
+                  Improved Visualization
+                </h3>
+
+                <p
+                  class="text-center text-sm text-gray-700 mt-4 md:mb-5 md:my-8"
+                >
+                  Eliminates ambiguities of 2D drawings and enables better
+                  stakeholder communication.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          id="card-3"
+          class="flip-card rounded-xl relative h-[300px] md:max-w-[350px] xl:w-[450px]"
+        >
+          <div class="flip-inner">
+            <div
+              class="flip-front border-2 border-gray-300 px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400"
+            >
+              <div class="flex flex-col items-center h-full gap-2">
+                <img
+                  src="/public/assets/fea/efficient-virtual.svg"
+                  alt="Experience Icon"
+                  class="w-20"
+                />
+                <h3
+                  class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent"
+                >
+                  Faster Iterations
+                </h3>
+                <p class="text-center text-sm text-gray-700 mt-4 md:my-4">
+                  Rapid updates and revisions ensure agility in responding to
+                  design or customer requirements.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div
+          id="card-4"
+          class="flip-card rounded-xl relative h-[300px] md:max-w-[350px]"
+        >
+          <div class="flip-inner">
+            <div
+              class="flip-front border-2 border-gray-300 px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400"
+            >
+              <div class="flex flex-col items-center h-full gap-2">
+                <img
+                  src="/public/assets/fea/accelerated.svg"
+                  alt="Experience Icon"
+                  class="w-20"
+                />
+                <h3
+                  class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent"
+                >
+                  Simulation and Validation
+                </h3>
+                <p class="text-center text-sm text-gray-700 mt-4 md:my-5">
+                  3D models serve as the foundation for FEA, CFD, and motion
+                  analysis, ensuring data-driven decisions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div
+          id="card-5"
+          class="flip-card rounded-xl relative h-[300px] md:max-w-[350px]"
+        >
+          <div class="flip-inner">
+            <div
+              class="flip-front border-2 border-gray-300 px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400"
+            >
+              <div class="flex flex-col items-center h-full gap-2">
+                <img
+                  src="/public/assets/fea/product-process.svg"
+                  alt="Experience Icon"
+                  class="w-20 mt-1"
+                />
+                <h3
+                  class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent"
+                >
+                  Manufacturing Readiness
+                </h3>
+                <p class="text-center text-sm text-gray-700 mt-4">
+                  Models integrate directly with CNC machining, additive
+                  manufacturing, and automated systems, bridging the gap between
+                  design and production.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div
+          id="card-6"
+          class="flip-card rounded-xl relative h-[300px] md:max-w-[350px]"
+        >
+          <div class="flip-inner">
+            <div
+              class="flip-front border-2 border-gray-300 px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400"
+            >
+              <div class="flex flex-col items-center h-full gap-2">
+                <img
+                  src="/public/assets/fea/risk-mitigation.svg"
+                  alt="Experience Icon"
+                  class="w-20 mt-1"
+                />
+                <h3
+                  class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent"
+                >
+                  Cost Efficiency
+                </h3>
+                <p class="text-center text-sm text-gray-700 mt-4 md:my-4">
+                  Reduced rework, faster approvals, and streamlined production
+                  processes save time and resources.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section
+      class="bg-gradient-to-b from-white via-violet-200 to-white flex flex-col items-center h-[300px] md:h-[400px] justify-center my-12 md:my-6"
+    >
+      <h2 class="font-bold text-center mb-4 text-[#7c6ee6] text-3xl py-4 px-16">
+        Partner with Us
+      </h2>
+      <p
+        class="text-center text-sm max-w-[700px] mx-auto my-2 md:my-4 md:text-base px-4"
+      >
+        2D to 3D CAD Modeling is more than a digital exercise—it’s a strategic
+        enabler for innovation, product performance, and lifecycle efficiency.
+        Whether you are modernizing legacy drawings or developing
+        next-generation designs, we deliver models that empower your teams to
+        design smarter, validate faster, and manufacture with confidence.
+        <br />
+        <button
+          class="bg-black text-white rounded-md px-6 py-2 w-1/2 md:w-44 lg:w-48 mx-auto my-6 font-semibold hover:bg-black/80 hover:bg-black/80"
+        >
+          <a href="https://cadrush.com/app/#/signin" target="_blank">
+            START BUILDING</a
+          >
+        </button>
+      </p>
+    </section>
+
+    <!-- faq -->
+    <section class="py-10 md:py-20">
+      <div class="mx-auto max-w-4xl lg:max-w-5xl px-4 sm:px-6 lg:px-8">
+        <h2
+          class="font-bold text-center mb-4 text-[#7c6ee6] text-3xl pb-4 md:pb-8"
+        >
+          Frequently asked questions
+        </h2>
+
+        <div
+          class="accordion-group flex flex-col gap-2"
+          data-accordion="default-accordion"
+        >
+          <div
+            class="accordion py-2 px-4 md:px-8 border border-solid border-gray-300 transition-all duration-500 rounded-md accordion-active:bg-indigo-50 active"
+            id="basic-heading-one-with-arrow"
+          >
+            <button
+              class="accordion-toggle group inline-flex items-center justify-between leading-8 text-gray-900 w-full transition duration-500 text-left hover:text-indigo-600 accordion-active:font-semibold accordion-active:text-indigo-600 text-base md:text-lg"
+              aria-controls="basic-collapse-one-with-arrow"
+            >
+              <h5 class="text-base md:text-lg font-normal">
+                What is CAD Modeling and Conversion?
+              </h5>
+              <img
+                src="/public/assets/plus.svg"
+                alt="Plus Icon"
+                class="w-6 h-6"
+              />
+            </button>
+            <div
+              id="basic-collapse-one-with-arrow"
+              class="accordion-content w-full px-0 overflow-hidden"
+              aria-labelledby="basic-heading-one-with-arrow"
+              style="max-height: 0"
+            >
+              <p
+                class="text-gray-900 leading-6 text-base md:text-lg my-2 font-light md:font-thin"
+              >
+                It is the process of creating 3D digital representations of
+                physical products or transforming 2D drawings and sketches into
+                intelligent 3D models for design, analysis, and manufacturing.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="accordion py-2 px-4 md:px-8 border border-solid border-gray-300 transition-all duration-500 rounded-md accordion-active:bg-indigo-50 active"
+            id="basic-heading-one-with-arrow"
+          >
+            <button
+              class="accordion-toggle group inline-flex items-center justify-between leading-8 text-gray-900 w-full transition duration-500 text-left hover:text-indigo-600 accordion-active:font-semibold accordion-active:text-indigo-600 text-base md:text-lg"
+              aria-controls="basic-collapse-one-with-arrow"
+            >
+              <h5 class="text-base md:text-lg font-normal">
+                What file formats do you support?
+              </h5>
+              <img
+                src="/public/assets/plus.svg"
+                alt="Plus Icon"
+                class="w-6 h-6"
+              />
+            </button>
+            <div
+              id="basic-collapse-one-with-arrow"
+              class="accordion-content w-full px-0 overflow-hidden"
+              aria-labelledby="basic-heading-one-with-arrow"
+              style="max-height: 0"
+            >
+              <p
+                class="text-gray-900 leading-6 text-base md:text-lg my-2 font-light md:font-thin"
+              >
+                We deliver models in formats such as STEP, IGES, STL, SLDPRT,
+                PRT, and other native CAD files depending on your needs.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="accordion py-2 px-4 md:px-8 border border-solid border-gray-300 transition-all duration-500 rounded-md accordion-active:bg-indigo-50 active"
+            id="basic-heading-one-with-arrow"
+          >
+            <button
+              class="accordion-toggle group inline-flex items-center justify-between leading-8 text-gray-900 w-full transition duration-500 text-left hover:text-indigo-600 accordion-active:font-semibold accordion-active:text-indigo-600 text-base md:text-lg"
+              aria-controls="basic-collapse-one-with-arrow"
+            >
+              <h5 class="text-base md:text-lg font-normal">
+                Can you convert legacy paper drawings into 3D models?
+              </h5>
+              <img
+                src="/public/assets/plus.svg"
+                alt="Plus Icon"
+                class="w-6 h-6"
+              />
+            </button>
+            <div
+              id="basic-collapse-one-with-arrow"
+              class="accordion-content w-full px-0 overflow-hidden"
+              aria-labelledby="basic-heading-one-with-arrow"
+              style="max-height: 0"
+            >
+              <p
+                class="text-gray-900 leading-6 text-base md:text-lg my-2 font-light md:font-thin"
+              >
+                Yes. We specialize in digitizing old blueprints, scanned
+                sketches, and 2D CAD drawings into accurate, ready-to-use 3D
+                models.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="accordion py-2 px-4 md:px-8 border border-solid border-gray-300 transition-all duration-500 rounded-md accordion-active:bg-indigo-50 active"
+            id="basic-heading-one-with-arrow"
+          >
+            <button
+              class="accordion-toggle group inline-flex items-center justify-between leading-8 text-gray-900 w-full transition duration-500 text-left hover:text-indigo-600 accordion-active:font-semibold accordion-active:text-indigo-600 text-base md:text-lg"
+              aria-controls="basic-collapse-one-with-arrow"
+            >
+              <h5 class="text-base md:text-lg font-normal">
+                What software do you use?
+              </h5>
+              <img
+                src="/public/assets/plus.svg"
+                alt="Plus Icon"
+                class="w-6 h-6"
+              />
+            </button>
+            <div
+              id="basic-collapse-one-with-arrow"
+              class="accordion-content w-full px-0 overflow-hidden"
+              aria-labelledby="basic-heading-one-with-arrow"
+              style="max-height: 0"
+            >
+              <p
+                class="text-gray-900 leading-6 text-base md:text-lg my-2 font-light md:font-thin"
+              >
+                Our team uses SolidWorks, PTC Creo, Siemens NX, CATIA, Autodesk
+                Inventor, and other leading CAD platforms.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="accordion py-2 px-4 md:px-8 border border-solid border-gray-300 transition-all duration-500 rounded-md accordion-active:bg-indigo-50 active"
+            id="basic-heading-one-with-arrow"
+          >
+            <button
+              class="accordion-toggle group inline-flex items-center justify-between leading-8 text-gray-900 w-full transition duration-500 text-left hover:text-indigo-600 accordion-active:font-semibold accordion-active:text-indigo-600 text-base md:text-lg"
+              aria-controls="basic-collapse-one-with-arrow"
+            >
+              <h5 class="text-base md:text-lg font-normal">
+                How do you ensure accuracy?
+              </h5>
+              <img
+                src="/public/assets/plus.svg"
+                alt="Plus Icon"
+                class="w-6 h-6"
+              />
+            </button>
+            <div
+              id="basic-collapse-one-with-arrow"
+              class="accordion-content w-full px-0 overflow-hidden"
+              aria-labelledby="basic-heading-one-with-arrow"
+              style="max-height: 0"
+            >
+              <p
+                class="text-gray-900 leading-6 text-base md:text-lg my-2 font-light md:font-thin"
+              >
+                All models are built with precise tolerances, validated for
+                functionality, and checked against industry standards (ASME,
+                ISO).
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="accordion py-2 px-4 md:px-8 border border-solid border-gray-300 transition-all duration-500 rounded-md accordion-active:bg-indigo-50 active"
+            id="basic-heading-one-with-arrow"
+          >
+            <button
+              class="accordion-toggle group inline-flex items-center justify-between leading-8 text-gray-900 w-full transition duration-500 text-left hover:text-indigo-600 accordion-active:font-semibold accordion-active:text-indigo-600 text-base md:text-lg"
+              aria-controls="basic-collapse-one-with-arrow"
+            >
+              <h5 class="text-base md:text-lg font-normal">
+                What industries do you serve?
+              </h5>
+              <img
+                src="/public/assets/plus.svg"
+                alt="Plus Icon"
+                class="w-6 h-6"
+              />
+            </button>
+            <div
+              id="basic-collapse-one-with-arrow"
+              class="accordion-content w-full px-0 overflow-hidden"
+              aria-labelledby="basic-heading-one-with-arrow"
+              style="max-height: 0"
+            >
+              <p
+                class="text-gray-900 leading-6 text-base md:text-lg my-2 font-light md:font-thin"
+              >
+                We work with automotive, heavy machinery, medical devices,
+                tooling, specialty vehicles, and more.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="accordion py-2 px-4 md:px-8 border border-solid border-gray-300 transition-all duration-500 rounded-md accordion-active:bg-indigo-50 active"
+            id="basic-heading-one-with-arrow"
+          >
+            <button
+              class="accordion-toggle group inline-flex items-center justify-between leading-8 text-gray-900 w-full transition duration-500 text-left hover:text-indigo-600 accordion-active:font-semibold accordion-active:text-indigo-600 text-base md:text-lg"
+              aria-controls="basic-collapse-one-with-arrow"
+            >
+              <h5 class="text-base md:text-lg font-normal">
+                What is the typical turnaround time?
+              </h5>
+              <img
+                src="/public/assets/plus.svg"
+                alt="Plus Icon"
+                class="w-6 h-6"
+              />
+            </button>
+            <div
+              id="basic-collapse-one-with-arrow"
+              class="accordion-content w-full px-0 overflow-hidden"
+              aria-labelledby="basic-heading-one-with-arrow"
+              style="max-height: 0"
+            >
+              <p
+                class="text-gray-900 leading-6 text-base md:text-lg my-2 font-light md:font-thin"
+              >
+                It depends on project complexity. Simple parts may be delivered
+                within a day, while larger assemblies may take several days.
+                Expedited delivery options are available.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-gray-900 text-white py-10 w-full md:pl-[10%]">
+      <div
+        class="container mx-auto px-6 md:px-12 lg:px-20 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left"
+      >
+        <div class="space-y-4 flex flex-col items-center md:items-start">
+          <img src="/public/assets/logo.svg" alt="CADRush Logo" class="w-32" />
+          <p class="text-sm text-gray-400 inter font-bold">
+            A product of MN Engineering Solutions.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="text-lg font-semibold">Contact</h3>
+          <div
+            class="flex items-center justify-center md:justify-start space-x-3"
+          >
+            <img src="/public/assets/mail.svg" class="w-5" />
+            <p class="font-normal">hello@cadrush.com</p>
+          </div>
+          <div
+            class="flex items-center justify-center md:justify-start space-x-1"
+          >
+            <img src="/public/assets/location.svg" class="w-5" />
+            <p class="font-normal">
+              MN Engineering Solutions Inc.<br />
+              332 Michigan Avenue, Chicago, IL 60604, USA
+            </p>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="text-lg font-semibold">Follow Us</h3>
+          <div class="flex justify-center md:justify-start space-x-4">
+            <a
+              href="https://www.instagram.com/cadrush_mnes?igsh=MXZ5cTk0eTJsa2FtcQ==&utm_source=ig_contact_invite"
+              class="bg-white w-10 h-10 flex items-center justify-center rounded-full shadow-md"
+            >
+              <img src="/public/assets/instagram.svg" class="w-5" />
+            </a>
+            <a
+              href="https://www.facebook.com/share/1D9pVsDCYJ/?mibextid=wwXIfr"
+              class="bg-white w-10 h-10 flex items-center justify-center rounded-full shadow-md"
+            >
+              <img src="/public/assets/facebook.svg" class="w-5" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/cadrush/"
+              class="bg-white w-10 h-10 flex items-center justify-center rounded-full shadow-md"
+            >
+              <img src="/public/assets/linkedin.svg" class="w-5" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Horizontal Line -->
+      <hr class="border-gray-700 my-6" />
+
+      <!-- Copyright -->
+      <div
+        class="text-center md:text-right text-sm text-gray-400 px-6 inter font-normal"
+      >
+        Copyright &copy; 2024 Cadrush. All rights reserved.
+      </div>
+    </footer>
+
+    <!-- Floating Scroll-to-Top Button -->
+    <button
+      id="scrollToTopBtn"
+      onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+      class="fixed bottom-6 right-6 z-50 bg-white border border-gray-300 shadow-lg rounded-full p-3 flex items-center justify-center transition-opacity duration-300 opacity-0 hover:bg-blue-100 hover:border-blue-400"
+      aria-label="Scroll to top"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-6 h-6 text-blue-600"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M5 15l7-7 7 7"
+        />
+      </svg>
+    </button>
+
+    <!-- Contact Form Popup -->
+    <div
+      id="contactPopup"
+      class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 p-4"
+    >
+      <div
+        class="bg-white rounded-xl shadow-2xl w-full max-w-md relative overflow-hidden"
+      >
+        <!-- Header -->
+        <div class="bg-[#7c6ee6] text-white p-6">
+          <div class="flex justify-between items-center">
+            <h3 class="text-xl font-bold">Get in Touch</h3>
+            <button
+              id="closeContact"
+              class="text-white hover:text-gray-200 focus:outline-none"
+            >
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+          <p class="text-sm mt-1 text-gray-100">
+            We'll get back to you as soon as possible
+          </p>
+        </div>
+
+        <!-- Form -->
+        <form id="contactForm" class="p-6 space-y-4">
+          <!-- Success Message -->
+          <div
+            id="successMessage"
+            class="hidden bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative"
+          >
+            Thank you! Your message has been sent successfully.
+          </div>
+
+          <!-- Error Message -->
+          <div
+            id="errorMessage"
+            class="hidden bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative"
+          ></div>
+
+          <!-- Form Fields -->
+          <div id="formFields">
+            <!-- Name Field -->
+            <div class="mb-4">
+              <label
+                for="name"
+                class="block text-gray-700 text-sm font-medium mb-2"
+                >Name*</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#7c6ee6] focus:border-transparent"
+              />
+              <p id="nameError" class="hidden text-red-500 text-xs mt-1"></p>
+            </div>
+
+            <!-- Email Field -->
+            <div class="mb-4">
+              <label
+                for="email"
+                class="block text-gray-700 text-sm font-medium mb-2"
+                >Email*</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#7c6ee6] focus:border-transparent"
+              />
+              <p id="emailError" class="hidden text-red-500 text-xs mt-1"></p>
+            </div>
+
+            <!-- Phone Field -->
+            <div class="mb-6">
+              <label
+                for="phone"
+                class="block text-gray-700 text-sm font-medium mb-2"
+                >Contact Number*</label
+              >
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#7c6ee6] focus:border-transparent"
+              />
+              <p id="phoneError" class="hidden text-red-500 text-xs mt-1"></p>
+            </div>
+
+            <!-- Submit Button -->
+            <button
+              type="submit"
+              id="submitBtn"
+              class="w-full bg-[#7c6ee6] hover:bg-[#6a5acd] text-white font-medium py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#7c6ee6] disabled:opacity-50 disabled:cursor-not-allowed transition duration-150 ease-in-out"
+            >
+              <span id="submitText">Send Message</span>
+              <span id="loadingSpinner" class="hidden">
+                <svg
+                  class="animate-spin -ml-1 mr-3 h-5 w-5 text-white inline-block"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <circle
+                    class="opacity-25"
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="currentColor"
+                    stroke-width="4"
+                  ></circle>
+                  <path
+                    class="opacity-75"
+                    fill="currentColor"
+                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                  ></path>
+                </svg>
+                Sending...
+              </span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="/public/js/index.js"></script>
+    <script src="/public/js/service-cards-animate.js"></script>
+    <script src="/public/js/fea.js"></script>
+    <script>
+      gsap.registerPlugin(MotionPathPlugin);
+      window.addEventListener("load", () => {
+        gsap.to("#ball", {
+          duration: 8,
+          repeat: -1,
+          yoyo: true,
+          ease: "power1.inOut",
+          motionPath: {
+            path: "#mainPath",
+            align: "#mainPath",
+            autoRotate: false,
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

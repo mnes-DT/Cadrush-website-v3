@@ -1,0 +1,59 @@
+/* Make hover overlay possible without reflowing the grid */
+.flip-card {
+  perspective: 1000px;
+  overflow: visible; /* important: allow overlay */
+}
+
+/* Pop-out card draws above neighbors when hovered */
+.flip-front {
+  position: relative;
+  z-index: 0;
+}
+.group:hover .flip-front,
+.group:focus-within .flip-front {
+  z-index: 20;
+}
+
+/* Paragraph clamp with ellipsis + fade */
+.card-para {
+  position: relative;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* show 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* subtle fade at the bottom while clamped */
+.card-para::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2.25rem;
+  pointer-events: none;
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+  transition: opacity 0.25s ease;
+}
+
+/* On hover/focus: show full text, remove fade */
+.group:hover .card-para,
+.group:focus-within .card-para {
+  -webkit-line-clamp: initial; /* un-clamp */
+  overflow: visible;
+}
+.group:hover .card-para::after,
+.group:focus-within .card-para::after {
+  opacity: 0;
+}
+
+/* Optional: a bit snappier "hard expand" feel */
+.group:hover .flip-front,
+.group:focus-within .flip-front {
+  transform: translateY(-2px) scale(1.03); /* pop out */
+  box-shadow: 0 20px 35px rgba(76, 29, 149, 0.15);
+}
