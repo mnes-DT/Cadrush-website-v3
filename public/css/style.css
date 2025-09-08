@@ -72,3 +72,64 @@
 #main-header {
   transition: background-color 0.3s, box-shadow 0.3s;
 }
+.card-container {
+  min-height: 400px; /* Base minimum height */
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  min-height: inherit;
+}
+
+/* Enhanced card styling for equal heights */
+.card-container {
+  min-height: 400px; /* Minimum height for all screen sizes */
+}
+.card-body h3 {
+  margin-bottom: 3rem; /* Space between title and icon */
+}
+
+/* Responsive heights for different screen sizes */
+@media (max-width: 768px) {
+  .card-container {
+    min-height: 400px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .card-container {
+    min-height: 460px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .card-container {
+    min-height: 480px;
+  }
+}
+
+@media (min-width: 1441px) {
+  .card-container {
+    min-height: 400px;
+  }
+}
+
+.card-header {
+  flex-shrink: 0;
+}
+
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-footer {
+  flex-shrink: 0;
+  margin-top: auto;
+}

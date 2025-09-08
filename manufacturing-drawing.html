@@ -707,158 +707,192 @@
         class="grid grid-cols-1 md:grid-cols-3 md:gap-12 gap-6 md:mt-12 items-stretch"
       >
         <!-- Card 1 -->
-        <div class="flip-card rounded-xl group relative h-[400px]" tabindex="0">
+        <div
+          class="flip-card rounded-xl group relative card-container"
+          tabindex="0"
+        >
           <div class="flip-inner h-full">
             <div
-              class="flip-front border border-[#c3b7fd] px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400 group-hover:scale-[1.03] group-hover:shadow-2xl group-hover:z-10 group-hover:ring-2 group-hover:ring-purple-300 focus-within:scale-[1.03] focus-within:shadow-2xl focus-within:z-10 focus-within:ring-2 focus-within:ring-purple-300"
+              class="flip-front border border-[#c3b7fd] px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400 group-hover:scale-[1.03] group-hover:shadow-2xl group-hover:z-10 group-hover:ring-2 group-hover:ring-purple-300 focus-within:scale-[1.03] focus-within:shadow-2xl focus-within:z-10 focus-within:ring-2 focus-within:ring-purple-300 h-full"
               style="transform-origin: center"
             >
-              <div class="flex flex-col items-center h-full gap-2">
-                <div
-                  class="self-start bg-white text-[#7c6ee6] font-bold text-xl"
-                >
-                  01
+              <div class="card-content">
+                <div class="card-header">
+                  <div class="bg-white text-[#7c6ee6] font-bold text-xl">
+                    01
+                  </div>
                 </div>
-                <h3 class="text-lg font-semibold text-center mt-7">
-                  Engineering-Driven Drafting Expertise
-                </h3>
-                <img
-                  src="/public/assets/fea/expertise.svg"
-                  alt="Experience Icon"
-                  class="w-22 h-22 my-7"
-                />
-                <p class="card-para text-center text-sm text-gray-700">
-                  Our team combines deep mechanical engineering knowledge with
-                  CAD drafting precision to produce production-ready drawings
-                  that meet real-world manufacturing standards.
-                </p>
+                <div class="card-body">
+                  <h3 class="text-lg font-semibold text-center mb-4">
+                    Engineering-Driven Drafting Expertise
+                  </h3>
+                  <img
+                    src="/public/assets/fea/expertise.svg"
+                    alt="Experience Icon"
+                    class="w-22 h-22 mb-4"
+                  />
+                </div>
+                <div class="card-footer">
+                  <p class="card-para text-center text-sm text-gray-700">
+                    Our team combines deep mechanical engineering knowledge with
+                    CAD drafting precision to produce production-ready drawings
+                    that meet real-world manufacturing standards.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
         <!-- Card 2 -->
-        <div class="flip-card group rounded-xl relative h-[400px]" tabindex="0">
-          <div class="flip-inner">
+        <div
+          class="flip-card group rounded-xl relative card-container"
+          tabindex="0"
+        >
+          <div class="flip-inner h-full">
             <div
-              class="flip-front border border-[#c3b7fd] px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400 group-hover:scale-[1.03] group-hover:shadow-2xl group-hover:z-10 group-hover:ring-2 group-hover:ring-purple-300 focus-within:scale-[1.03] focus-within:shadow-2xl focus-within:z-10 focus-within:ring-2 focus-within:ring-purple-300"
+              class="flip-front border border-[#c3b7fd] px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400 group-hover:scale-[1.03] group-hover:shadow-2xl group-hover:z-10 group-hover:ring-2 group-hover:ring-purple-300 focus-within:scale-[1.03] focus-within:shadow-2xl focus-within:z-10 focus-within:ring-2 focus-within:ring-purple-300 h-full"
               style="transform-origin: center"
             >
-              <div class="flex flex-col items-center h-full gap-2">
-                <div
-                  class="self-start bg-white text-[#7c6ee6] font-bold text-xl"
-                >
-                  02
+              <div class="card-content">
+                <div class="card-header">
+                  <div class="bg-white text-[#7c6ee6] font-bold text-xl">
+                    02
+                  </div>
                 </div>
-                <h3 class="text-lg font-semibold text-center mt-8">
-                  Industry-Specific Understanding
-                </h3>
-                <img
-                  src="/public/assets/fea/accuracy.svg"
-                  alt="Experience Icon"
-                  class="w-22 h-22 my-10"
-                />
-                <p class="card-para text-center text-sm text-gray-700">
-                  All drawings are created in adherence to industry-standard
-                  practices, including proper dimensioning, GD&T, and BOM
-                  structuring—ensuring every drawing support inspection and
-                  assembly.
-                </p>
+                <div class="card-body">
+                  <h3 class="text-lg font-semibold text-center mb-4">
+                    Industry-Specific Understanding
+                  </h3>
+                  <img
+                    src="/public/assets/fea/accuracy.svg"
+                    alt="Experience Icon"
+                    class="w-22 h-22 mb-4"
+                  />
+                </div>
+                <div class="card-footer">
+                  <p class="card-para text-center text-sm text-gray-700">
+                    We deliver drawing solutions tailored to the specific needs
+                    of industries such as automotive, heavy machinery, medical
+                    devices, specialty vehicles, and tooling.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
         <!-- Card 3 -->
-        <div class="flip-card group rounded-xl relative h-[400px]" tabindex="0">
-          <div class="flip-inner">
+        <div
+          class="flip-card group rounded-xl relative card-container"
+          tabindex="0"
+        >
+          <div class="flip-inner h-full">
             <div
-              class="flip-front border border-[#c3b7fd] px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400 group-hover:scale-[1.03] group-hover:shadow-2xl group-hover:z-10 group-hover:ring-2 group-hover:ring-purple-300 focus-within:scale-[1.03] focus-within:shadow-2xl focus-within:z-10 focus-within:ring-2 focus-within:ring-purple-300"
+              class="flip-front border border-[#c3b7fd] px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400 group-hover:scale-[1.03] group-hover:shadow-2xl group-hover:z-10 group-hover:ring-2 group-hover:ring-purple-300 focus-within:scale-[1.03] focus-within:shadow-2xl focus-within:z-10 focus-within:ring-2 focus-within:ring-purple-300 h-full"
               style="transform-origin: center"
             >
-              <div class="flex flex-col items-center h-full gap-2">
-                <div
-                  class="self-start bg-white text-[#7c6ee6] font-bold text-xl"
-                >
-                  03
+              <div class="card-content">
+                <div class="card-header">
+                  <div class="bg-white text-[#7c6ee6] font-bold text-xl">
+                    03
+                  </div>
                 </div>
-                <h3 class="text-lg font-semibold text-center mt-8">
-                  Standards Compliance and Quality Focus
-                </h3>
-                <img
-                  src="/public/assets/fea/design-optimization.svg"
-                  alt="Experience Icon"
-                  class="w-22 h-22 my-6"
-                />
-                <p class="card-para text-center text-sm text-gray-700">
-                  All drawings are created in adherence to industry-standard
-                  practices, including proper dimensioning, GD&T, and BOM
-                  structuring—ensuring every drawing support inspection and
-                  assembly.
-                </p>
+                <div class="card-body">
+                  <h3 class="text-lg font-semibold text-center mb-4">
+                    Standards Compliance and Quality Focus
+                  </h3>
+                  <img
+                    src="/public/assets/fea/design-optimization.svg"
+                    alt="Experience Icon"
+                    class="w-22 h-22 mb-4"
+                  />
+                </div>
+                <div class="card-footer">
+                  <p class="card-para text-center text-sm text-gray-700">
+                    All drawings are created in adherence to industry-standard
+                    practices, including proper dimensioning, GD&T, and BOM
+                    structuring—ensuring every drawing support inspection and
+                    assembly.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
         <!-- Card 4 -->
-        <div class="flip-card group rounded-xl relative h-[400px]" tabindex="0">
-          <div class="flip-inner">
+        <div
+          class="flip-card group rounded-xl relative card-container"
+          tabindex="0"
+        >
+          <div class="flip-inner h-full">
             <div
-              class="flip-front border border-[#c3b7fd] px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400 group-hover:scale-[1.03] group-hover:shadow-2xl group-hover:z-10 group-hover:ring-2 group-hover:ring-purple-300 focus-within:scale-[1.03] focus-within:shadow-2xl focus-within:z-10 focus-within:ring-2 focus-within:ring-purple-300"
+              class="flip-front border border-[#c3b7fd] px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400 group-hover:scale-[1.03] group-hover:shadow-2xl group-hover:z-10 group-hover:ring-2 group-hover:ring-purple-300 focus-within:scale-[1.03] focus-within:shadow-2xl focus-within:z-10 focus-within:ring-2 focus-within:ring-purple-300 h-full"
               style="transform-origin: center"
             >
-              <div class="flex flex-col items-center h-full gap-2">
-                <div
-                  class="self-start bg-white text-[#7c6ee6] font-bold text-xl"
-                >
-                  04
+              <div class="card-content">
+                <div class="card-header">
+                  <div class="bg-white text-[#7c6ee6] font-bold text-xl">
+                    04
+                  </div>
                 </div>
-                <h3 class="text-lg font-semibold text-center mt-8">
-                  Collaboration with Manufacturers
-                </h3>
-                <img
-                  src="/public/assets/fea/fatser-time.svg"
-                  alt="Experience Icon"
-                  class="w-22 h-22 my-6"
-                />
-                <p class="card-para text-center text-sm text-gray-700">
-                  We work closely with production teams and vendors to confirm
-                  feasibility, manufacturability, and compliance—reducing the
-                  likelihood of delays or rework.
-                </p>
+                <div class="card-body">
+                  <h3 class="text-lg font-semibold text-center mb-4">
+                    Collaboration with Manufacturers
+                  </h3>
+                  <img
+                    src="/public/assets/fea/fatser-time.svg"
+                    alt="Experience Icon"
+                    class="w-22 h-22 mb-4"
+                  />
+                </div>
+                <div class="card-footer">
+                  <p class="card-para text-center text-sm text-gray-700">
+                    We work closely with production teams and vendors to confirm
+                    feasibility, manufacturability, and compliance—reducing the
+                    likelihood of delays or rework.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
         <!-- Card 5 -->
-        <div class="flip-card group rounded-xl relative h-[400px]" tabindex="0">
-          <div class="flip-inner">
+        <div
+          class="flip-card group rounded-xl relative card-container"
+          tabindex="0"
+        >
+          <div class="flip-inner h-full">
             <div
-              class="flip-front border border-[#c3b7fd] px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400 group-hover:scale-[1.03] group-hover:shadow-2xl group-hover:z-10 group-hover:ring-2 group-hover:ring-purple-300 focus-within:scale-[1.03] focus-within:shadow-2xl focus-within:z-10 focus-within:ring-2 focus-within:ring-purple-300"
+              class="flip-front border border-[#c3b7fd] px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400 group-hover:scale-[1.03] group-hover:shadow-2xl group-hover:z-10 group-hover:ring-2 group-hover:ring-purple-300 focus-within:scale-[1.03] focus-within:shadow-2xl focus-within:z-10 focus-within:ring-2 focus-within:ring-purple-300 h-full"
               style="transform-origin: center"
             >
-              <div class="flex flex-col items-center h-full gap-2">
-                <div
-                  class="self-start bg-white text-[#7c6ee6] font-bold text-xl"
-                >
-                  05
+              <div class="card-content">
+                <div class="card-header">
+                  <div class="bg-white text-[#7c6ee6] font-bold text-xl">
+                    05
+                  </div>
                 </div>
-                <h3 class="text-lg font-semibold text-center mt-8">
-                  Flexibility in Input Sources
-                </h3>
-                <img
-                  src="/public/assets/fea/cost-efficiency.svg"
-                  alt="Experience Icon"
-                  class="w-22 h-22 my-10"
-                />
-                <p class="card-para text-center text-sm text-gray-700">
-                  Whether starting from legacy paper drawings, existing
-                  components, or conceptual sketches, we can create complete
-                  manufacturing documentation to your required format and level
-                  of detail.
-                </p>
+                <div class="card-body">
+                  <h3 class="text-lg font-semibold text-center mb-4">
+                    Flexibility in Input Sources
+                  </h3>
+                  <img
+                    src="/public/assets/fea/cost-efficiency.svg"
+                    alt="Experience Icon"
+                    class="w-22 h-22 mb-4"
+                  />
+                </div>
+                <div class="card-footer">
+                  <p class="card-para text-center text-sm text-gray-700">
+                    Whether starting from legacy paper drawings, existing
+                    components, or conceptual sketches, we can create complete
+                    manufacturing documentation to your required format and
+                    level of detail.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
