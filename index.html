@@ -9,7 +9,7 @@
       content="CADRush offers innovative CAD solutions from concept to manufacturing. Efficient, transparent, and high-quality services for your business needs."
     />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://www.cadrush.com/" />
+    <link rel="canonical" href="https://cadrush.com/" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="manifest" href="/manifest.json" />
     <!-- Open Graph / Facebook -->
@@ -22,8 +22,11 @@
       content="CADRush offers innovative CAD solutions from concept to manufacturing. Efficient, transparent, and high-quality services for your business needs."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.cadrush.com/" />
-    <meta property="og:image" content="/public/assets/logo.svg" />
+    <meta property="og:url" content="https://cadrush.com/" />
+    <meta
+      property="og:image"
+      content="https://cadrush.com/public/assets/logo.svg"
+    />
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta
@@ -34,7 +37,10 @@
       name="twitter:description"
       content="CADRush offers innovative CAD solutions from concept to manufacturing. Efficient, transparent, and high-quality services for your business needs."
     />
-    <meta name="twitter:image" content="/public/assets/logo.svg" />
+    <meta
+      name="twitter:image"
+      content="https://cadrush.com/public/assets/logo.svg"
+    />
     <script
       defer
       src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
@@ -46,8 +52,8 @@
 
     <!-- css -->
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <link rel="stylesheet" href="/public/css/style.css" />
-    <link rel="stylesheet" href="/public/css/home.css" />
+    <link rel="stylesheet" href="https://cadrush.com/public/css/style.css" />
+    <link rel="stylesheet" href="https://cadrush.com/public/css/home.css" />
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -64,7 +70,7 @@
       rel="stylesheet"
     />
 
-    <script src="/public/js/tailwind.js"></script>
+    <script src="https://cadrush.com/public/js/tailwind.js"></script>
 
     <script>
       tailwind.config = {
@@ -105,8 +111,9 @@
       >
         <!-- Logo at far left -->
         <a href="https://cadrush.com/" class="flex items-center">
-          <img src="/public/assets/logo.svg" alt="CADRush Logo" class="h-6" />
+          <img src="/public/assets/Logo2.png" alt="CADRush Logo" class="h-20" />
         </a>
+
         <!-- Centered Nav -->
         <div class="flex items-center bg-white text-black py-2 px-12 rounded">
           <nav class="flex py-2 space-x-12 mx-auto items-center">
@@ -138,32 +145,32 @@
                 <!-- Invisible padding to prevent dropdown from closing when moving cursor -->
                 <div class="absolute -top-4 left-0 right-0 h-4"></div>
                 <a
-                  href="https://cadrush.com/paper-to-cad"
+                  href="https://cadrush.com/paper-to-cad.html"
                   class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >Paper to CAD Conversion</a
                 >
                 <a
-                  href="https://cadrush.com/2d-cad-to-3d-model"
+                  href="https://cadrush.com/2d-cad-to-3d-model.html"
                   class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >2D CAD to 3D Model</a
                 >
                 <a
-                  href="https://cadrush.com/electrical-drawing-panel-layout"
+                  href="https://cadrush.com/electrical-drawing-panel-layout.html"
                   class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >Electrical Drawing & Panel Layout</a
                 >
                 <a
-                  href="https://cadrush.com/plc-programming-migration"
+                  href="https://cadrush.com/plc-programming-migration.html"
                   class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >PLC Programming & Migration</a
                 >
                 <a
-                  href="https://cadrush.com/fea-cfd"
+                  href="https://cadrush.com/fea-cfd.html"
                   class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >FEA & CFD</a
                 >
                 <a
-                  href="https://cadrush.com/manufacturing-drawing"
+                  href="https://cadrush.com/manufacturing-drawing.html"
                   class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >Manufacturing Drawing</a
                 >
@@ -171,10 +178,6 @@
                 <div class="absolute -bottom-4 left-0 right-0 h-4"></div>
               </div>
             </div>
-            <!-- <a href="https://cadrush.com/case-studies"
-                        class="text-black font-medium hover:text-blue-800">CASE STUDIES</a>
-                    <a href="https://cadrush.com/faq"
-                        class="text-black font-medium hover:text-blue-800">FAQ</a> -->
             <button
               id="contactBtn-menu"
               class="text-black font-medium hover:text-blue-800"
@@ -183,37 +186,40 @@
             </button>
           </nav>
         </div>
+
         <!-- Register button at far right -->
-        <button
+        <a
           class="bg-black text-white px-6 py-2 rounded-lg font-semibold shadow hover:bg-gray-800 transition"
+          href="https://cadrush.com/app/#/signup"
+          target="_blank"
         >
-          <a href="https://cadrush.com/app/#/signin" target="_blank">
-            REGISTER
-          </a>
-        </button>
+          REGISTER
+        </a>
       </div>
+
       <!-- Mobile Navbar -->
       <div class="flex md:hidden justify-between items-center py-3 px-3 z-40">
         <a href="https://cadrush.com/" class="text-white font-bold text-xl"
-          ><img src="/public/assets/logo.svg" alt="CADRush Logo" class="h-3"
+          ><img src="/public/assets/Logo2.png" alt="CADRush Logo" class="h-12"
         /></a>
         <div class="flex flex-row space-x-2">
-          <button
+          <a
             class="bg-black text-white px-4 py-1 rounded-lg font-normal text-sm shadow hover:bg-gray-800 transition"
-            href="https://cadrush.com/app/#/signin"
+            href="https://cadrush.com/app/#/signup"
             target="_blank"
           >
             REGISTER
-          </button>
+          </a>
           <button id="hamburger" onclick="openDrawer()">
             <img
-              src="/public/assets/hamburger.svg"
+              src="https://cadrush.com/public/assets/hamburger.svg"
               alt="Open menu"
               class="w-8 h-8"
             />
           </button>
         </div>
       </div>
+
       <!-- Right Side Drawer for Mobile -->
       <div
         id="mobile-drawer"
@@ -222,7 +228,7 @@
         <div class="flex justify-end p-4">
           <button onclick="closeDrawer()">
             <img
-              src="/public/assets/close-x.svg"
+              src="https://cadrush.com/public/assets/close-x.svg"
               alt="Close menu"
               class="w-6 h-6"
             />
@@ -253,46 +259,47 @@
             </button>
             <div id="mobile-services-menu" class="hidden pl-4 mt-1 space-y-2">
               <a
-                href="https://cadrush.com/paper-to-cad"
+                href="https://cadrush.com/paper-to-cad.html"
                 class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
                 >Paper to CAD</a
               >
               <a
-                href="https://cadrush.com/2d-cad-to-3d-model"
+                href="https://cadrush.com/2d-cad-to-3d-model.html"
                 class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
                 >2D CAD to 3D Model</a
               >
               <a
-                href="https://cadrush.com/electrical-drawing-panel-layout"
+                href="https://cadrush.com/electrical-drawing-panel-layout.html"
                 class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
                 >Electrical Drawing & Panel Layout</a
               >
               <a
-                href="https://cadrush.com/plc-programming-migration"
+                href="https://cadrush.com/plc-programming-migration.html"
                 class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
               >
                 PLC Programming & Migration</a
               >
               <a
-                href="https://cadrush.com/fea-cfd"
+                href="https://cadrush.com/fea-cfd.html"
                 class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
                 >FEA & CFD</a
               >
               <a
-                href="https://cadrush.com/manufacturing-drawing"
+                href="https://cadrush.com/manufacturing-drawing.html"
                 class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
                 >Manufacturing Drawing</a
               >
             </div>
           </div>
-          <button
-            id="contactBtn-menu"
-            class="text-black font-medium hover:text-blue-800"
-          >
-            CONTACT
-          </button>
         </nav>
+        <button
+          id="contactBtn-menu"
+          class="text-black font-medium hover:text-blue-800 px-8 mt-10"
+        >
+          CONTACT
+        </button>
       </div>
+
       <!-- Overlay for Drawer (optional, improves UX) -->
       <div
         id="drawer-overlay"
@@ -308,43 +315,82 @@
       <div
         class="flex items-center justify-center flex-col py-2 md:py-4 lg:py-12 xl:py-18 2xl:py-28 md:flex-row w-full px-2 md:px-10 lg:px-12 xl:px-24"
       >
-        <div class="flex flex-col w-full md:w-3/4 p-2 md:p-8 lg:p-4">
-          <h1
-            class="max-w-screen-lg mx-auto px-2 md:px-4 lg:px-4 xl:px-6 py-2 md:py-6 lg:py-8 text-2xl md:text-3xl lg:text-4xl xl:text-6xl font-medium text-white text-center"
+        <div
+          class="flex flex-col w-full md:w-3/4 p-2 md:p-8 lg:p-4 mt-10 md:mt-0"
+        >
+          <!-- Slider Container -->
+          <div
+            id="hero-slider"
+            class="relative overflow-hidden text-center text-white"
           >
-            From Concept to
-            <br class="block md:hidden lg:hidden xl:hidden" />
-            Manufacturing<br class="md:block hidden lg:hidden xl:hidden" />—Made
-            Simple
-          </h1>
-          <p
-            class="max-w-screen-lg mx-auto px-2 md:px-2 lg:px-12 xl:px-36 py-2 text-sm md:text-xl text-white text-center font-light desktop-px-48"
-          >
-            Bring your ideas to life without the hassle of complex software. Our
-            experienced team delivers precision, efficiency, and unwavering
-            support at every stage of your project.
-          </p>
+            <!-- Slide 1 -->
+            <div class="slide active">
+              <h1
+                class="text-2xl md:text-3xl lg:text-4xl xl:text-6xl font-medium"
+              >
+                From Concept to
+                <br class="block md:hidden lg:hidden xl:hidden" />
+                Manufacturing<br
+                  class="md:block hidden lg:hidden xl:hidden"
+                />—Made Simple
+              </h1>
+              <p
+                class="max-w-screen-lg mx-auto py-2 text-sm md:text-xl font-light md:mt-4 md:px-16"
+              >
+                Bring your ideas to life without the hassle of complex software.
+                Our experienced team delivers precision, efficiency, and
+                unwavering support at <br />
+                every stage of your project.
+              </p>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide hidden">
+              <h1
+                class="text-2xl md:text-3xl lg:text-4xl xl:text-6xl font-medium"
+              >
+                Ready to Bring Your Ideas to Life with Precision and Efficiency?
+              </h1>
+              <p
+                class="max-w-screen-lg mx-auto py-2 text-sm md:text-xl font-light md:mt-4 px-14"
+              >
+                Welcome to CADRush—your trusted partner for high-quality
+                engineering services. From concept to completion, we turn your
+                vision into reality with expert precision and unmatched
+                dedication.
+              </p>
+            </div>
+
+            <!-- Dots -->
+            <div id="slider-dots" class="flex justify-center space-x-3 my-6">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+
           <div
             class="hidden md:flex items-center justify-center flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 py-8 md:py-12"
           >
             <a
-              href="https://cadrush.com/app/#/signin"
+              href="https://cadrush.com/app/#/signup"
+              target="_blank"
               class="bg-black text-white px-6 py-2 rounded-lg font-light shadow hover:bg-gray-800 transition w-[200px] text-sm"
               >START YOUR PROJECT</a
             >
 
-            <button
+            <!-- <button
               class="bg-transparent text-white flex items-center space-x-2 px-6 py-1.5 justify-between rounded-lg font-light border border-white hover:bg-gray-800/50 transition w-[200px] text-sm my-2"
             >
               LEARN MORE
               <img
-                src="/public/assets/down.svg"
+                src="https://cadrush.com/public/assets/down.svg"
                 alt="down"
                 class="w-6 h-4 animate-bounce"
               />
-            </button>
+            </button> -->
           </div>
         </div>
+
         <div class="w-2/3 md:w-1/4 lg:w-1/3 my-4 md:my-0 relative">
           <!-- Pulse Circles Behind -->
           <div class="absolute inset-0 flex justify-center items-center z-0">
@@ -360,7 +406,7 @@
 
           <!-- Hero Image on top -->
           <img
-            src="/public/assets/home-hero.webp"
+            src="https://cadrush.com/public/assets/home-hero.webp"
             alt="Hero Image"
             class="relative z-10 mx-auto"
           />
@@ -371,18 +417,23 @@
           class="md:hidden flex items-center justify-center flex-col-reverse md:flex-row space-y-4 md:space-y-0 md:space-x-8 py-8 md:py-12"
         >
           <a
-            href="https://cadrush.com/app/#/signin"
+            href="https://cadrush.com/app/#/signup"
+            target="_blank"
             class="bg-black text-white px-6 py-2 md:py-4 rounded-lg font-light shadow hover:bg-gray-800 transition w-[200px] text-sm"
             >START YOUR PROJECT</a
           >
 
-          <button
+          <!-- <button
             class="bg-transparent text-white flex items-center space-x-2 px-6 py-2 justify-between rounded-lg font-light border border-white hover:bg-gray-800/50 transition w-[200px] text-sm animate-bounce"
             style="margin-left: 0px"
           >
             LEARN MORE
-            <img src="/public/assets/down.svg" alt="down" class="w-6 h-4" />
-          </button>
+            <img
+              src="https://cadrush.com/public/assets/down.svg"
+              alt="down"
+              class="w-6 h-4"
+            />
+          </button> -->
         </div>
       </div>
     </section>
@@ -392,7 +443,7 @@
       <!-- Section Title -->
       <div class="text-center">
         <h2 class="font-bold text-center mb-4 md:mb-8 text-[#7c6ee6] text-3xl">
-          Why CADRush
+          Why CADRush?
         </h2>
         <p
           class="text-center text-xs max-w-[500px] mx-auto my-4 md:my-8 md:text-base"
@@ -406,7 +457,7 @@
         <!-- Image -->
         <div class="md:w-1/2 w-full">
           <img
-            src="/public/assets/home_image1.webp"
+            src="https://cadrush.com/public/assets/home_image1.webp"
             alt="Why CADRush?"
             class="w-full h-auto rounded-lg shadow-md"
           />
@@ -466,11 +517,10 @@
               Quality Assurance and Confidentiality
             </h3>
             <p class="mt-2 text-sm text-gray-600">
-              <strong>CADRush</strong> brings everything together—design,
-              management, and progress tracking—into a single, easy-to-use
-              workspace. With a clean, intuitive interface, you can stay in
-              control of every detail, keep your team aligned, and ensure
-              projects move forward on time and on budget.
+              <strong>CADRush</strong> prioritizes quality, delivering designs
+              that meet industry standards and client expectations. We uphold
+              strict confidentiality protocols to safeguard your data throughout
+              the entire project lifecycle.
             </p>
           </div>
         </div>
@@ -483,7 +533,7 @@
     >
       <div class="text-center mb-10">
         <h2 class="font-bold text-center mb-4 text-[#7c6ee6] text-3xl">
-          Why CADRush
+          Why CADRush?
         </h2>
         <p
           class="text-center text-sm max-w-[500px] mx-auto mb-2 md:mb-4 md:text-base"
@@ -495,19 +545,19 @@
         <div class="image-container">
           <img
             id="image1"
-            src="/public/assets/home_image1.webp"
+            src="https://cadrush.com/public/assets/home_image1.webp"
             alt="Image 1"
             class="active rounded-md w-[800px]"
           />
           <img
             id="image2"
-            src="/public/assets/home_image2.webp"
+            src="https://cadrush.com/public/assets/home_image2.webp"
             alt="Image 2"
             class="rounded-md"
           />
           <img
             id="image3"
-            src="/public/assets/home_image3.webp"
+            src="https://cadrush.com/public/assets/home_image3.webp"
             alt="Image 3"
             class="rounded-md"
           />
@@ -525,7 +575,7 @@
               class="step-number flex h-10 w-10 items-center justify-center rounded-full font-bold text-lg"
               id="step1"
               data-index="0"
-              style="top: 20%"
+              style="top: 5%"
             >
               01
             </div>
@@ -541,7 +591,7 @@
               class="step-number flex h-10 w-10 items-center justify-center rounded-full font-bold text-lg"
               id="step3"
               data-index="2"
-              style="top: 80%"
+              style="top: 100%"
             >
               03
             </div>
@@ -574,11 +624,10 @@
               Quality Assurance and Confidentiality
             </h2>
             <p class="mt-2 text-sm text-gray-600">
-              <strong>CADRush</strong> brings everything together—design,
-              management, and progress tracking—into a single, easy-to-use
-              workspace. With a clean, intuitive interface, you can stay in
-              control of every detail, keep your team aligned, and ensure
-              projects move forward on time and on budget.
+              <strong>CADRush</strong> prioritizes quality, delivering designs
+              that meet industry standards and client expectations. We uphold
+              strict confidentiality protocols to safeguard your data throughout
+              the entire project lifecycle.
             </p>
           </div>
         </div>
@@ -593,17 +642,26 @@
         About CADRush
       </h2>
       <p
-        class="text-center text-sm max-w-[500px] mx-auto my-2 md:my-4 md:text-base"
+        class="text-center text-sm max-w-[850px] mx-auto my-2 md:my-4 md:text-base"
       >
         <strong>CADRush</strong> connects you with experienced engineering
-        professionals ready to support every stage of your project from initial
-        concept to final delivery.
+        professionals ready to support every stage of your project—from initial
+        concept to final delivery. Whether you need CAD design, mechanical
+        drafting, product development, or expert project support, our team
+        delivers with precision and speed.
+      </p>
+
+      <p
+        class="text-center text-sm max-w-[650px] mx-auto my-2 md:my-4 md:text-base"
+      >
+        Start your next project with confidence—CADRush is here to help you get
+        it done right.
       </p>
       <!-- video block for mobile-->
       <div class="w-full h-auto my-12 block md:hidden mx-auto">
         <!-- lazy load video -->
         <video
-          src="/public/assets/intro.mov"
+          src="https://cadrush.com/public/assets/intro.mov"
           alt="About Video"
           class="w-full h-auto"
           muted
@@ -618,7 +676,7 @@
       >
         <!-- lazy load video -->
         <video
-          src="/public/assets/intro.mov"
+          src="https://cadrush.com/public/assets/intro.mov"
           alt="About Video"
           class="w-full h-auto"
           controls
@@ -628,14 +686,15 @@
         class="flex flex-row md:flex-row justify-center items-center my-4 md:my-12 explore-btn"
       >
         <a
-          href="https://cadrush.com/app/#/signin"
+          href="https://cadrush.com/app/#/signup"
+          target="_blank"
           class="flex items-center justify-center text-blue-500 hover:text-blue-700 transition-colors decoration-none"
         >
           <div
             class="mr-2 border rounded-full border-blue-500 p-1 arrow-container"
           >
             <img
-              src="public/assets/cross-arrow.svg"
+              src="https://cadrush.com/public/assets/cross-arrow.svg"
               alt="cross arrow"
               class="size-4 my-1 mx-4 arrow-img"
             />
@@ -687,23 +746,24 @@
           class="flex flex-col md:flex-row flex-nowrap gap-2 w-full max-w-none mx-auto md:gap-8 lg:gap-8 xl:px-10"
         >
           <div
-            class="flex flex-row items-center md:w-1/2 lg:w-1/4 xl:w-1/4 md:mx-4 md:mb-8 space-x-2 mt-4"
+            class="flex flex-row items-center md:w-1/2 lg:w-1/4 xl:w-1/4 md:mx-4 md:mb-8 space-x-2"
           >
             <div
               class="flex flex-row justify-center space-x-2 items-center mr-4"
             >
               <span class="text-2xl font-semibold text-[#7c6ee6]">01</span>
               <div
-                class="w-px flex-1 bg-gray-300 my-1 min-h-20 md:min-h-28 lg:min-h-36 ml-4 md:ml-0"
+                class="w-px flex-1 bg-gray-300 min-h-20 md:min-h-28 lg:min-h-36 ml-4 md:ml-0"
               ></div>
             </div>
-            <div class="max-h-28">
-              <h3 class="text-lg font-semibold text-gray-700 mb-1">
+            <div>
+              <h3 class="text-lg font-semibold text-gray-700 mb-2">
                 Create New Project
               </h3>
               <p class="text-sm text-gray-700">
                 Initiate your project with ease. Enter essential details, set
-                timelines, and allocate resources.
+                timelines, and allocate resources. CADRush provides you with a
+                structured approach to kickstart your project efficiently.
               </p>
             </div>
           </div>
@@ -781,12 +841,12 @@
     <!-- Our services -->
     <section class="py-12 px-4 max-w-7xl mx-auto">
       <h2 class="font-bold text-center mb-4 text-[#7c6ee6] text-3xl py-8">
-        Our Services
+        CADRush Services (What we offer?)
       </h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Card 1 -->
         <a
-          href="https://cadrush.com/paper-to-cad"
+          href="https://cadrush.com/paper-to-cad.html"
           class="block group relative w-full min-h-[300px] md:min-h-[420px] bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-purple-400"
         >
           <div class="our-service-card h-full">
@@ -797,13 +857,13 @@
               <h3
                 class="text-xl md:text-2xl font-medium text-center mb-4 md:mb-8"
               >
-                Paper to CAD Parametric Conversion
+                Paper to CAD Conversion
               </h3>
               <div
                 class="w-full h-[100px] md:h-[120px] flex justify-center items-center mb-6"
               >
                 <img
-                  src="/public/assets/paper-to-cad.webp"
+                  src="https://cadrush.com/public/assets/paper-to-cad.webp"
                   alt="CAD Drawing"
                   class="max-h-full max-w-full object-contain rounded-md"
                 />
@@ -816,7 +876,7 @@
                 >
                   <span class="text-md font-semibold m-4"
                     ><img
-                      src="/public/assets/cross-arrow.svg"
+                      src="https://cadrush.com/public/assets/cross-arrow.svg"
                       alt="Cross Arrow"
                       class="w-3 h-3 inline arrow-img"
                   /></span>
@@ -831,13 +891,13 @@
               class="absolute inset-0 w-full h-full flex flex-col justify-center items-center bg-black text-white p-8 opacity-0 transition-opacity duration-300 group-hover:opacity-100 text-center"
             >
               <h3 class="text-base md:text-xl text-center mb-4">
-                Paper to CAD Parametric Conversion
+                Paper to CAD Conversion
               </h3>
               <div
                 class="w-full h-[180px] flex justify-center items-center mb-6"
               >
                 <img
-                  src="/public/assets/paper-to-cad.webp"
+                  src="https://cadrush.com/public/assets/paper-to-cad.webp"
                   alt="Blueprint"
                   class="max-h-full max-w-full object-contain rounded-md"
                 />
@@ -854,7 +914,7 @@
                 >
                   <span class="text-md font-semibold m-4"
                     ><img
-                      src="/public/assets/cross-arrow.svg"
+                      src="https://cadrush.com/public/assets/cross-arrow.svg"
                       alt="Cross Arrow"
                       class="w-3 h-3 inline brightness-0 invert arrow-img"
                   /></span>
@@ -865,7 +925,7 @@
         </a>
 
         <a
-          href="https://cadrush.com/2d-cad-to-3d-model"
+          href="https://cadrush.com/2d-cad-to-3d-model.html"
           class="block group relative w-full min-h-[300px] md:min-h-[420px] bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-purple-400"
         >
           <div class="our-service-card h-full">
@@ -876,13 +936,13 @@
               <h3
                 class="text-xl md:text-2xl font-medium text-center mb-4 md:mb-8"
               >
-                2D to 3D CAD Modeling
+                2D to 3D Modeling
               </h3>
               <div
                 class="w-full h-[100px] md:h-[120px] flex justify-center items-center mb-6"
               >
                 <img
-                  src="/public/assets/2d-cad-to-3d-model.webp"
+                  src="https://cadrush.com/public/assets/2d-cad-to-3d-model.webp"
                   alt="CAD Drawing"
                   class="max-h-full max-w-full object-contain rounded-md"
                 />
@@ -895,7 +955,7 @@
                 >
                   <span class="text-md font-semibold m-4"
                     ><img
-                      src="/public/assets/cross-arrow.svg"
+                      src="https://cadrush.com/public/assets/cross-arrow.svg"
                       alt="Cross Arrow"
                       class="w-3 h-3 inline arrow-img"
                   /></span>
@@ -910,13 +970,13 @@
               class="absolute inset-0 w-full h-full flex flex-col justify-center items-center bg-black text-white p-8 opacity-0 transition-opacity duration-300 group-hover:opacity-100 text-center"
             >
               <h3 class="text-base md:text-xl text-center mb-4">
-                2D to 3D CAD Modeling
+                2D to 3D Modeling
               </h3>
               <div
                 class="w-full h-[180px] flex justify-center items-center mb-6"
               >
                 <img
-                  src="/public/assets/2d-cad-to-3d-model.webp"
+                  src="https://cadrush.com/public/assets/2d-cad-to-3d-model.webp"
                   alt="Blueprint"
                   class="max-h-full max-w-full object-contain rounded-md"
                 />
@@ -933,7 +993,7 @@
                 >
                   <span class="text-md font-semibold m-4"
                     ><img
-                      src="/public/assets/cross-arrow.svg"
+                      src="https://cadrush.com/public/assets/cross-arrow.svg"
                       alt="Cross Arrow"
                       class="w-3 h-3 inline brightness-0 invert arrow-img"
                   /></span>
@@ -944,7 +1004,7 @@
         </a>
 
         <a
-          href="https://cadrush.com/electrical-drawing-panel-layout"
+          href="https://cadrush.com/electrical-drawing-panel-layout.html"
           class="block group relative w-full min-h-[300px] md:min-h-[420px] bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-purple-400"
         >
           <div class="our-service-card h-full">
@@ -955,13 +1015,13 @@
               <h3
                 class="text-xl md:text-2xl font-medium text-center mb-4 md:mb-8"
               >
-                Electrical Drawing & Panel Layout
+                Electrical Drawing and Panel Layout
               </h3>
               <div
                 class="w-full h-[100px] md:h-[120px] flex justify-center items-center mb-6"
               >
                 <img
-                  src="/public/assets/3d-modeling.webp"
+                  src="https://cadrush.com/public/assets/3d-modeling.webp"
                   alt="CAD Drawing"
                   class="max-h-full max-w-full object-contain rounded-md"
                 />
@@ -974,7 +1034,7 @@
                 >
                   <span class="text-md font-semibold m-4"
                     ><img
-                      src="/public/assets/cross-arrow.svg"
+                      src="https://cadrush.com/public/assets/cross-arrow.svg"
                       alt="Cross Arrow"
                       class="w-3 h-3 inline arrow-img"
                   /></span>
@@ -989,13 +1049,13 @@
               class="absolute inset-0 w-full h-full flex flex-col justify-center items-center bg-black text-white p-8 opacity-0 transition-opacity duration-300 group-hover:opacity-100 text-center"
             >
               <h3 class="text-base md:text-xl text-center mb-4">
-                Electrical Drawing & Panel Layout
+                Electrical Drawing and Panel Layout
               </h3>
               <div
                 class="w-full h-[180px] flex justify-center items-center mb-6"
               >
                 <img
-                  src="/public/assets/3d-modeling.webp"
+                  src="https://cadrush.com/public/assets/3d-modeling.webp"
                   alt="Blueprint"
                   class="max-h-full max-w-full object-contain rounded-md"
                 />
@@ -1012,7 +1072,7 @@
                 >
                   <span class="text-md font-semibold m-4"
                     ><img
-                      src="/public/assets/cross-arrow.svg"
+                      src="https://cadrush.com/public/assets/cross-arrow.svg"
                       alt="Cross Arrow"
                       class="w-3 h-3 inline brightness-0 invert arrow-img"
                   /></span>
@@ -1023,7 +1083,7 @@
         </a>
 
         <a
-          href="https://cadrush.com/plc-programming-migration"
+          href="https://cadrush.com/plc-programming-migration.html"
           class="block group relative w-full min-h-[300px] md:min-h-[420px] bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-purple-400"
         >
           <div class="our-service-card h-full">
@@ -1034,13 +1094,13 @@
               <h3
                 class="text-xl md:text-2xl font-medium text-center mb-4 md:mb-8"
               >
-                PLC Programming/Migration
+                PLC Programming and Migration
               </h3>
               <div
                 class="w-full h-[100px] md:h-[120px] flex justify-center items-center mb-6"
               >
                 <img
-                  src="/public/assets/cfd.webp"
+                  src="https://cadrush.com/public/assets/cfd.webp"
                   alt="CAD Drawing"
                   class="max-h-full max-w-full object-contain rounded-md"
                 />
@@ -1053,7 +1113,7 @@
                 >
                   <span class="text-md font-semibold m-4"
                     ><img
-                      src="/public/assets/cross-arrow.svg"
+                      src="https://cadrush.com/public/assets/cross-arrow.svg"
                       alt="Cross Arrow"
                       class="w-3 h-3 inline arrow-img"
                   /></span>
@@ -1068,13 +1128,13 @@
               class="absolute inset-0 w-full h-full flex flex-col justify-center items-center bg-black text-white p-8 opacity-0 transition-opacity duration-300 group-hover:opacity-100 text-center"
             >
               <h3 class="text-base md:text-xl text-center mb-4">
-                PLC Programming/Migration
+                PLC Programming and Migration
               </h3>
               <div
                 class="w-full h-[180px] flex justify-center items-center mb-6"
               >
                 <img
-                  src="/public/assets/cfd.webp"
+                  src="https://cadrush.com/public/assets/cfd.webp"
                   alt="Blueprint"
                   class="max-h-full max-w-full object-contain rounded-md"
                 />
@@ -1092,7 +1152,7 @@
                 >
                   <span class="text-md font-semibold m-4"
                     ><img
-                      src="/public/assets/cross-arrow.svg"
+                      src="https://cadrush.com/public/assets/cross-arrow.svg"
                       alt="Cross Arrow"
                       class="w-3 h-3 inline brightness-0 invert arrow-img"
                   /></span>
@@ -1103,7 +1163,7 @@
         </a>
 
         <a
-          href="https://cadrush.com/fea-cfd"
+          href="https://cadrush.com/fea-cfd.html"
           class="block group relative w-full min-h-[300px] md:min-h-[420px] bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-purple-400"
         >
           <div class="our-service-card h-full">
@@ -1114,13 +1174,13 @@
               <h3
                 class="text-xl md:text-2xl font-medium text-center mb-4 md:mb-8"
               >
-                FEA/CFD
+                FEA & CFD Analysis
               </h3>
               <div
                 class="w-full h-[100px] md:h-[120px] flex justify-center items-center mb-6"
               >
                 <img
-                  src="/public/assets/fea.webp"
+                  src="https://cadrush.com/public/assets/fea.webp"
                   alt="CAD Drawing"
                   class="max-h-full max-w-full object-contain rounded-md"
                 />
@@ -1133,7 +1193,7 @@
                 >
                   <span class="text-md font-semibold m-4"
                     ><img
-                      src="/public/assets/cross-arrow.svg"
+                      src="https://cadrush.com/public/assets/cross-arrow.svg"
                       alt="Cross Arrow"
                       class="w-3 h-3 inline arrow-img"
                   /></span>
@@ -1147,12 +1207,14 @@
             <div
               class="absolute inset-0 w-full h-full flex flex-col justify-center items-center bg-black text-white p-8 opacity-0 transition-opacity duration-300 group-hover:opacity-100 text-center"
             >
-              <h3 class="text-base md:text-xl text-center mb-4">FEA/CFD</h3>
+              <h3 class="text-base md:text-xl text-center mb-4">
+                FEA & CFD Analysis
+              </h3>
               <div
                 class="w-full h-[180px] flex justify-center items-center mb-6"
               >
                 <img
-                  src="/public/assets/fea.webp"
+                  src="https://cadrush.com/public/assets/fea.webp"
                   alt="Blueprint"
                   class="max-h-full max-w-full object-contain rounded-md"
                 />
@@ -1170,7 +1232,7 @@
                 >
                   <span class="text-md font-semibold m-4"
                     ><img
-                      src="/public/assets/cross-arrow.svg"
+                      src="https://cadrush.com/public/assets/cross-arrow.svg"
                       alt="Cross Arrow"
                       class="w-3 h-3 inline brightness-0 invert arrow-img"
                   /></span>
@@ -1181,7 +1243,7 @@
         </a>
 
         <a
-          href="https://cadrush.com/manufacturing-drawing"
+          href="https://cadrush.com/manufacturing-drawing.html"
           class="block group relative w-full min-h-[300px] md:min-h-[420px] bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-purple-400"
         >
           <div class="our-service-card h-full">
@@ -1192,13 +1254,13 @@
               <h3
                 class="text-xl md:text-2xl font-medium text-center mb-4 md:mb-8"
               >
-                DFM/Manufacturing Drawing
+                Manufacturing Drawing
               </h3>
               <div
                 class="w-full h-[100px] md:h-[120px] flex justify-center items-center mb-6"
               >
                 <img
-                  src="/public/assets/manufacturing-drawing.webp"
+                  src="https://cadrush.com/public/assets/manufacturing-drawing.webp"
                   alt="CAD Drawing"
                   class="max-h-full max-w-full object-contain rounded-md"
                 />
@@ -1211,7 +1273,7 @@
                 >
                   <span class="text-md font-semibold m-4"
                     ><img
-                      src="/public/assets/cross-arrow.svg"
+                      src="https://cadrush.com/public/assets/cross-arrow.svg"
                       alt="Cross Arrow"
                       class="w-3 h-3 inline arrow-img"
                   /></span>
@@ -1226,13 +1288,13 @@
               class="absolute inset-0 w-full h-full flex flex-col justify-center items-center bg-black text-white p-8 opacity-0 transition-opacity duration-300 group-hover:opacity-100 text-center"
             >
               <h3 class="text-base md:text-xl text-center mb-4">
-                DFM/Manufacturing Drawing
+                Manufacturing Drawing
               </h3>
               <div
                 class="w-full h-[180px] flex justify-center items-center mb-6"
               >
                 <img
-                  src="/public/assets/manufacturing-drawing.webp"
+                  src="https://cadrush.com/public/assets/manufacturing-drawing.webp"
                   alt="Blueprint"
                   class="max-h-full max-w-full object-contain rounded-md"
                 />
@@ -1249,7 +1311,7 @@
                 >
                   <span class="text-md font-semibold m-4"
                     ><img
-                      src="/public/assets/cross-arrow.svg"
+                      src="https://cadrush.com/public/assets/cross-arrow.svg"
                       alt="Cross Arrow"
                       class="w-3 h-3 inline brightness-0 invert arrow-img"
                   /></span>
@@ -1267,12 +1329,12 @@
     >
       <!-- Wave background overlay -->
       <img
-        src="/public/assets/wave.svg"
+        src="https://cadrush.com/public/assets/wave.svg"
         alt="Wave"
         class="absolute inset-0 hidden md:block w-full h-full object-cover pointer-events-none z-0"
       />
       <img
-        src="/public/assets/wave-mob.svg"
+        src="https://cadrush.com/public/assets/wave-mob.svg"
         alt="Wave"
         class="absolute inset-0 md:hidden w-full h-full object-cover pointer-events-none z-0"
       />
@@ -1292,12 +1354,14 @@
             <div class="w-full h-full justify-end items-start p-2 flex">
               <span
                 id="contactBtn"
-                class="rounded-full bg-white p-1 cursor-pointer"
-                ><img
-                  src="/public/assets/arrow.svg"
-                  alt="arrow svg"
-                  class="w-8 h-8 content-center"
-              /></span>
+                class="flex items-center justify-center rounded-full bg-white cursor-pointer group transition-colors duration-300 hover:bg-blue-200 hover:shadow-lg w-10 h-10"
+              >
+                <img
+                  src="https://cadrush.com/public/assets/cross-arrow.svg"
+                  alt="Cross Arrow"
+                  class="w-4 h-4 transition-transform duration-500 ease-in-out group-hover:rotate-[55deg]"
+                />
+              </span>
             </div>
             <div
               class="w-full h-full justify-start items-end p-2 flex font-light"
@@ -1313,7 +1377,7 @@
             We are available to help you with any questions or concerns.
           </p>
           <a
-            href="https://cadrush.com/app/#/signin"
+            href="https://cadrush.com/app/#/signup"
             target="_blank"
             class="flex md:w-1/2 w-full justify-center md:justify-start mb-8"
           >
@@ -1333,7 +1397,7 @@
         class="container mx-auto px-6 md:px-12 lg:px-20 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left"
       >
         <div class="space-y-4 flex flex-col items-center md:items-start">
-          <img src="/public/assets/logo.svg" alt="CADRush Logo" class="w-32" />
+          <img src="/public/assets/Logo2.png" alt="CADRush Logo" class="h-12" />
           <p class="text-[14px] text-gray-400 inter font-bold">
             A product of MN Engineering Solutions.
           </p>
@@ -1344,13 +1408,16 @@
           <div
             class="flex items-center justify-center md:justify-start space-x-3"
           >
-            <img src="/public/assets/mail.svg" class="w-5" />
+            <img src="https://cadrush.com/public/assets/mail.svg" class="w-5" />
             <p class="font-normal">hello@cadrush.com</p>
           </div>
           <div
             class="flex items-center justify-center md:justify-start space-x-1"
           >
-            <img src="/public/assets/location.svg" class="w-5" />
+            <img
+              src="https://cadrush.com/public/assets/location.svg"
+              class="w-5"
+            />
             <p class="font-normal">
               MN Engineering Solutions Inc.<br />
               332 Michigan Avenue, Chicago, IL 60604, USA
@@ -1365,19 +1432,28 @@
               href="https://www.instagram.com/cadrush_mnes?igsh=MXZ5cTk0eTJsa2FtcQ==&utm_source=ig_contact_invite"
               class="bg-white w-10 h-10 flex items-center justify-center rounded-full shadow-md"
             >
-              <img src="/public/assets/instagram.svg" class="w-5" />
+              <img
+                src="https://cadrush.com/public/assets/instagram.svg"
+                class="w-5"
+              />
             </a>
             <a
               href="https://www.facebook.com/share/1D9pVsDCYJ/?mibextid=wwXIfr"
               class="bg-white w-10 h-10 flex items-center justify-center rounded-full shadow-md"
             >
-              <img src="/public/assets/facebook.svg" class="w-5" />
+              <img
+                src="https://cadrush.com/public/assets/facebook.svg"
+                class="w-5"
+              />
             </a>
             <a
               href="https://www.linkedin.com/company/cadrush/"
               class="bg-white w-10 h-10 flex items-center justify-center rounded-full shadow-md"
             >
-              <img src="/public/assets/linkedin.svg" class="w-5" />
+              <img
+                src="https://cadrush.com/public/assets/linkedin.svg"
+                class="w-5"
+              />
             </a>
           </div>
         </div>
@@ -1416,9 +1492,9 @@
         />
       </svg>
     </button>
-    <script src="/public/js/home.js"></script>
-    <script src="/public/js/index.js"></script>
-    <script src="/public/js/service-cards-animate.js"></script>
+    <script src="https://cadrush.com/public/js/home.js"></script>
+    <script src="https://cadrush.com/public/js/index.js"></script>
+    <script src="https://cadrush.com/public/js/service-cards-animate.js"></script>
 
     <!-- Contact Form Popup -->
     <div
@@ -1561,6 +1637,68 @@
       </div>
     </div>
 
-    <script src="/public/js/index.js"></script>
+    <script src="https://cadrush.com/public/js/index.js"></script>
+
+    <!-- Script -->
+    <script>
+      const slides = document.querySelectorAll("#hero-slider .slide");
+      const dots = document.querySelectorAll("#slider-dots .dot");
+      let currentIndex = 0;
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.classList.add("hidden");
+          slide.classList.remove("active");
+          dots[i].classList.remove("active");
+          if (i === index) {
+            slide.classList.remove("hidden");
+            slide.classList.add("active");
+            dots[i].classList.add("active");
+          }
+        });
+      }
+
+      // Auto change
+      setInterval(() => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+      }, 4000);
+
+      // Dot click navigation
+      dots.forEach((dot, i) => {
+        dot.addEventListener("click", () => {
+          currentIndex = i;
+          showSlide(currentIndex);
+        });
+      });
+    </script>
+
+    <style>
+      /* Smooth fade animation */
+      #hero-slider .slide {
+        transition: opacity 1s ease-in-out;
+      }
+      #hero-slider .slide.hidden {
+        opacity: 0;
+      }
+      #hero-slider .slide.active {
+        opacity: 1;
+      }
+
+      /* Dots style */
+      #slider-dots .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        display: inline-block;
+        background: rgba(255, 255, 255, 0.5);
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+      #slider-dots .dot.active {
+        background: white;
+        transform: scale(1.2);
+      }
+    </style>
   </body>
 </html>

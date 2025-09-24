@@ -9,7 +9,7 @@
       content="CADRush offers innovative CAD solutions Electrical Drawing & Panel Layout. Efficient, transparent, and high-quality services for your business needs."
     />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://www.cadrush.com/" />
+    <link rel="canonical" href="https://cadrush.com/" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="manifest" href="/manifest.json" />
     <!-- Open Graph / Facebook -->
@@ -22,8 +22,11 @@
       content="CADRush offers innovative CAD solutions Electrical Drawing & Panel Layout. Efficient, transparent, and high-quality services for your business needs."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.cadrush.com/" />
-    <meta property="og:image" content="/public/assets/logo.svg" />
+    <meta property="og:url" content="https://cadrush.com/" />
+    <meta
+      property="og:image"
+      content="https://cadrush.com/public/assets/logo.svg"
+    />
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta
@@ -34,7 +37,10 @@
       name="twitter:description"
       content="CADRush offers innovative CAD solutions Electrical Drawing & Panel Layout. Efficient, transparent, and high-quality services for your business needs."
     />
-    <meta name="twitter:image" content="/public/assets/logo.svg" />
+    <meta
+      name="twitter:image"
+      content="https://cadrush.com/public/assets/logo.svg"
+    />
 
     <!-- gsap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -95,8 +101,8 @@
         -webkit-text-fill-color: transparent;
       }
     </style>
-    <script src="/public/js/services.js"></script>
-    <script src="/public/js/tailwind.js"></script>
+    <script src="https://cadrush.com/public/js/services.js"></script>
+    <script src="https://cadrush.com/public/js/tailwind.js"></script>
 
     <script>
       tailwind.config = {
@@ -137,7 +143,11 @@
       >
         <!-- Logo at far left -->
         <a href="https://cadrush.com/" class="flex items-center">
-          <img src="/public/assets/logo.svg" alt="CADRush Logo" class="h-6" />
+          <img
+            src="https://cadrush.com/public/assets/Logo2.png"
+            alt="CADRush Logo"
+            class="h-20"
+          />
         </a>
         <!-- Centered Nav -->
         <div class="flex items-center bg-white text-black py-2 px-12 rounded">
@@ -168,35 +178,35 @@
                 style="pointer-events: auto"
               >
                 <!-- Invisible padding to prevent dropdown from closing when moving cursor -->
+                <div class="absolute -top-4 left-0 right-0 h-4"></div>
                 <a
-                  href="https://cadrush.com/paper-to-cad"
-                  class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
-                  >Paper to CAD</a
+                  href="https://cadrush.com/paper-to-cad.html"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >Paper to CAD Conversion</a
                 >
                 <a
-                  href="https://cadrush.com/2d-cad-to-3d-model"
-                  class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
+                  href="https://cadrush.com/2d-cad-to-3d-model.html"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >2D CAD to 3D Model</a
                 >
                 <a
-                  href="https://cadrush.com/electrical-drawing-panel-layout"
-                  class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
+                  href="https://cadrush.com/electrical-drawing-panel-layout.html"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >Electrical Drawing & Panel Layout</a
                 >
                 <a
-                  href="https://cadrush.com/plc-programming-migration"
-                  class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
-                >
-                  PLC Programming & Migration</a
+                  href="https://cadrush.com/plc-programming-migration.html"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >PLC Programming & Migration</a
                 >
                 <a
-                  href="https://cadrush.com/fea-cfd"
-                  class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
+                  href="https://cadrush.com/fea-cfd.html"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >FEA & CFD</a
                 >
                 <a
-                  href="https://cadrush.com/manufacturing-drawing"
-                  class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
+                  href="https://cadrush.com/manufacturing-drawing.html"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >Manufacturing Drawing</a
                 >
                 <!-- Invisible padding to prevent dropdown from closing when moving cursor -->
@@ -215,37 +225,43 @@
             </button>
           </nav>
         </div>
+
         <!-- Register button at far right -->
-        <button
+        <a
           class="bg-black text-white px-6 py-2 rounded-lg font-semibold shadow hover:bg-gray-800 transition"
+          href="https://cadrush.com/app/#/signup"
+          target="_blank"
         >
-          <a href="https://cadrush.com/app/#/signin" target="_blank"
-            >REGISTER</a
-          >
-        </button>
+          REGISTER
+        </a>
       </div>
+
       <!-- Mobile Navbar -->
       <div class="flex md:hidden justify-between items-center py-3 px-3 z-40">
         <a href="https://cadrush.com/" class="text-white font-bold text-xl"
-          ><img src="/public/assets/logo.svg" alt="CADRush Logo" class="h-3"
+          ><img
+            src="https://cadrush.com/public/assets/Logo2.png"
+            alt="CADRush Logo"
+            class="h-12"
         /></a>
         <div class="flex flex-row space-x-2">
           <button
             class="bg-black text-white px-4 py-1 rounded-lg font-normal text-sm shadow hover:bg-gray-800 transition"
           >
-            <a href="https://cadrush.com/app/#/signin" target="_blank"
+            <a href="https://cadrush.com/app/#/signup" target="_blank"
               >REGISTER</a
             >
           </button>
           <button id="hamburger" onclick="openDrawer()">
             <img
-              src="/public/assets/hamburger.svg"
+              src="https://cadrush.com/public/assets/hamburger.svg"
               alt="Open menu"
               class="w-8 h-8"
             />
           </button>
         </div>
       </div>
+
       <!-- Right Side Drawer for Mobile -->
       <div
         id="mobile-drawer"
@@ -254,21 +270,21 @@
         <div class="flex justify-end p-4">
           <button onclick="closeDrawer()">
             <img
-              src="/public/assets/close-x.svg"
+              src="https://cadrush.com/public/assets/close-x.svg"
               alt="Close menu"
               class="w-6 h-6"
             />
           </button>
         </div>
-        <nav class="flex flex-col space-y-6 px-8 mt-8">
+        <nav class="flex flex-col space-y-4 px-8 mt-8">
           <div class="relative">
             <button
               id="mobile-services-toggle"
-              class="flex items-center text-gray-700 font-medium hover:text-blue-800 w-full justify-between"
+              class="flex items-center w-full py-2 text-gray-700 font-medium hover:text-blue-800 justify-between"
             >
-              Services
+              <span>SERVICES</span>
               <svg
-                class="w-4 h-4 ml-1 transform transition-transform"
+                class="w-4 h-4 ml-2 transform transition-transform"
                 id="services-arrow"
                 fill="none"
                 stroke="currentColor"
@@ -283,58 +299,49 @@
                 ></path>
               </svg>
             </button>
-            <div id="mobile-services-menu" class="hidden pl-4 mt-2 space-y-2">
+            <div id="mobile-services-menu" class="hidden pl-4 mt-1 space-y-2">
               <a
-                href="https://cadrush.com/paper-to-cad"
-                class="block text-gray-600 hover:text-blue-800 text-sm py-1"
+                href="https://cadrush.com/paper-to-cad.html"
+                class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
                 >Paper to CAD</a
               >
               <a
-                href="https://cadrush.com/electrical-drawing-panel-layout"
-                class="block text-gray-600 hover:text-blue-800 text-sm py-1"
+                href="https://cadrush.com/2d-cad-to-3d-model.html"
+                class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
+                >2D CAD to 3D Model</a
+              >
+              <a
+                href="https://cadrush.com/electrical-drawing-panel-layout.html"
+                class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
                 >Electrical Drawing & Panel Layout</a
               >
               <a
-                href="https://cadrush.com/3d-printing"
-                class="block text-gray-600 hover:text-blue-800 text-sm py-1"
-                >3D Printing</a
-              >
-              <a
-                href="https://cadrush.com/rendering"
-                class="block text-gray-600 hover:text-blue-800 text-sm py-1"
-                >3D Rendering</a
-              >
-              <a
-                href="https://cadrush.com/cfd"
-                class="block text-gray-600 hover:text-blue-800 text-sm py-1"
+                href="https://cadrush.com/plc-programming-migration.html"
+                class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
               >
                 PLC Programming & Migration</a
               >
               <a
-                href="https://cadrush.com/fea-cfd"
-                class="block text-gray-600 hover:text-blue-800 text-sm py-1"
+                href="https://cadrush.com/fea-cfd.html"
+                class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
                 >FEA & CFD</a
+              >
+              <a
+                href="https://cadrush.com/manufacturing-drawing.html"
+                class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
+                >Manufacturing Drawing</a
               >
             </div>
           </div>
-          <a
-            href="https://cadrush.com/case-studies"
-            class="text-gray-700 font-medium hover:text-blue-800"
-            >CASE STUDIES</a
-          >
-          <a
-            href="https://cadrush.com/faq"
-            class="text-gray-700 font-medium hover:text-blue-800"
-            >FAQ</a
-          >
-          <button
-            id="contactBtn-menu"
-            class="text-gray-700 font-medium hover:text-blue-800"
-          >
-            CONTACT
-          </button>
         </nav>
+        <button
+          id="contactBtn-menu"
+          class="text-black font-medium hover:text-blue-800 px-8 mt-10"
+        >
+          CONTACT
+        </button>
       </div>
+
       <!-- Overlay for Drawer (optional, improves UX) -->
       <div
         id="drawer-overlay"
@@ -345,7 +352,7 @@
 
     <!-- Hero Section -->
     <section
-      class="h-[60vh] bg-gradient-to-br from-[#4b9adb] to-[#9747ff] animated-gradient header-scrolled py-10 md:py-12 lg:py-12 md:px-10"
+      class="h-[65vh] md:h-[60vh] bg-gradient-to-br from-[#4b9adb] to-[#9747ff] animated-gradient header-scrolled py-10 md:py-12 lg:py-12 md:px-10"
     >
       <div
         class="flex flex-col md:flex-row items-center justify-between h-full"
@@ -374,18 +381,17 @@
 
             </div> -->
           <p class="text-white mt-5 text-center md:text-left">
-            Electrical Drawing - We offer Electrical Drawing & Panel Layout
-            Services deliver precise schematics and optimized designs to ensure
-            safe, efficient, and compliant electrical systems. From wiring
-            diagrams to control panel layouts, CADRush provides clarity,
-            reliability, and scalability for seamless installation and
-            operation.
+            We offer Electrical Drawing & Panel Layout Services deliver precise
+            schematics and optimized designs to ensure safe, efficient, and
+            compliant electrical systems. From wiring diagrams to control panel
+            layouts, CADRush provides clarity, reliability, and scalability for
+            seamless installation and operation.
           </p>
         </div>
         <!-- Right: Image -->
         <div class="mt-6 md:mt-20 md:ml-10 flex-shrink-0">
           <img
-            src="/public/assets/3d-modeling.webp"
+            src="https://cadrush.com/public/assets/3d-modeling.webp"
             alt="FEA Hero"
             class="w-64 md:w-70 lg:w-[23rem]"
           />
@@ -403,7 +409,9 @@
           x-data="{ shown: false }"
           x-intersect="$el.classList.add('animate-fadeInUp')"
         >
-          <h2 class="font-bold text-center mb-4 text-[#7c6ee6] text-3xl">
+          <h2
+            class="font-bold text-center mb-4 text-[#7c6ee6] text-2xl md:text-3xl"
+          >
             Electrical Drawing & Panel Layout Services for Industries
           </h2>
           <p
@@ -438,9 +446,9 @@
                   class="w-12 h-12 rounded-full bg-[#EDEDED] group-hover:bg-gray-400 flex items-center justify-center text-white text-xl font-bold mr-4"
                 >
                   <img
-                    src="/public/assets/fea/automobile.svg"
+                    src="https://cadrush.com/public/assets/electrical/manfacturing-packaging.svg"
                     alt="Img"
-                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200"
+                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200 w-7"
                   />
                 </div>
                 <h3
@@ -477,9 +485,9 @@
                   class="w-12 h-12 rounded-full bg-[#EDEDED] group-hover:bg-gray-400 flex items-center justify-center text-white text-xl font-bold mr-4"
                 >
                   <img
-                    src="/public/assets/fea/heavy-equipment.svg"
+                    src="https://cadrush.com/public/assets/electrical/automotive-vehicles.svg"
                     alt="Img"
-                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200"
+                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200 w-8"
                   />
                 </div>
                 <h3
@@ -516,9 +524,9 @@
                   class="w-12 h-12 rounded-full bg-[#EDEDED] group-hover:bg-gray-400 flex items-center justify-center text-white text-xl font-bold mr-4"
                 >
                   <img
-                    src="/public/assets/fea/machine-parts.svg"
+                    src="https://cadrush.com/public/assets/electrical/food-beverage.svg"
                     alt="Img"
-                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200"
+                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200 w-8"
                   />
                 </div>
                 <h3
@@ -555,9 +563,9 @@
                   class="w-12 h-12 rounded-full bg-[#EDEDED] group-hover:bg-gray-400 flex items-center justify-center text-white text-xl font-bold mr-4"
                 >
                   <img
-                    src="/public/assets/fea/medical-devices.svg"
+                    src="https://cadrush.com/public/assets/electrical/power-energy.svg"
                     alt="Img"
-                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200"
+                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200 w-8"
                   />
                 </div>
                 <h3
@@ -595,9 +603,9 @@
                   class="w-12 h-12 rounded-full bg-[#EDEDED] group-hover:bg-gray-400 flex items-center justify-center text-white text-xl font-bold mr-4"
                 >
                   <img
-                    src="/public/assets/fea/speciality-car.svg"
+                    src="https://cadrush.com/public/assets/electrical/pharma-healthcare.svg"
                     alt="Img"
-                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200"
+                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200 w-8"
                   />
                 </div>
                 <h3
@@ -634,15 +642,15 @@
                   class="w-12 h-12 rounded-full bg-[#EDEDED] group-hover:bg-gray-400 flex items-center justify-center text-white text-xl font-bold mr-4"
                 >
                   <img
-                    src="/public/assets/fea/speciality-car.svg"
+                    src="https://cadrush.com/public/assets/electrical/water-treatment.svg"
                     alt="Img"
-                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200"
+                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200 w-9"
                   />
                 </div>
                 <h3
                   class="text-xl font-bold text-gray-900 group-hover:text-white transition-colors duration-300"
                 >
-                  Water Treatment & Utilities and Glass Industry
+                  Water Treatment & Utilities <br />and Glass Industry
                 </h3>
               </div>
               <p
@@ -674,15 +682,16 @@
                   class="w-12 h-12 rounded-full bg-[#EDEDED] group-hover:bg-gray-400 flex items-center justify-center text-white text-xl font-bold mr-4"
                 >
                   <img
-                    src="/public/assets/fea/speciality-car.svg"
+                    src="https://cadrush.com/public/assets/electrical/cement-industry.svg"
                     alt="Img"
-                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200"
+                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200 w-8"
                   />
                 </div>
                 <h3
                   class="text-xl font-bold text-gray-900 group-hover:text-white transition-colors duration-300"
                 >
-                  Cement Industry and Chemical Industry
+                  Cement Industry and <br />
+                  Chemical Industry
                 </h3>
               </div>
               <p
@@ -714,15 +723,15 @@
                   class="w-12 h-12 rounded-full bg-[#EDEDED] group-hover:bg-gray-400 flex items-center justify-center text-white text-xl font-bold mr-4"
                 >
                   <img
-                    src="/public/assets/fea/speciality-car.svg"
+                    src="https://cadrush.com/public/assets/electrical/paper-industry.svg"
                     alt="Img"
-                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200"
+                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200 w-8"
                   />
                 </div>
                 <h3
                   class="text-xl font-bold text-gray-900 group-hover:text-white transition-colors duration-300"
                 >
-                  Paper Industry and Amusement Park
+                  Paper Industry and <br />Amusement Park
                 </h3>
               </div>
               <p
@@ -754,9 +763,9 @@
                   class="w-12 h-12 rounded-full bg-[#EDEDED] group-hover:bg-gray-400 flex items-center justify-center text-white text-xl font-bold mr-4"
                 >
                   <img
-                    src="/public/assets/fea/speciality-car.svg"
+                    src="https://cadrush.com/public/assets/electrical/electronic-industry.svg"
                     alt="Img"
-                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200"
+                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200 w-7"
                   />
                 </div>
                 <h3
@@ -780,18 +789,18 @@
 
     <!-- our expertise -->
     <section
-      class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 md:gap-8 px-4 md:px-20 py-8 md:mt-12"
+      class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 px-4 md:px-20 py-5"
     >
       <!-- Left text block -->
       <div class="flex-1 text-center md:text-left">
         <h1
           class="text-2xl md:text-3xl font-bold bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent"
         >
-          Our Software Expertise
+          Electrical Design & Software Expertise
         </h1>
         <p class="mt-4 text-[#747474]">
-          We leverage industry-leading platforms for reliable and accurate
-          results:
+          We deliver precise electrical schematics and panel layouts using
+          advanced tools and global standards, including:
         </p>
       </div>
 
@@ -799,32 +808,63 @@
       <div class="flex-1 border-2 p-10 rounded-xl md:py-16">
         <div class="flex items-center mt-2">
           <img
-            src="/public//assets//fea//tick.svg"
+            src="https://cadrush.com/public/assets/fea/tick.svg"
             alt="tick"
             class="w-5 h-5 mr-2"
           />
-          <h2 class="font-semibold text-xl">FEA Tools</h2>
+          <h2 class="font-semibold text-xl">Panel & Drawing Expertise</h2>
         </div>
         <h3 class="ml-7 mt-1">
-          ANYSYS, Abaqus, NASTRAN, SolidWorks Simulation, Creo, Inventor.
+          SLDs, control schematics, MCC, PCC, PLC, VFD, and custom panels
         </h3>
 
         <div class="flex items-center mt-6">
           <img
-            src="/public//assets//fea//tick.svg"
+            src="https://cadrush.com/public/assets/fea/tick.svg"
             alt="tick"
             class="w-5 h-5 mr-2"
           />
-          <h2 class="font-semibold text-xl">CFD Tools</h2>
+          <h2 class="font-semibold text-xl">Automation Integration</h2>
+        </div>
+        <h3 class="ml-7 mt-1">PLC, DCS & SCADA-ready designs</h3>
+
+        <div class="flex items-center mt-6">
+          <img
+            src="https://cadrush.com/public/assets/fea/tick.svg"
+            alt="tick"
+            class="w-5 h-5 mr-2"
+          />
+          <h2 class="font-semibold text-xl">Compliance & Safety</h2>
+        </div>
+        <h3 class="ml-7 mt-1">IEC, IEEE, NEC, NFPA standards</h3>
+
+        <div class="flex items-center mt-6">
+          <img
+            src="https://cadrush.com/public/assets/fea/tick.svg"
+            alt="tick"
+            class="w-5 h-5 mr-2"
+          />
+          <h2 class="font-semibold text-xl">Energy Optimization</h2>
+        </div>
+        <h3 class="ml-7 mt-1">VFDs, load management & energy monitoring</h3>
+
+        <div class="flex items-center mt-6">
+          <img
+            src="https://cadrush.com/public/assets/fea/tick.svg"
+            alt="tick"
+            class="w-5 h-5 mr-2"
+          />
+          <h2 class="font-semibold text-xl">Software Tools</h2>
         </div>
         <h3 class="ml-7 mt-1">
-          ANSYS Fluent, ANSYS CFX, STAR-CCM+, COMSOL Multiphysics, Autodesk CFD,
-          SolidWorks Flow Simulation.
+          AutoCAD Electrical, EPLAN, SEE Electrical, Promis-e, SolidWorks
+          Electrical
         </h3>
 
         <p class="mt-10 text-[#747474]">
-          This flexibility ensures seamless integration with your CAD ecosystem
-          and compatibility with your design-to-production workflows.
+          Our engineers ensure that every drawing and layout is optimized for
+          ease of installation, future expansion, and compliance with IEC, NEC,
+          and other international standards.
         </p>
       </div>
     </section>
@@ -844,7 +884,7 @@
       >
         <!-- Card 1 -->
         <div
-          class="flip-card rounded-xl group relative card-container"
+          class="flip-card rounded-xl group relative card-container min-h-[300px]"
           tabindex="0"
         >
           <div class="flip-inner h-full">
@@ -863,7 +903,7 @@
                     Accuracy & Compliance
                   </h3>
                   <img
-                    src="/public/assets/fea/expertise.svg"
+                    src="https://cadrush.com/public/assets/electrical/accuracy-compliance.svg"
                     alt="Experience Icon"
                     class="w-22 h-22 mb-4"
                   />
@@ -881,7 +921,7 @@
 
         <!-- Card 2 -->
         <div
-          class="flip-card group rounded-xl relative card-container"
+          class="flip-card group rounded-xl relative card-container min-h-[300px]"
           tabindex="0"
         >
           <div class="flip-inner h-full">
@@ -900,7 +940,7 @@
                     Custom Solutions
                   </h3>
                   <img
-                    src="/public/assets/fea/accuracy.svg"
+                    src="https://cadrush.com/public/assets/electrical/custom-solutions.svg"
                     alt="Experience Icon"
                     class="w-22 h-22 mb-4"
                   />
@@ -918,7 +958,7 @@
 
         <!-- Card 3 -->
         <div
-          class="flip-card group rounded-xl relative card-container"
+          class="flip-card group rounded-xl relative card-container min-h-[300px]"
           tabindex="0"
         >
           <div class="flip-inner h-full">
@@ -937,7 +977,7 @@
                     Ease of Maintenance
                   </h3>
                   <img
-                    src="/public/assets/fea/design-optimization.svg"
+                    src="https://cadrush.com/public/assets/electrical/easy-of-maintenence.svg"
                     alt="Experience Icon"
                     class="w-22 h-22 mb-4"
                   />
@@ -955,7 +995,7 @@
 
         <!-- Card 4 -->
         <div
-          class="flip-card group rounded-xl relative card-container"
+          class="flip-card group rounded-xl relative card-container min-h-[300px]"
           tabindex="0"
         >
           <div class="flip-inner h-full">
@@ -974,7 +1014,7 @@
                     Future-Ready Designs
                   </h3>
                   <img
-                    src="/public/assets/fea/fatser-time.svg"
+                    src="https://cadrush.com/public/assets/electrical/future-ready.svg"
                     alt="Experience Icon"
                     class="w-22 h-22 mb-4"
                   />
@@ -992,7 +1032,7 @@
 
         <!-- Card 5 -->
         <div
-          class="flip-card group rounded-xl relative card-container"
+          class="flip-card group rounded-xl relative card-container min-h-[300px]"
           tabindex="0"
         >
           <div class="flip-inner h-full">
@@ -1011,7 +1051,7 @@
                     Integrated Approach
                   </h3>
                   <img
-                    src="/public/assets/fea/cost-efficiency.svg"
+                    src="https://cadrush.com/public/assets/electrical/integrated-approach.svg"
                     alt="Experience Icon"
                     class="w-22 h-22 mb-4"
                   />
@@ -1029,7 +1069,7 @@
 
         <!-- Card 6 -->
         <div
-          class="flip-card group rounded-xl relative card-container"
+          class="flip-card group rounded-xl relative card-container min-h-[300px]"
           tabindex="0"
         >
           <div class="flip-inner h-full">
@@ -1048,7 +1088,7 @@
                     Safety & Reliability
                   </h3>
                   <img
-                    src="/public/assets/fea/collaborative.svg"
+                    src="https://cadrush.com/public/assets/electrical/safety-reliability.svg"
                     alt="Experience Icon"
                     class="w-22 h-22 mb-4"
                   />
@@ -1066,7 +1106,7 @@
 
         <!-- Card 7 -->
         <div
-          class="flip-card group rounded-xl relative card-container"
+          class="flip-card group rounded-xl relative card-container min-h-[300px]"
           tabindex="0"
         >
           <div class="flip-inner h-full">
@@ -1085,7 +1125,7 @@
                     Energy Optimization
                   </h3>
                   <img
-                    src="/public/assets/fea/collaborative.svg"
+                    src="https://cadrush.com/public/assets/electrical/energy-optimization.svg"
                     alt="Experience Icon"
                     class="w-22 h-22 mb-4"
                   />
@@ -1103,223 +1143,67 @@
       </div>
     </section>
 
-    <!-- electrical design & software expertise -->
-    <section
-      class="max-w-md mx-auto my-4 md:my-8 p-6 md:max-w-full md:mx-44 md:mt-20"
-    >
-      <h2
-        class="font-bold text-center mb-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent text-3xl"
-      >
-        Electrical Design & Software Expertise
-      </h2>
-      <p
-        class="text-center text-sm max-w-[500px] mx-auto my-2 md:my-4 md:text-base"
-      >
-        We deliver precise electrical schematics and panel layouts using
-        advanced tools and global standards, including:
-      </p>
-
-      <!-- grid container -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-        <!-- Card 1 -->
-        <div
-          id="card-1"
-          class="flip-card rounded-xl relative md:max-w-[350px] xl:w-[450px]"
-        >
-          <div class="flip-inner">
-            <div
-              class="flip-front border-2 border-gray-300 px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400"
-            >
-              <div class="flex flex-col items-center h-full gap-2">
-                <img
-                  src="/public/assets/fea/comprehensive.svg"
-                  alt="Experience Icon"
-                  class="w-20"
-                />
-                <h3
-                  class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent"
-                >
-                  Panel & Drawing Expertise
-                </h3>
-                <p class="text-center text-sm text-gray-700 mt-4 md:my-3">
-                  SLDs, control schematics, MCC, PCC, PLC, VFD, and custom
-                  panels
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div
-          id="card-2"
-          class="flip-card rounded-xl relative md:max-w-[350px] xl:w-[450px]"
-        >
-          <div class="flip-inner">
-            <div
-              class="flip-front border-2 border-gray-300 px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400"
-            >
-              <div class="flex flex-col items-center h-full gap-2">
-                <img
-                  src="/public/assets/fea/failure-spot.svg"
-                  alt="Experience Icon"
-                  class="w-20"
-                />
-                <h3
-                  class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent"
-                >
-                  Automation Integration
-                </h3>
-
-                <p
-                  class="text-center text-sm text-gray-700 mt-4 md:mb-5 md:mt-6"
-                >
-                  PLC, DCS & SCADA-ready designs
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div
-          id="card-3"
-          class="flip-card rounded-xl relative md:max-w-[350px] xl:w-[450px]"
-        >
-          <div class="flip-inner">
-            <div
-              class="flip-front border-2 border-gray-300 px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400"
-            >
-              <div class="flex flex-col items-center h-full gap-2">
-                <img
-                  src="/public/assets/fea/efficient-virtual.svg"
-                  alt="Experience Icon"
-                  class="w-20 mt-2"
-                />
-                <h3
-                  class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent"
-                >
-                  Compliance & Safety
-                </h3>
-                <p class="text-center text-sm text-gray-700 mt-4 md:mb-5">
-                  IEC, IEEE, NEC, NFPA standards
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div id="card-4" class="flip-card rounded-xl relative md:max-w-[350px]">
-          <div class="flip-inner">
-            <div
-              class="flip-front border-2 border-gray-300 px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400"
-            >
-              <div class="flex flex-col items-center h-full gap-2">
-                <img
-                  src="/public/assets/fea/accelerated.svg"
-                  alt="Experience Icon"
-                  class="w-20"
-                />
-                <h3
-                  class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent"
-                >
-                  Energy Optimization
-                </h3>
-                <p class="text-center text-sm text-gray-700 mt-4 md:my-5">
-                  VFDs, load management & energy monitoring
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 5 -->
-        <div id="card-5" class="flip-card rounded-xl relative md:max-w-[350px]">
-          <div class="flip-inner">
-            <div
-              class="flip-front border-2 border-gray-300 px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400"
-            >
-              <div class="flex flex-col items-center h-full gap-2">
-                <img
-                  src="/public/assets/fea/product-process.svg"
-                  alt="Experience Icon"
-                  class="w-20 mt-1"
-                />
-                <h3
-                  class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent"
-                >
-                  Software Tools
-                </h3>
-                <p class="text-center text-sm text-gray-700 mt-4">
-                  AutoCAD Electrical, EPLAN, SEE Electrical, Promis-e,
-                  SolidWorks Electrical.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <p class="text-center mt-5 md:mt-12">
-        Our engineers ensure that every drawing and layout is optimized for ease
-        of installation, future expansion, and compliance with IEC, NEC, and
-        other international standards.
-      </p>
-    </section>
-
     <!--  Why Electrical Drawings & Panel Layouts Matters -->
-    <section
-      class="bg-gradient-to-b from-white via-violet-200 to-white flex flex-col items-center h-[300px] md:h-[400px] justify-center my-12 md:my-6"
-    >
+    <section class="flex flex-col items-center h-[300px] justify-center my-12">
       <h2
-        class="font-bold text-center mb-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent text-3xl py-4 px-16"
+        class="font-bold text-center mb-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent text-2xl md:text-3xl py-4 px-16"
       >
         Why Electrical Drawings & Panel Layouts Matter
       </h2>
       <p
-        class="text-center text-sm max-w-[700px] mx-auto my-2 md:my-4 md:text-base px-4"
+        class="text-center text-sm max-w-[900px] mx-auto my-2 md:my-4 md:text-base px-4"
       >
         Well-engineered electrical drawings and panel layouts ensure not only
-        operational efficiency but also workplace safety. They minimize the risk
+        <span class="font-bold">operational efficiency</span> but also
+        <span class="font-bold">workplace safety.</span> They minimize the risk
         of electrical hazards, support faster troubleshooting and preventive
         maintenance, and future-proof infrastructure against technological
-        advancements. Precise designs also enable regulatory compliance, energy
-        efficiency, and cost savings across the system lifecycle
+        advancements. Precise designs also enable
+        <span class="font-bold">regulatory compliance, energy efficiency,</span>
+        and <span class="font-bold">cost savings</span> across the system
+        lifecycle
       </p>
     </section>
 
-    <!-- CTA -->
+    <!-- partner with us -->
     <section
       class="bg-gradient-to-b from-white via-violet-200 to-white flex flex-col items-center h-[300px] md:h-[400px] justify-center my-12 md:my-6"
     >
       <h2
-        class="font-bold text-center mb-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent text-3xl py-4 px-16"
+        class="font-bold text-center mb-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent text-2xl md:text-3xl py-4 md:px-16 px-10"
       >
         Partner with Us for Electrical Design Excellence
       </h2>
       <p
-        class="text-center text-sm max-w-[700px] mx-auto my-2 md:my-4 md:text-base px-4"
+        class="text-center text-sm max-w-[900px] mx-auto my-2 md:my-4 md:text-base px-4"
       >
         With proven expertise across diverse industries, we deliver electrical
-        systems that are reliable, compliant, and performance driven. From new
-        installations to modernization of existing infrastructure, our designs
-        ensure precision, safety, and long-term value, helping clients achieve
-        efficiency and future readiness.
+        systems that are
+        <span class="font-bold"
+          >reliable, compliant, and performance driven.</span
+        >
+        From
+        <span class="font-bold"
+          >new installations to modernization of existing infrastructure,</span
+        >
+        our designs ensure
+        <span class="font-bold">precision, safety, and long-term value,</span>
+        helping clients achieve efficiency and future readiness.
       </p>
       <button
         class="bg-black text-white rounded-md px-6 py-2 w-1/2 md:w-44 lg:w-48 mx-auto my-6 font-semibold hover:bg-black/80"
       >
-        <a href="https://cadrush.com/app/#/signin" target="_blank">
+        <a href="https://cadrush.com/app/#/signup" target="_blank">
           START BUILDING</a
         >
       </button>
     </section>
 
     <!-- faq -->
-    <section class="py-12 md:py-20">
+    <section class="py-12">
       <div class="mx-auto max-w-4xl lg:max-w-5xl px-4 sm:px-6 lg:px-8">
         <h2
-          class="font-bold text-center mb-4 text-[#7c6ee6] text-3xl pb-4 md:pb-8"
+          class="font-bold text-center mb-4 text-[#7c6ee6] text-2xl md:text-3xl pb-4 md:pb-8"
         >
           Frequently asked questions
         </h2>
@@ -1340,7 +1224,7 @@
                 What is included in electrical drawing services?
               </h5>
               <img
-                src="/public/assets/plus.svg"
+                src="https://cadrush.com/public/assets/plus.svg"
                 alt="Plus Icon"
                 class="w-6 h-6"
               />
@@ -1373,7 +1257,7 @@
                 Why are accurate electrical drawings important?
               </h5>
               <img
-                src="/public/assets/plus.svg"
+                src="https://cadrush.com/public/assets/plus.svg"
                 alt="Plus Icon"
                 class="w-6 h-6"
               />
@@ -1406,7 +1290,7 @@
                 systems?
               </h5>
               <img
-                src="/public/assets/plus.svg"
+                src="https://cadrush.com/public/assets/plus.svg"
                 alt="Plus Icon"
                 class="w-6 h-6"
               />
@@ -1438,7 +1322,7 @@
                 How do panel layouts improve safety?
               </h5>
               <img
-                src="/public/assets/plus.svg"
+                src="https://cadrush.com/public/assets/plus.svg"
                 alt="Plus Icon"
                 class="w-6 h-6"
               />
@@ -1471,7 +1355,7 @@
                 Do you provide customized layouts for specific industries?
               </h5>
               <img
-                src="/public/assets/plus.svg"
+                src="https://cadrush.com/public/assets/plus.svg"
                 alt="Plus Icon"
                 class="w-6 h-6"
               />
@@ -1503,7 +1387,7 @@
                 What design tools do you use for electrical drawings?
               </h5>
               <img
-                src="/public/assets/plus.svg"
+                src="https://cadrush.com/public/assets/plus.svg"
                 alt="Plus Icon"
                 class="w-6 h-6"
               />
@@ -1535,7 +1419,7 @@
                 Can you integrate electrical layouts with automation systems?
               </h5>
               <img
-                src="/public/assets/plus.svg"
+                src="https://cadrush.com/public/assets/plus.svg"
                 alt="Plus Icon"
                 class="w-6 h-6"
               />
@@ -1567,7 +1451,7 @@
                 Do you ensure compliance with international standards?
               </h5>
               <img
-                src="/public/assets/plus.svg"
+                src="https://cadrush.com/public/assets/plus.svg"
                 alt="Plus Icon"
                 class="w-6 h-6"
               />
@@ -1599,7 +1483,7 @@
                 How do electrical drawings help in future expansion?
               </h5>
               <img
-                src="/public/assets/plus.svg"
+                src="https://cadrush.com/public/assets/plus.svg"
                 alt="Plus Icon"
                 class="w-6 h-6"
               />
@@ -1631,7 +1515,7 @@
                 What industries benefit most from professional panel layouts?
               </h5>
               <img
-                src="/public/assets/plus.svg"
+                src="https://cadrush.com/public/assets/plus.svg"
                 alt="Plus Icon"
                 class="w-6 h-6"
               />
@@ -1661,7 +1545,11 @@
         class="container mx-auto px-6 md:px-12 lg:px-20 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left"
       >
         <div class="space-y-4 flex flex-col items-center md:items-start">
-          <img src="/public/assets/logo.svg" alt="CADRush Logo" class="w-32" />
+          <img
+            src="https://cadrush.com/public/assets/Logo2.png"
+            alt="CADRush Logo"
+            class="h-12"
+          />
           <p class="text-sm text-gray-400 inter font-bold">
             A product of MN Engineering Solutions.
           </p>
@@ -1680,13 +1568,16 @@
           <div
             class="flex items-center justify-center md:justify-start space-x-3"
           >
-            <img src="/public/assets/mail.svg" class="w-5" />
+            <img src="https://cadrush.com/public/assets/mail.svg" class="w-5" />
             <p class="font-normal">hello@cadrush.com</p>
           </div>
           <div
             class="flex items-center justify-center md:justify-start space-x-1"
           >
-            <img src="/public/assets/location.svg" class="w-5" />
+            <img
+              src="https://cadrush.com/public/assets/location.svg"
+              class="w-5"
+            />
             <p class="font-normal">
               MN Engineering Solutions Inc.<br />
               332 Michigan Avenue, Chicago, IL 60604, USA
@@ -1701,19 +1592,28 @@
               href="https://www.instagram.com/cadrush_mnes?igsh=MXZ5cTk0eTJsa2FtcQ==&utm_source=ig_contact_invite"
               class="bg-white w-10 h-10 flex items-center justify-center rounded-full shadow-md"
             >
-              <img src="/public/assets/instagram.svg" class="w-5" />
+              <img
+                src="https://cadrush.com/public/assets/instagram.svg"
+                class="w-5"
+              />
             </a>
             <a
               href="https://www.facebook.com/share/1D9pVsDCYJ/?mibextid=wwXIfr"
               class="bg-white w-10 h-10 flex items-center justify-center rounded-full shadow-md"
             >
-              <img src="/public/assets/facebook.svg" class="w-5" />
+              <img
+                src="https://cadrush.com/public/assets/facebook.svg"
+                class="w-5"
+              />
             </a>
             <a
               href="https://www.linkedin.com/company/cadrush/"
               class="bg-white w-10 h-10 flex items-center justify-center rounded-full shadow-md"
             >
-              <img src="/public/assets/linkedin.svg" class="w-5" />
+              <img
+                src="https://cadrush.com/public/assets/linkedin.svg"
+                class="w-5"
+              />
             </a>
           </div>
         </div>
@@ -1894,9 +1794,9 @@
       </div>
     </div>
 
-    <script src="/public/js/index.js"></script>
-    <script src="/public/js/service-cards-animate.js"></script>
-    <script src="/public/js/fea.js"></script>
+    <script src="https://cadrush.com/public/js/index.js"></script>
+    <script src="https://cadrush.com/public/js/service-cards-animate.js"></script>
+    <script src="https://cadrush.com/public/js/fea.js"></script>
     <script>
       gsap.registerPlugin(MotionPathPlugin);
       window.addEventListener("load", () => {

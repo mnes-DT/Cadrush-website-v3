@@ -9,7 +9,7 @@
       content="CADRush offers innovative CAD solutions from concept to manufacturing. Efficient, transparent, and high-quality services for your business needs."
     />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://www.cadrush.com/" />
+    <link rel="canonical" href="https://cadrush.com/" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="manifest" href="/manifest.json" />
     <!-- Open Graph / Facebook -->
@@ -19,8 +19,11 @@
       content="CADRush offers innovative CAD solutions from concept to manufacturing. Efficient, transparent, and high-quality services for your business needs."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.cadrush.com/" />
-    <meta property="og:image" content="/public/assets/logo.svg" />
+    <meta property="og:url" content="https://cadrush.com/" />
+    <meta
+      property="og:image"
+      content="https://cadrush.com/public/assets/logo.svg"
+    />
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="CADRush - PLC" />
@@ -28,7 +31,10 @@
       name="twitter:description"
       content="CADRush offers innovative CAD solutions from concept to manufacturing. Efficient, transparent, and high-quality services for your business needs."
     />
-    <meta name="twitter:image" content="/public/assets/logo.svg" />
+    <meta
+      name="twitter:image"
+      content="https://cadrush.com/public/assets/logo.svg"
+    />
 
     <!-- gsap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -89,8 +95,8 @@
         -webkit-text-fill-color: transparent;
       }
     </style>
-    <script src="/public/js/services.js"></script>
-    <script src="/public/js/tailwind.js"></script>
+    <script src="https://cadrush.com/public/js/services.js"></script>
+    <script src="https://cadrush.com/public/js/tailwind.js"></script>
 
     <script>
       tailwind.config = {
@@ -131,7 +137,11 @@
       >
         <!-- Logo at far left -->
         <a href="https://cadrush.com/" class="flex items-center">
-          <img src="/public/assets/logo.svg" alt="CADRush Logo" class="h-6" />
+          <img
+            src="https://cadrush.com/public/assets/Logo2.png"
+            alt="CADRush Logo"
+            class="h-20"
+          />
         </a>
         <!-- Centered Nav -->
         <div class="flex items-center bg-white text-black py-2 px-12 rounded">
@@ -164,33 +174,33 @@
                 <!-- Invisible padding to prevent dropdown from closing when moving cursor -->
                 <div class="absolute -top-4 left-0 right-0 h-4"></div>
                 <a
-                  href="https://cadrush.com/paper-to-cad"
+                  href="https://cadrush.com/paper-to-cad.html"
                   class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >Paper to CAD Conversion</a
                 >
                 <a
-                  href="https://cadrush.com/2d-cad-to-3d-model"
+                  href="https://cadrush.com/2d-cad-to-3d-model.html"
                   class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >2D CAD to 3D Model</a
                 >
                 <a
-                  href="https://cadrush.com/electrical-drawing-panel-layout"
+                  href="https://cadrush.com/electrical-drawing-panel-layout.html"
                   class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >Electrical Drawing & Panel Layout</a
                 >
                 <a
-                  href="https://cadrush.com/plc-programming-migration"
+                  href="https://cadrush.com/plc-programming-migration.html"
                   class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                 >
                   PLC Programming & Migration</a
                 >
                 <a
-                  href="https://cadrush.com/fea-cfd"
+                  href="https://cadrush.com/fea-cfd.html"
                   class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >FEA & CFD</a
                 >
                 <a
-                  href="https://cadrush.com/manufacturing-drawing"
+                  href="https://cadrush.com/manufacturing-drawing.html"
                   class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >Manufacturing Drawing</a
                 >
@@ -210,37 +220,43 @@
             </button>
           </nav>
         </div>
+
         <!-- Register button at far right -->
-        <button
+        <a
           class="bg-black text-white px-6 py-2 rounded-lg font-semibold shadow hover:bg-gray-800 transition"
+          href="https://cadrush.com/app/#/signup"
+          target="_blank"
         >
-          <a href="https://cadrush.com/app/#/signin" target="_blank"
-            >REGISTER</a
-          >
-        </button>
+          REGISTER
+        </a>
       </div>
+
       <!-- Mobile Navbar -->
       <div class="flex md:hidden justify-between items-center py-3 px-3 z-40">
         <a href="https://cadrush.com/" class="text-white font-bold text-xl"
-          ><img src="/public/assets/logo.svg" alt="CADRush Logo" class="h-3"
+          ><img
+            src="https://cadrush.com/public/assets/Logo2.png"
+            alt="CADRush Logo"
+            class="h-12"
         /></a>
         <div class="flex flex-row space-x-2">
           <button
             class="bg-black text-white px-4 py-1 rounded-lg font-normal text-sm shadow hover:bg-gray-800 transition"
           >
-            <a href="https://cadrush.com/app/#/signin" target="_blank"
+            <a href="https://cadrush.com/app/#/signup" target="_blank"
               >REGISTER</a
             >
           </button>
           <button id="hamburger" onclick="openDrawer()">
             <img
-              src="/public/assets/hamburger.svg"
+              src="https://cadrush.com/public/assets/hamburger.svg"
               alt="Open menu"
               class="w-8 h-8"
             />
           </button>
         </div>
       </div>
+
       <!-- Right Side Drawer for Mobile -->
       <div
         id="mobile-drawer"
@@ -249,21 +265,21 @@
         <div class="flex justify-end p-4">
           <button onclick="closeDrawer()">
             <img
-              src="/public/assets/close-x.svg"
+              src="https://cadrush.com/public/assets/close-x.svg"
               alt="Close menu"
               class="w-6 h-6"
             />
           </button>
         </div>
-        <nav class="flex flex-col space-y-6 px-8 mt-8">
+        <nav class="flex flex-col space-y-4 px-8 mt-8">
           <div class="relative">
             <button
               id="mobile-services-toggle"
-              class="flex items-center text-gray-700 font-medium hover:text-blue-800 w-full justify-between"
+              class="flex items-center w-full py-2 text-gray-700 font-medium hover:text-blue-800 justify-between"
             >
-              Services
+              <span>SERVICES</span>
               <svg
-                class="w-4 h-4 ml-1 transform transition-transform"
+                class="w-4 h-4 ml-2 transform transition-transform"
                 id="services-arrow"
                 fill="none"
                 stroke="currentColor"
@@ -278,52 +294,49 @@
                 ></path>
               </svg>
             </button>
-            <div id="mobile-services-menu" class="hidden pl-4 mt-2 space-y-2">
+            <div id="mobile-services-menu" class="hidden pl-4 mt-1 space-y-2">
               <a
-                href="https://cadrush.com/paper-to-cad"
+                href="https://cadrush.com/paper-to-cad.html"
                 class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
                 >Paper to CAD</a
               >
               <a
-                href="https://cadrush.com/2d-cad-to-3d-model"
+                href="https://cadrush.com/2d-cad-to-3d-model.html"
                 class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
                 >2D CAD to 3D Model</a
               >
               <a
-                href="https://cadrush.com/electrical-drawing-panel-layout"
+                href="https://cadrush.com/electrical-drawing-panel-layout.html"
                 class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
                 >Electrical Drawing & Panel Layout</a
               >
               <a
-                href="https://cadrush.com/plc-programming-migration"
+                href="https://cadrush.com/plc-programming-migration.html"
                 class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
               >
                 PLC Programming & Migration</a
               >
               <a
-                href="https://cadrush.com/fea-cfd"
+                href="https://cadrush.com/fea-cfd.html"
                 class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
                 >FEA & CFD</a
               >
               <a
-                href="https://cadrush.com/manufacturing-drawing"
+                href="https://cadrush.com/manufacturing-drawing.html"
                 class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
                 >Manufacturing Drawing</a
               >
             </div>
           </div>
-          <!-- <a href="https://cadrush.com/case-studies"
-                    class="text-gray-700 font-medium hover:text-blue-800">CASE STUDIES</a>
-                <a href="https://cadrush.com/faq"
-                    class="text-gray-700 font-medium hover:text-blue-800">FAQ</a> -->
-          <button
-            id="contactBtn-menu"
-            class="text-gray-700 font-medium hover:text-blue-800"
-          >
-            CONTACT
-          </button>
         </nav>
+        <button
+          id="contactBtn-menu"
+          class="text-black font-medium hover:text-blue-800 px-8 mt-10"
+        >
+          CONTACT
+        </button>
       </div>
+
       <!-- Overlay for Drawer (optional, improves UX) -->
       <div
         id="drawer-overlay"
@@ -334,7 +347,7 @@
 
     <!-- Hero Section -->
     <section
-      class="h-[60vh] bg-gradient-to-br from-[#4b9adb] to-[#9747ff] animated-gradient header-scrolled py-10 md:py-12 lg:py-12 md:px-10"
+      class="h-[65vh] md:h-[60vh] bg-gradient-to-br from-[#4b9adb] to-[#9747ff] animated-gradient header-scrolled py-10 md:py-12 lg:py-12 md:px-10"
     >
       <div
         class="flex flex-col md:flex-row items-center justify-between h-full"
@@ -358,7 +371,7 @@
         <!-- Right: Image -->
         <div class="mt-6 md:mt-20 md:ml-10 flex-shrink-0">
           <img
-            src="/public/assets/cfd.webp"
+            src="https://cadrush.com/public/assets/cfd.webp"
             alt="FEA Hero"
             class="w-64 md:w-70 lg:w-[24rem]"
           />
@@ -410,9 +423,9 @@
                   class="w-12 h-12 rounded-full bg-[#EDEDED] group-hover:bg-gray-400 flex items-center justify-center text-white text-xl font-bold mr-4"
                 >
                   <img
-                    src="/public/assets/fea/automobile.svg"
+                    src="https://cadrush.com/public/assets/plc/manufacturing.svg"
                     alt="Img"
-                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200"
+                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200 w-7"
                   />
                 </div>
                 <h3
@@ -449,9 +462,9 @@
                   class="w-12 h-12 rounded-full bg-[#EDEDED] group-hover:bg-gray-400 flex items-center justify-center text-white text-xl font-bold mr-4"
                 >
                   <img
-                    src="/public/assets/fea/heavy-equipment.svg"
+                    src="https://cadrush.com/public/assets/plc/heavy-equipment.svg"
                     alt="Img"
-                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200"
+                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200 w-7"
                   />
                 </div>
                 <h3
@@ -488,9 +501,9 @@
                   class="w-12 h-12 rounded-full bg-[#EDEDED] group-hover:bg-gray-400 flex items-center justify-center text-white text-xl font-bold mr-4"
                 >
                   <img
-                    src="/public/assets/fea/machine-parts.svg"
+                    src="https://cadrush.com/public/assets/plc/machine-oem.svg"
                     alt="Img"
-                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200"
+                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200 w-7"
                   />
                 </div>
                 <h3
@@ -527,9 +540,9 @@
                   class="w-12 h-12 rounded-full bg-[#EDEDED] group-hover:bg-gray-400 flex items-center justify-center text-white text-xl font-bold mr-4"
                 >
                   <img
-                    src="/public/assets/fea/medical-devices.svg"
+                    src="https://cadrush.com/public/assets/plc/food-beverage.svg"
                     alt="Img"
-                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200"
+                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200 w-7"
                   />
                 </div>
                 <h3
@@ -566,9 +579,9 @@
                   class="w-12 h-12 rounded-full bg-[#EDEDED] group-hover:bg-gray-400 flex items-center justify-center text-white text-xl font-bold mr-4"
                 >
                   <img
-                    src="/public/assets/fea/speciality-car.svg"
+                    src="https://cadrush.com/public/assets/plc/speciality-vehicles.svg"
                     alt="Img"
-                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200"
+                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200 w-7"
                   />
                 </div>
                 <h3
@@ -605,9 +618,9 @@
                   class="w-12 h-12 rounded-full bg-[#EDEDED] group-hover:bg-gray-400 flex items-center justify-center text-white text-xl font-bold mr-4"
                 >
                   <img
-                    src="/public/assets/fea/medical-devices.svg"
+                    src="https://cadrush.com/public/assets/plc/pharma-healthcare.svg"
                     alt="Img"
-                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200"
+                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200 w-7"
                   />
                 </div>
                 <h3
@@ -627,152 +640,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Our FEA Software Expertise Desktop-->
-    <!-- <section
-      class="hidden bg-gradient-to-b from-white via-violet-200 to-white py-10 lg:py-12 min-h-[calc(100vh-10rem)] md:flex flex-col items-center justify-center bg-opacity-15"
-    >
-      <div class="flex flex-col items-center w-full mx-auto max-w-xs">
-        <h2 class="font-bold text-center mb-4 text-[#7c6ee6] text-3xl">
-          Our CFD Software Expertise
-        </h2>
-        <p
-          class="text-center text-sm max-w-[500px] mx-auto my-2 md:my-4 md:text-base"
-        >
-          To deliver reliable and accurate simulations, we use leading CFD
-          platforms and integrated tools, including
-        </p>
-      </div>
-      <div
-        class="relative flex justify-center items-center w-full max-w-7xl px-4 py-6"
-      > -->
-    <!-- LEFT COLUMN -->
-    <!-- <div class="flex flex-col gap-32 items-end w-1/3">
-          <div class="flex flex-col items-center">
-            <img
-              src="/public/assets/fea-solidworks-fea.svg"
-              class="w-16 h-16 mb-2"
-            />
-            <div class="font-bold text-lg">ANSYS Fluent</div> -->
-    <!-- <p class="text-center text-sm max-w-xs">Integrated FEA solutions within SolidWorks for rapid design
-                        validation and optimization.</p> -->
-    <!-- </div>
-          <div class="flex flex-col items-center">
-            <img
-              src="/public/assets/fea-solidedge-inventor-pds.svg"
-              class="w-16 h-16 mb-2"
-            /> -->
-    <!-- <div class="font-bold text-lg">ANSYS CFX</div> -->
-    <!-- <p class="text-center text-sm max-w-xs">Advanced non-linear simulations for analyzing complex
-                        material
-                        behaviors and contact problems.</p> -->
-    <!-- </div>
-        </div> -->
-
-    <!-- SVG ROADMAP -->
-    <!-- <div class="relative w-[200px] h-[600px]">
-          <svg
-            id="timeline-path"
-            viewBox="0 0 200 600"
-            class="absolute top-0 left-0 w-full h-full"
-          >
-            <path
-              id="mainPath"
-              d="M100,0 L100,600"
-              stroke="#ccc"
-              stroke-width="4"
-              fill="none"
-            />
-
-            <line
-              x1="100"
-              y1="150"
-              x2="0"
-              y2="150"
-              stroke="#ccc"
-              stroke-width="2"
-            />
-            <line
-              x1="100"
-              y1="450"
-              x2="0"
-              y2="450"
-              stroke="#ccc"
-              stroke-width="2"
-            />
-            <line
-              x1="100"
-              y1="225"
-              x2="200"
-              y2="225"
-              stroke="#ccc"
-              stroke-width="2"
-            />
-            <line
-              x1="100"
-              y1="375"
-              x2="200"
-              y2="375"
-              stroke="#ccc"
-              stroke-width="2"
-            />
-            <line
-              x1="100"
-              y1="525"
-              x2="200"
-              y2="525"
-              stroke="#ccc"
-              stroke-width="2"
-            />
-          </svg> -->
-    <!-- <svg id="timeline-path" width="293" height="870" viewBox="0 0 293 870" fill="none"
-                    class="absolute top-0 bottom-36 left-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M293 198H144M144 198V361.625M144 198V154L105 121.5V24M293 852.5H144V688.875M144 525.25H293M144 525.25V688.875M144 525.25V361.625M144 688.875H0M144 361.625H0"
-                        stroke="#3F3F3F" />
-                </svg> -->
-
-    <!-- Ball -->
-    <!-- <div
-            id="ball"
-            class="absolute top-0 left-1/2 w-5 h-5 bg-violet-500 rounded-full shadow-md transform -translate-x-1/2 -translate-y-1/2"
-          ></div>
-        </div> -->
-
-    <!-- RIGHT COLUMN -->
-    <!-- <div class="flex flex-col gap-24 items-start w-1/3">
-          <div class="flex flex-col items-center">
-            <img
-              src="/public/assets/fea-ansys-nls.svg"
-              class="w-16 h-16 mb-2"
-            />
-            <div class="font-bold text-lg">STAR-CCM+</div> -->
-    <!-- <p class="text-center text-sm max-w-xs">Advanced non-linear simulations for analyzing complex
-                        material
-                        behaviors and contact problems.</p> -->
-    <!-- </div>
-          <div class="flex flex-col items-center">
-            <img
-              src="/public/assets/fea-design-modeler.svg"
-              class="w-16 h-16 mb-2"
-            />
-            <div class="font-bold text-lg">COMSOL Multiphysics</div> -->
-    <!-- <p class="text-center text-sm max-w-xs">Powerful geometry modeling and simplification tools for FEA
-                        preprocessing.</p> -->
-    <!-- </div>
-          <div class="flex flex-col items-center">
-            <img
-              src="/public/assets/fea-pro-wildfire-creo.svg"
-              class="w-16 h-16 mb-2"
-            />
-            <div class="font-bold text-lg">SolidWorks Flow Simulation</div> -->
-    <!-- <p class="text-center text-sm max-w-xs">High-performance simulation solutions tailored for
-                        parametric
-                        CAD environments, enabling accurate analysis of mechanical and thermal behavior.</p> -->
-    <!-- </div>
-        </div>
-      </div>
-    </section> -->
 
     <!-- our expertise -->
     <section
@@ -795,33 +662,61 @@
       <div class="flex-1 border-2 p-10 rounded-xl md:py-16">
         <div class="flex items-center mt-2">
           <img
-            src="/public//assets//fea//tick.svg"
+            src="https://cadrush.com/public/assets/fea/tick.svg"
             alt="tick"
             class="w-5 h-5 mr-2"
           />
-          <h2 class="font-semibold text-xl">FEA Tools</h2>
+          <h2 class="font-semibold text-xl">Siemens TIA Portal & WinCC</h2>
         </div>
-        <h3 class="ml-7 mt-1">
+        <!-- <h3 class="ml-7 mt-1">
           ANYSYS, Abaqus, NASTRAN, SolidWorks Simulation, Creo, Inventor.
-        </h3>
+        </h3> -->
 
         <div class="flex items-center mt-6">
           <img
-            src="/public//assets//fea//tick.svg"
+            src="https://cadrush.com/public/assets/fea/tick.svg"
             alt="tick"
             class="w-5 h-5 mr-2"
           />
-          <h2 class="font-semibold text-xl">CFD Tools</h2>
+          <h2 class="font-semibold text-xl">
+            Rockwell Studio 5000 / FactoryTalk View
+          </h2>
         </div>
-        <h3 class="ml-7 mt-1">
+        <!-- <h3 class="ml-7 mt-1">
           ANSYS Fluent, ANSYS CFX, STAR-CCM+, COMSOL Multiphysics, Autodesk CFD,
           SolidWorks Flow Simulation.
-        </h3>
+        </h3> -->
+        <div class="flex items-center mt-6">
+          <img
+            src="https://cadrush.com/public/assets/fea/tick.svg"
+            alt="tick"
+            class="w-5 h-5 mr-2"
+          />
+          <h2 class="font-semibold text-xl">Mitsubishi GX Works & GOT HMI</h2>
+        </div>
+        <div class="flex items-center mt-6">
+          <img
+            src="https://cadrush.com/public/assets/fea/tick.svg"
+            alt="tick"
+            class="w-5 h-5 mr-2"
+          />
+          <h2 class="font-semibold text-xl">
+            Omron Sysmac Studio / CXProgrammer
+          </h2>
+        </div>
+        <div class="flex items-center mt-6">
+          <img
+            src="https://cadrush.com/public/assets/fea/tick.svg"
+            alt="tick"
+            class="w-5 h-5 mr-2"
+          />
+          <h2 class="font-semibold text-xl">Beckhoff Twin CAT / CODESYS</h2>
+        </div>
 
-        <p class="mt-10 text-[#747474]">
+        <!-- <p class="mt-10 text-[#747474]">
           This flexibility ensures seamless integration with your CAD ecosystem
           and compatibility with your design-to-production workflows.
-        </p>
+        </p> -->
       </div>
     </section>
 
@@ -840,7 +735,7 @@
       >
         <!-- Card 1 -->
         <div
-          class="flip-card rounded-xl group relative card-container"
+          class="flip-card rounded-xl group relative card-container min-h-[300px]"
           tabindex="0"
         >
           <div class="flip-inner h-full">
@@ -859,7 +754,7 @@
                     Engineering Depth & Reusable Standards
                   </h3>
                   <img
-                    src="/public/assets/fea/expertise.svg"
+                    src="https://cadrush.com/public/assets/plc/engineering-depth.svg"
                     alt="Experience Icon"
                     class="w-22 h-22 mb-4"
                   />
@@ -878,7 +773,7 @@
 
         <!-- Card 2 -->
         <div
-          class="flip-card group rounded-xl relative card-container"
+          class="flip-card group rounded-xl relative card-container min-h-[300px]"
           tabindex="0"
         >
           <div class="flip-inner h-full">
@@ -897,7 +792,7 @@
                     Industry Specific Application
                   </h3>
                   <img
-                    src="/public/assets/fea/accuracy.svg"
+                    src="https://cadrush.com/public/assets/plc/industry-specific.svg"
                     alt="Experience Icon"
                     class="w-22 h-22 mb-4"
                   />
@@ -916,7 +811,7 @@
 
         <!-- Card 3 -->
         <div
-          class="flip-card group rounded-xl relative card-container"
+          class="flip-card group rounded-xl relative card-container min-h-[300px]"
           tabindex="0"
         >
           <div class="flip-inner h-full">
@@ -935,14 +830,14 @@
                     Best Practice Compliance
                   </h3>
                   <img
-                    src="/public/assets/fea/design-optimization.svg"
+                    src="https://cadrush.com/public/assets/plc/best-practice.svg"
                     alt="Experience Icon"
                     class="w-22 h-22 mb-4"
                   />
                 </div>
                 <div class="card-footer">
                   <p class="card-para text-center text-sm text-gray-700">
-                    Adherence to IEC 61131 3, OEM standards, alarm management
+                    Adherence to IEC 611313, OEM standards, alarm management
                     good practices, and change control documentation.
                   </p>
                 </div>
@@ -953,7 +848,7 @@
 
         <!-- Card 4 -->
         <div
-          class="flip-card group rounded-xl relative card-container"
+          class="flip-card group rounded-xl relative card-container min-h-[300px]"
           tabindex="0"
         >
           <div class="flip-inner h-full">
@@ -972,7 +867,7 @@
                     Multi Vendor & Brownfield Friendly
                   </h3>
                   <img
-                    src="/public/assets/fea/fatser-time.svg"
+                    src="https://cadrush.com/public/assets/plc/multi-vendors.svg"
                     alt="Experience Icon"
                     class="w-22 h-22 mb-4"
                   />
@@ -990,7 +885,7 @@
 
         <!-- Card 5 -->
         <div
-          class="flip-card group rounded-xl relative card-container"
+          class="flip-card group rounded-xl relative card-container min-h-[300px]"
           tabindex="0"
         >
           <div class="flip-inner h-full">
@@ -1009,7 +904,7 @@
                     Data Integrity, Cybersecurity & Lifecycle Support
                   </h3>
                   <img
-                    src="/public/assets/fea/cost-efficiency.svg"
+                    src="https://cadrush.com/public/assets/plc/data-intigrity.svg"
                     alt="Experience Icon"
                     class="w-22 h-22 mb-4"
                   />
@@ -1027,7 +922,7 @@
 
         <!-- Card 6 -->
         <div
-          class="flip-card group rounded-xl relative card-container"
+          class="flip-card group rounded-xl relative card-container min-h-[300px]"
           tabindex="0"
         >
           <div class="flip-inner h-full">
@@ -1038,7 +933,7 @@
               <div class="card-content">
                 <div class="card-header">
                   <div class="bg-white text-[#7c6ee6] font-bold text-xl">
-                    05
+                    06
                   </div>
                 </div>
                 <div class="card-body">
@@ -1046,7 +941,7 @@
                     PLC Migration Expertise
                   </h3>
                   <img
-                    src="/public/assets/fea/cost-efficiency.svg"
+                    src="https://cadrush.com/public/assets/plc/plc-migration.svg"
                     alt="Experience Icon"
                     class="w-22 h-22 mb-4"
                   />
@@ -1087,7 +982,7 @@
         <!-- Card 1 -->
         <div
           id="card-1"
-          class="flip-card rounded-xl relative md:max-w-[350px] xl:w-[450px]"
+          class="flip-card rounded-xl relative md:max-w-[350px] xl:w-[450px] min-h-[250px]"
         >
           <div class="flip-inner">
             <div
@@ -1095,9 +990,9 @@
             >
               <div class="flex flex-col items-center h-full gap-2">
                 <img
-                  src="/public/assets/fea/comprehensive.svg"
+                  src="https://cadrush.com/public/assets/plc/life-cycle.svg"
                   alt="Experience Icon"
-                  class="w-20"
+                  class="w-16"
                 />
                 <h3
                   class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent"
@@ -1119,7 +1014,7 @@
         <!-- Card 2 -->
         <div
           id="card-2"
-          class="flip-card rounded-xl relative md:max-w-[350px] xl:w-[450px]"
+          class="flip-card rounded-xl relative md:max-w-[350px] xl:w-[450px] min-h-[250px]"
         >
           <div class="flip-inner">
             <div
@@ -1127,9 +1022,9 @@
             >
               <div class="flex flex-col items-center h-full gap-2">
                 <img
-                  src="/public/assets/fea/failure-spot.svg"
+                  src="https://cadrush.com/public/assets/plc/performance-readability.svg"
                   alt="Experience Icon"
-                  class="w-20"
+                  class="w-16"
                 />
                 <h3
                   class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent"
@@ -1151,7 +1046,7 @@
         <!-- Card 3 -->
         <div
           id="card-3"
-          class="flip-card rounded-xl relative md:max-w-[350px] xl:w-[450px]"
+          class="flip-card rounded-xl relative md:max-w-[350px] xl:w-[450px] min-h-[250px]"
         >
           <div class="flip-inner">
             <div
@@ -1159,9 +1054,9 @@
             >
               <div class="flex flex-col items-center h-full gap-2">
                 <img
-                  src="/public/assets/fea/efficient-virtual.svg"
+                  src="https://cadrush.com/public/assets/plc/connectivity-readiness.svg"
                   alt="Experience Icon"
-                  class="w-20 mt-2"
+                  class="w-16 mt-2"
                 />
                 <h3
                   class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent"
@@ -1178,16 +1073,19 @@
         </div>
 
         <!-- Card 4 -->
-        <div id="card-4" class="flip-card rounded-xl relative md:max-w-[350px]">
+        <div
+          id="card-4"
+          class="flip-card rounded-xl relative md:max-w-[350px] min-h-[250px]"
+        >
           <div class="flip-inner">
             <div
               class="flip-front border-2 border-gray-300 px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400"
             >
               <div class="flex flex-col items-center h-full gap-2">
                 <img
-                  src="/public/assets/fea/accelerated.svg"
+                  src="https://cadrush.com/public/assets/plc/secure-safety.svg"
                   alt="Experience Icon"
-                  class="w-20"
+                  class="w-16"
                 />
                 <h3
                   class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent"
@@ -1206,16 +1104,19 @@
         </div>
 
         <!-- Card 5 -->
-        <div id="card-5" class="flip-card rounded-xl relative md:max-w-[350px]">
+        <div
+          id="card-5"
+          class="flip-card rounded-xl relative md:max-w-[350px] min-h-[250px]"
+        >
           <div class="flip-inner">
             <div
               class="flip-front border-2 border-gray-300 px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400"
             >
               <div class="flex flex-col items-center h-full gap-2">
                 <img
-                  src="/public/assets/fea/product-process.svg"
+                  src="https://cadrush.com/public/assets/plc/maintainability.svg"
                   alt="Experience Icon"
-                  class="w-20 mt-1"
+                  class="w-16 mt-1"
                 />
                 <h3
                   class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent"
@@ -1233,7 +1134,7 @@
       </div>
     </section>
 
-    <!-- CTA -->
+    <!-- partner with us -->
     <section
       class="bg-gradient-to-b from-white via-violet-200 to-white flex flex-col items-center h-[300px] md:h-[400px] justify-center my-12 md:my-6"
     >
@@ -1253,14 +1154,14 @@
       <button
         class="bg-black text-white rounded-md px-6 py-2 w-1/2 md:w-44 lg:w-48 mx-auto my-6 font-semibold hover:bg-black/80"
       >
-        <a href="https://cadrush.com/app/#/signin" target="_blank">
+        <a href="https://cadrush.com/app/#/signup" target="_blank">
           START BUILDING</a
         >
       </button>
     </section>
 
     <!-- faq -->
-    <section class="py-10 md:py-20">
+    <section class="py-10">
       <div class="mx-auto max-w-4xl lg:max-w-5xl px-4 sm:px-6 lg:px-8">
         <h2
           class="font-bold text-center mb-4 text-[#7c6ee6] text-3xl pb-4 md:pb-8"
@@ -1284,7 +1185,7 @@
                 Why should I upgrade my PLC or HMI?
               </h5>
               <img
-                src="/public/assets/plus.svg"
+                src="https://cadrush.com/public/assets/plus.svg"
                 alt="Plus Icon"
                 class="w-6 h-6"
               />
@@ -1317,7 +1218,7 @@
                 Will migration cause downtime in production?
               </h5>
               <img
-                src="/public/assets/plus.svg"
+                src="https://cadrush.com/public/assets/plus.svg"
                 alt="Plus Icon"
                 class="w-6 h-6"
               />
@@ -1350,7 +1251,7 @@
                 Can you integrate new PLCs with my existing SCADA/DCS systems?
               </h5>
               <img
-                src="/public/assets/plus.svg"
+                src="https://cadrush.com/public/assets/plus.svg"
                 alt="Plus Icon"
                 class="w-6 h-6"
               />
@@ -1382,7 +1283,7 @@
                 Do you provide HMI programming services?
               </h5>
               <img
-                src="/public/assets/plus.svg"
+                src="https://cadrush.com/public/assets/plus.svg"
                 alt="Plus Icon"
                 class="w-6 h-6"
               />
@@ -1414,7 +1315,7 @@
                 What industries benefit from PLC programming and migration?
               </h5>
               <img
-                src="/public/assets/plus.svg"
+                src="https://cadrush.com/public/assets/plus.svg"
                 alt="Plus Icon"
                 class="w-6 h-6"
               />
@@ -1447,7 +1348,7 @@
                 Which PLC brands and platforms do you support?
               </h5>
               <img
-                src="/public/assets/plus.svg"
+                src="https://cadrush.com/public/assets/plus.svg"
                 alt="Plus Icon"
                 class="w-6 h-6"
               />
@@ -1480,7 +1381,7 @@
                 How secure are your solutions?
               </h5>
               <img
-                src="/public/assets/plus.svg"
+                src="https://cadrush.com/public/assets/plus.svg"
                 alt="Plus Icon"
                 class="w-6 h-6"
               />
@@ -1512,7 +1413,7 @@
                 Is outsourcing PLC migration cost-effective?
               </h5>
               <img
-                src="/public/assets/plus.svg"
+                src="https://cadrush.com/public/assets/plus.svg"
                 alt="Plus Icon"
                 class="w-6 h-6"
               />
@@ -1544,7 +1445,7 @@
                 How do I start a PLC or HMI upgrade project?
               </h5>
               <img
-                src="/public/assets/plus.svg"
+                src="https://cadrush.com/public/assets/plus.svg"
                 alt="Plus Icon"
                 class="w-6 h-6"
               />
@@ -1573,7 +1474,11 @@
         class="container mx-auto px-6 md:px-12 lg:px-20 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left"
       >
         <div class="space-y-4 flex flex-col items-center md:items-start">
-          <img src="/public/assets/logo.svg" alt="CADRush Logo" class="w-32" />
+          <img
+            src="https://cadrush.com/public/assets/Logo2.png"
+            alt="CADRush Logo"
+            class="h-12"
+          />
           <p class="text-sm text-gray-400 inter font-bold">
             A product of MN Engineering Solutions.
           </p>
@@ -1584,13 +1489,16 @@
           <div
             class="flex items-center justify-center md:justify-start space-x-3"
           >
-            <img src="/public/assets/mail.svg" class="w-5" />
+            <img src="https://cadrush.com/public/assets/mail.svg" class="w-5" />
             <p class="font-normal">hello@cadrush.com</p>
           </div>
           <div
             class="flex items-center justify-center md:justify-start space-x-1"
           >
-            <img src="/public/assets/location.svg" class="w-5" />
+            <img
+              src="https://cadrush.com/public/assets/location.svg"
+              class="w-5"
+            />
             <p class="font-normal">
               MN Engineering Solutions Inc.<br />
               332 Michigan Avenue, Chicago, IL 60604, USA
@@ -1605,19 +1513,28 @@
               href="https://www.instagram.com/cadrush_mnes?igsh=MXZ5cTk0eTJsa2FtcQ==&utm_source=ig_contact_invite"
               class="bg-white w-10 h-10 flex items-center justify-center rounded-full shadow-md"
             >
-              <img src="/public/assets/instagram.svg" class="w-5" />
+              <img
+                src="https://cadrush.com/public/assets/instagram.svg"
+                class="w-5"
+              />
             </a>
             <a
               href="https://www.facebook.com/share/1D9pVsDCYJ/?mibextid=wwXIfr"
               class="bg-white w-10 h-10 flex items-center justify-center rounded-full shadow-md"
             >
-              <img src="/public/assets/facebook.svg" class="w-5" />
+              <img
+                src="https://cadrush.com/public/assets/facebook.svg"
+                class="w-5"
+              />
             </a>
             <a
               href="https://www.linkedin.com/company/cadrush/"
               class="bg-white w-10 h-10 flex items-center justify-center rounded-full shadow-md"
             >
-              <img src="/public/assets/linkedin.svg" class="w-5" />
+              <img
+                src="https://cadrush.com/public/assets/linkedin.svg"
+                class="w-5"
+              />
             </a>
           </div>
         </div>
@@ -1798,9 +1715,9 @@
       </div>
     </div>
 
-    <script src="/public/js/index.js"></script>
-    <script src="/public/js/service-cards-animate.js"></script>
-    <script src="/public/js/fea.js"></script>
+    <script src="https://cadrush.com/public/js/index.js"></script>
+    <script src="https://cadrush.com/public/js/service-cards-animate.js"></script>
+    <script src="https://cadrush.com/public/js/fea.js"></script>
     <script>
       gsap.registerPlugin(MotionPathPlugin);
       window.addEventListener("load", () => {

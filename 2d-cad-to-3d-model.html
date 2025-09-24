@@ -9,7 +9,7 @@
       content="CADRush offers innovative CAD solutions 2D to 3D Conversion. Efficient, transparent, and high-quality services for your business needs."
     />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://www.cadrush.com/" />
+    <link rel="canonical" href="https://cadrush.com/" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="manifest" href="/manifest.json" />
     <!-- Open Graph / Facebook -->
@@ -19,8 +19,11 @@
       content="CADRush offers innovative CAD solutions 2D to 3D Conversion. Efficient, transparent, and high-quality services for your business needs."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.cadrush.com/" />
-    <meta property="og:image" content="/public/assets/logo.svg" />
+    <meta property="og:url" content="https://cadrush.com/" />
+    <meta
+      property="og:image"
+      content="https://cadrush.com/public/assets/logo.svg"
+    />
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="CADRush - 2D to 3D Conversion" />
@@ -28,7 +31,10 @@
       name="twitter:description"
       content="CADRush offers innovative CAD solutions 2D to 3D Conversion. Efficient, transparent, and high-quality services for your business needs."
     />
-    <meta name="twitter:image" content="/public/assets/logo.svg" />
+    <meta
+      name="twitter:image"
+      content="https://cadrush.com/public/assets/logo.svg"
+    />
 
     <!-- gsap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -89,8 +95,8 @@
         -webkit-text-fill-color: transparent;
       }
     </style>
-    <script src="/public/js/services.js"></script>
-    <script src="/public/js/tailwind.js"></script>
+    <script src="https://cadrush.com/public/js/services.js"></script>
+    <script src="https://cadrush.com/public/js/tailwind.js"></script>
 
     <script>
       tailwind.config = {
@@ -131,8 +137,13 @@
       >
         <!-- Logo at far left -->
         <a href="https://cadrush.com/" class="flex items-center">
-          <img src="/public/assets/logo.svg" alt="CADRush Logo" class="h-6" />
+          <img
+            src="https://cadrush.com/public/assets/Logo2.png"
+            alt="CADRush Logo"
+            class="h-20"
+          />
         </a>
+
         <!-- Centered Nav -->
         <div class="flex items-center bg-white text-black py-2 px-12 rounded">
           <nav class="flex py-2 space-x-12 mx-auto items-center">
@@ -164,33 +175,32 @@
                 <!-- Invisible padding to prevent dropdown from closing when moving cursor -->
                 <div class="absolute -top-4 left-0 right-0 h-4"></div>
                 <a
-                  href="https://cadrush.com/paper-to-cad"
+                  href="https://cadrush.com/paper-to-cad.html"
                   class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >Paper to CAD Conversion</a
                 >
                 <a
-                  href="https://cadrush.com/2d-cad-to-3d-model"
+                  href="https://cadrush.com/2d-cad-to-3d-model.html"
                   class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >2D CAD to 3D Model</a
                 >
                 <a
-                  href="https://cadrush.com/electrical-drawing-panel-layout"
+                  href="https://cadrush.com/electrical-drawing-panel-layout.html"
                   class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >Electrical Drawing & Panel Layout</a
                 >
                 <a
-                  href="https://cadrush.com/plc-programming-migration"
+                  href="https://cadrush.com/plc-programming-migration.html"
                   class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                >
-                  PLC Programming & Migration</a
+                  >PLC Programming & Migration</a
                 >
                 <a
-                  href="https://cadrush.com/fea-cfd"
+                  href="https://cadrush.com/fea-cfd.html"
                   class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >FEA & CFD</a
                 >
                 <a
-                  href="https://cadrush.com/manufacturing-drawing"
+                  href="https://cadrush.com/manufacturing-drawing.html"
                   class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >Manufacturing Drawing</a
                 >
@@ -210,37 +220,43 @@
             </button>
           </nav>
         </div>
-        <!-- Register button at far right -->
 
+        <!-- Register button at far right -->
         <a
           class="bg-black text-white px-6 py-2 rounded-lg font-semibold shadow hover:bg-gray-800 transition"
-          href="https://cadrush.com/app/#/signin"
+          href="https://cadrush.com/app/#/signup"
           target="_blank"
-          ><button>REGISTER</button>
+        >
+          REGISTER
         </a>
       </div>
+
       <!-- Mobile Navbar -->
       <div class="flex md:hidden justify-between items-center py-3 px-3 z-40">
         <a href="https://cadrush.com/" class="text-white font-bold text-xl"
-          ><img src="/public/assets/logo.svg" alt="CADRush Logo" class="h-3"
+          ><img
+            src="https://cadrush.com/public/assets/Logo2.png"
+            alt="CADRush Logo"
+            class="h-12"
         /></a>
         <div class="flex flex-row space-x-2">
           <button
             class="bg-black text-white px-4 py-1 rounded-lg font-normal text-sm shadow hover:bg-gray-800 transition"
           >
-            <a href="https://cadrush.com/app/#/signin" target="_blank"
+            <a href="https://cadrush.com/app/#/signup" target="_blank"
               >REGISTER</a
             >
           </button>
           <button id="hamburger" onclick="openDrawer()">
             <img
-              src="/public/assets/hamburger.svg"
+              src="https://cadrush.com/public/assets/hamburger.svg"
               alt="Open menu"
               class="w-8 h-8"
             />
           </button>
         </div>
       </div>
+
       <!-- Right Side Drawer for Mobile -->
       <div
         id="mobile-drawer"
@@ -249,21 +265,21 @@
         <div class="flex justify-end p-4">
           <button onclick="closeDrawer()">
             <img
-              src="/public/assets/close-x.svg"
+              src="https://cadrush.com/public/assets/close-x.svg"
               alt="Close menu"
               class="w-6 h-6"
             />
           </button>
         </div>
-        <nav class="flex flex-col space-y-6 px-8 mt-8">
+        <nav class="flex flex-col space-y-4 px-8 mt-8">
           <div class="relative">
             <button
               id="mobile-services-toggle"
-              class="flex items-center text-gray-700 font-medium hover:text-blue-800 w-full justify-between"
+              class="flex items-center w-full py-2 text-gray-700 font-medium hover:text-blue-800 justify-between"
             >
-              Services
+              <span>SERVICES</span>
               <svg
-                class="w-4 h-4 ml-1 transform transition-transform"
+                class="w-4 h-4 ml-2 transform transition-transform"
                 id="services-arrow"
                 fill="none"
                 stroke="currentColor"
@@ -278,52 +294,49 @@
                 ></path>
               </svg>
             </button>
-            <div id="mobile-services-menu" class="hidden pl-4 mt-2 space-y-2">
+            <div id="mobile-services-menu" class="hidden pl-4 mt-1 space-y-2">
               <a
-                href="https://cadrush.com/paper-to-cad"
+                href="https://cadrush.com/paper-to-cad.html"
                 class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
                 >Paper to CAD</a
               >
               <a
-                href="https://cadrush.com/2d-cad-to-3d-model"
+                href="https://cadrush.com/2d-cad-to-3d-model.html"
                 class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
                 >2D CAD to 3D Model</a
               >
               <a
-                href="https://cadrush.com/electrical-drawing-panel-layout"
+                href="https://cadrush.com/electrical-drawing-panel-layout.html"
                 class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
                 >Electrical Drawing & Panel Layout</a
               >
               <a
-                href="https://cadrush.com/plc-programming-migration"
+                href="https://cadrush.com/plc-programming-migration.html"
                 class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
               >
                 PLC Programming & Migration</a
               >
               <a
-                href="https://cadrush.com/fea-cfd"
+                href="https://cadrush.com/fea-cfd.html"
                 class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
                 >FEA & CFD</a
               >
               <a
-                href="https://cadrush.com/manufacturing-drawing"
+                href="https://cadrush.com/manufacturing-drawing.html"
                 class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
                 >Manufacturing Drawing</a
               >
             </div>
           </div>
-          <!-- <a href="https://cadrush.com/case-studies"
-                    class="text-gray-700 font-medium hover:text-blue-800">CASE STUDIES</a>
-                <a href="https://cadrush.com/faq"
-                    class="text-gray-700 font-medium hover:text-blue-800">FAQ</a> -->
-          <button
-            id="contactBtn-menu"
-            class="text-gray-700 font-medium hover:text-blue-800"
-          >
-            CONTACT
-          </button>
         </nav>
+        <button
+          id="contactBtn-menu"
+          class="text-black font-medium hover:text-blue-800 px-8 mt-10"
+        >
+          CONTACT
+        </button>
       </div>
+
       <!-- Overlay for Drawer (optional, improves UX) -->
       <div
         id="drawer-overlay"
@@ -373,7 +386,7 @@
         <!-- Right: Image -->
         <div class="mt-6 md:mt-20 md:ml-10 flex-shrink-0">
           <img
-            src="/public/assets/2d-cad-to-3d-model.webp"
+            src="https://cadrush.com/public/assets/2d-cad-to-3d-model.webp"
             alt="FEA Hero"
             class="w-64 md:w-70 lg:w-[24rem]"
           />
@@ -424,9 +437,9 @@
                   class="w-12 h-12 rounded-full bg-[#EDEDED] group-hover:bg-gray-400 flex items-center justify-center text-white text-xl font-bold mr-4"
                 >
                   <img
-                    src="/public/assets/fea/automobile.svg"
+                    src="https://cadrush.com/public/assets/2d-to-3d/automotive.svg"
                     alt="Img"
-                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200"
+                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200 w-7"
                   />
                 </div>
                 <h3
@@ -460,18 +473,18 @@
             <div class="relative p-10 h-full flex flex-col">
               <div class="flex items-center mb-4">
                 <div
-                  class="w-12 h-12 rounded-full bg-[#EDEDED] group-hover:bg-gray-400 flex items-center justify-center text-white text-xl font-bold mr-4"
+                  class="w-12 h-12 rounded-full bg-[#EDEDED] group-hover:bg-gray-400 flex items-center justify-center font-bold mr-4"
                 >
                   <img
-                    src="/public/assets/fea/heavy-equipment.svg"
+                    src="https://cadrush.com/public/assets/2d-to-3d/heavy-industrial.svg"
                     alt="Img"
-                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200"
+                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200 w-7"
                   />
                 </div>
                 <h3
                   class="text-xl font-bold text-gray-900 group-hover:text-white transition-colors duration-300"
                 >
-                  Heavy Equipment and Industrial Machinery
+                  Heavy Equipment and <br />Industrial Machinery
                 </h3>
               </div>
               <p
@@ -504,15 +517,15 @@
                   class="w-12 h-12 rounded-full bg-[#EDEDED] group-hover:bg-gray-400 flex items-center justify-center text-white text-xl font-bold mr-4"
                 >
                   <img
-                    src="/public/assets/fea/machine-parts.svg"
+                    src="https://cadrush.com/public/assets/2d-to-3d/machine-parts.svg"
                     alt="Img"
-                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200"
+                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200 w-8"
                   />
                 </div>
                 <h3
                   class="text-xl font-bold text-gray-900 group-hover:text-white transition-colors duration-300"
                 >
-                  Machine Parts & Tools:
+                  Machine Parts & Tools
                 </h3>
               </div>
               <p
@@ -543,9 +556,9 @@
                   class="w-12 h-12 rounded-full bg-[#EDEDED] group-hover:bg-gray-400 flex items-center justify-center text-white text-xl font-bold mr-4"
                 >
                   <img
-                    src="/public/assets/fea/medical-devices.svg"
+                    src="https://cadrush.com/public/assets/2d-to-3d/medical-devices.svg"
                     alt="Img"
-                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200"
+                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200 w-8"
                   />
                 </div>
                 <h3
@@ -582,15 +595,15 @@
                   class="w-12 h-12 rounded-full bg-[#EDEDED] group-hover:bg-gray-400 flex items-center justify-center text-white text-xl font-bold mr-4"
                 >
                   <img
-                    src="/public/assets/fea/speciality-car.svg"
+                    src="https://cadrush.com/public/assets/2d-to-3d/special-vehicles.svg"
                     alt="Img"
-                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200"
+                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200 w-8"
                   />
                 </div>
                 <h3
                   class="text-xl font-bold text-gray-900 group-hover:text-white transition-colors duration-300"
                 >
-                  Speciality Vehicles
+                  Specialty Vehicles
                 </h3>
               </div>
               <p
@@ -607,18 +620,18 @@
 
     <!-- our expertise -->
     <section
-      class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 md:gap-8 px-4 md:px-20 py-8 md:mt-12"
+      class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 md:gap-8 px-4 md:px-20 py-5 md:mt-8"
     >
       <!-- Left text block -->
       <div class="flex-1 text-center md:text-left">
         <h1
           class="text-2xl md:text-3xl font-bold bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent"
         >
-          Our Software Expertise
+          Software Expertise
         </h1>
         <p class="mt-4 text-[#747474]">
-          We leverage industry-leading platforms for reliable and accurate
-          results:
+          We are experts in modern CAD packages that most of the industries use
+          for engineering.
         </p>
       </div>
 
@@ -626,32 +639,67 @@
       <div class="flex-1 border-2 p-10 rounded-xl md:py-16">
         <div class="flex items-center mt-2">
           <img
-            src="/public//assets//fea//tick.svg"
+            src="https://cadrush.com/public/assets/fea/tick.svg"
             alt="tick"
             class="w-5 h-5 mr-2"
           />
-          <h2 class="font-semibold text-xl">FEA Tools</h2>
+          <h2 class="font-semibold text-xl">SolidWorks</h2>
         </div>
-        <h3 class="ml-7 mt-1">
+        <!-- <h3 class="ml-7 mt-1">
           ANYSYS, Abaqus, NASTRAN, SolidWorks Simulation, Creo, Inventor.
-        </h3>
+        </h3> -->
 
-        <div class="flex items-center mt-6">
+        <div class="flex items-center mt-2">
           <img
-            src="/public//assets//fea//tick.svg"
+            src="https://cadrush.com/public/assets/fea/tick.svg"
             alt="tick"
             class="w-5 h-5 mr-2"
           />
-          <h2 class="font-semibold text-xl">CFD Tools</h2>
+          <h2 class="font-semibold text-xl">PTC Creo</h2>
         </div>
-        <h3 class="ml-7 mt-1">
+        <!-- <h3 class="ml-7 mt-1">
           ANSYS Fluent, ANSYS CFX, STAR-CCM+, COMSOL Multiphysics, Autodesk CFD,
           SolidWorks Flow Simulation.
-        </h3>
+        </h3> -->
+
+        <div class="flex items-center mt-2">
+          <img
+            src="https://cadrush.com/public//assets//fea//tick.svg"
+            alt="tick"
+            class="w-5 h-5 mr-2"
+          />
+          <h2 class="font-semibold text-xl">Siemens NX CAD</h2>
+        </div>
+        <div class="flex items-center mt-2">
+          <img
+            src="https://cadrush.com/public//assets//fea//tick.svg"
+            alt="tick"
+            class="w-5 h-5 mr-2"
+          />
+          <h2 class="font-semibold text-xl">Solid Edge</h2>
+        </div>
+        <div class="flex items-center mt-2">
+          <img
+            src="https://cadrush.com/public//assets//fea//tick.svg"
+            alt="tick"
+            class="w-5 h-5 mr-2"
+          />
+          <h2 class="font-semibold text-xl">Autodesk Inventor</h2>
+        </div>
+        <div class="flex items-center mt-2">
+          <img
+            src="https://cadrush.com/public//assets//fea//tick.svg"
+            alt="tick"
+            class="w-5 h-5 mr-2"
+          />
+          <h2 class="font-semibold text-xl">CATIA</h2>
+        </div>
 
         <p class="mt-10 text-[#747474]">
-          This flexibility ensures seamless integration with your CAD ecosystem
-          and compatibility with your design-to-production workflows.
+          This versatility allows us to deliver models in multiple formats that
+          you want (STEP, IGES, STL, native CAD files, etc.), maintaining
+          compatibility with downstream processes such as simulation,
+          prototyping, and manufacturing.
         </p>
       </div>
     </section>
@@ -663,7 +711,7 @@
       <h2
         class="font-bold text-center mb-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent text-2xl md:text-3xl"
       >
-        Why Choose MN CADRush?
+        Why Choose CADRush?
       </h2>
 
       <div
@@ -671,7 +719,7 @@
       >
         <!-- Card 1 -->
         <div
-          class="flip-card rounded-xl group relative card-container"
+          class="flip-card rounded-xl group relative card-container min-h-[300px]"
           tabindex="0"
         >
           <div class="flip-inner h-full">
@@ -690,7 +738,7 @@
                     Engineering Expertise
                   </h3>
                   <img
-                    src="/public/assets/fea/expertise.svg"
+                    src="https://cadrush.com/public/assets/2d-to-3d/expertise.svg"
                     alt="Experience Icon"
                     class="w-22 h-22 mb-4"
                   />
@@ -708,7 +756,7 @@
 
         <!-- Card 2 -->
         <div
-          class="flip-card group rounded-xl relative card-container"
+          class="flip-card group rounded-xl relative card-container min-h-[300px]"
           tabindex="0"
         >
           <div class="flip-inner h-full">
@@ -727,7 +775,7 @@
                     Accuracy and Integrity
                   </h3>
                   <img
-                    src="/public/assets/fea/accuracy.svg"
+                    src="https://cadrush.com/public/assets/2d-to-3d/accuracy.svg"
                     alt="Experience Icon"
                     class="w-22 h-22 mb-4"
                   />
@@ -746,7 +794,7 @@
 
         <!-- Card 3 -->
         <div
-          class="flip-card group rounded-xl relative card-container"
+          class="flip-card group rounded-xl relative card-container min-h-[300px]"
           tabindex="0"
         >
           <div class="flip-inner h-full">
@@ -765,7 +813,7 @@
                     Cross-Industry Knowledge
                   </h3>
                   <img
-                    src="/public/assets/fea/design-optimization.svg"
+                    src="https://cadrush.com/public/assets/2d-to-3d/cross-industry.svg"
                     alt="Experience Icon"
                     class="w-22 h-22 mb-4"
                   />
@@ -783,7 +831,7 @@
 
         <!-- Card 4 -->
         <div
-          class="flip-card group rounded-xl relative card-container"
+          class="flip-card group rounded-xl relative card-container min-h-[300px]"
           tabindex="0"
         >
           <div class="flip-inner h-full">
@@ -802,7 +850,7 @@
                     Software Versatility
                   </h3>
                   <img
-                    src="/public/assets/fea/fatser-time.svg"
+                    src="https://cadrush.com/public/assets/2d-to-3d/fatser-iteration.svg"
                     alt="Experience Icon"
                     class="w-22 h-22 mb-4"
                   />
@@ -820,7 +868,7 @@
 
         <!-- Card 5 -->
         <div
-          class="flip-card group rounded-xl relative card-container"
+          class="flip-card group rounded-xl relative card-container min-h-[300px]"
           tabindex="0"
         >
           <div class="flip-inner h-full">
@@ -839,7 +887,7 @@
                     Quality and Efficiency
                   </h3>
                   <img
-                    src="/public/assets/fea/cost-efficiency.svg"
+                    src="https://cadrush.com/public/assets/2d-to-3d/cost-efficiency.svg"
                     alt="Experience Icon"
                     class="w-22 h-22 mb-4"
                   />
@@ -854,68 +902,25 @@
             </div>
           </div>
         </div>
-
-        <!-- Card 6 -->
-        <div
-          class="flip-card group rounded-xl relative card-container"
-          tabindex="0"
-        >
-          <div class="flip-inner h-full">
-            <div
-              class="flip-front border border-[#c3b7fd] px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400 group-hover:scale-[1.03] group-hover:shadow-2xl group-hover:z-10 group-hover:ring-2 group-hover:ring-purple-300 focus-within:scale-[1.03] focus-within:shadow-2xl focus-within:z-10 focus-within:ring-2 focus-within:ring-purple-300 h-full"
-              style="transform-origin: center"
-            >
-              <div class="card-content">
-                <div class="card-header">
-                  <div class="bg-white text-[#7c6ee6] font-bold text-xl">
-                    06
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h3 class="text-lg font-semibold text-center mb-4">
-                    Collaborative Engagement
-                  </h3>
-                  <img
-                    src="/public/assets/fea/collaborative.svg"
-                    alt="Experience Icon"
-                    class="w-22 h-22 mb-4"
-                  />
-                </div>
-                <div class="card-footer">
-                  <p class="card-para text-center text-sm text-gray-700">
-                    We work closely with your team to align simulations with
-                    your technical and commercial goals.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
-    <!-- Why FEA & CFD -->
+    <!-- benefits of cad -->
     <section
       class="max-w-md mx-auto my-4 md:my-8 p-6 md:max-w-full md:mx-44 md:mt-20"
     >
       <h2
-        class="font-bold text-center mb-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent text-3xl"
+        class="font-bold text-center mb-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent text-2xl md:text-3xl"
       >
         Benefits of CAD Modeling and Conversion
       </h2>
-      <!-- <p
-        class="text-center text-sm max-w-[500px] mx-auto my-2 md:my-4 md:text-base"
-      >
-        FEA offers a multitude of advantages that make it indispensable for
-        today’s engineering challenges
-      </p> -->
 
       <!-- grid container -->
-      <div class="grid grid-cols-1 md:grid-cols-3 md:gap-6 mt-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
         <!-- Card 1 -->
         <div
           id="card-1"
-          class="flip-card rounded-xl relative h-[300px] md:max-w-[350px] xl:w-[450px]"
+          class="flip-card rounded-xl relative md:max-w-[350px] xl:w-[450px]"
         >
           <div class="flip-inner">
             <div
@@ -923,9 +928,9 @@
             >
               <div class="flex flex-col items-center h-full gap-2">
                 <img
-                  src="/public/assets/fea/comprehensive.svg"
+                  src="https://cadrush.com/public/assets/2d-to-3d/design-precision.svg"
                   alt="Experience Icon"
-                  class="w-20"
+                  class="w-16"
                 />
                 <h3
                   class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent"
@@ -944,7 +949,7 @@
         <!-- Card 2 -->
         <div
           id="card-2"
-          class="flip-card rounded-xl relative h-[300px] md:max-w-[350px] xl:w-[450px]"
+          class="flip-card rounded-xl relative md:max-w-[350px] xl:w-[450px]"
         >
           <div class="flip-inner">
             <div
@@ -952,9 +957,9 @@
             >
               <div class="flex flex-col items-center h-full gap-2">
                 <img
-                  src="/public/assets/fea/failure-spot.svg"
+                  src="https://cadrush.com/public/assets/2d-to-3d/visualization.svg"
                   alt="Experience Icon"
-                  class="w-20"
+                  class="w-16"
                 />
                 <h3
                   class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent"
@@ -976,7 +981,7 @@
         <!-- Card 3 -->
         <div
           id="card-3"
-          class="flip-card rounded-xl relative h-[300px] md:max-w-[350px] xl:w-[450px]"
+          class="flip-card rounded-xl relative md:max-w-[350px] xl:w-[450px]"
         >
           <div class="flip-inner">
             <div
@@ -984,9 +989,9 @@
             >
               <div class="flex flex-col items-center h-full gap-2">
                 <img
-                  src="/public/assets/fea/efficient-virtual.svg"
+                  src="https://cadrush.com/public/assets/2d-to-3d/faster-iteration1.svg"
                   alt="Experience Icon"
-                  class="w-20"
+                  class="w-16"
                 />
                 <h3
                   class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent"
@@ -1003,19 +1008,16 @@
         </div>
 
         <!-- Card 4 -->
-        <div
-          id="card-4"
-          class="flip-card rounded-xl relative h-[300px] md:max-w-[350px]"
-        >
+        <div id="card-4" class="flip-card rounded-xl relative md:max-w-[350px]">
           <div class="flip-inner">
             <div
               class="flip-front border-2 border-gray-300 px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400"
             >
               <div class="flex flex-col items-center h-full gap-2">
                 <img
-                  src="/public/assets/fea/accelerated.svg"
+                  src="https://cadrush.com/public/assets/2d-to-3d/simulation.svg"
                   alt="Experience Icon"
-                  class="w-20"
+                  class="w-16"
                 />
                 <h3
                   class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent"
@@ -1032,19 +1034,16 @@
         </div>
 
         <!-- Card 5 -->
-        <div
-          id="card-5"
-          class="flip-card rounded-xl relative h-[300px] md:max-w-[350px]"
-        >
+        <div id="card-5" class="flip-card rounded-xl relative md:max-w-[350px]">
           <div class="flip-inner">
             <div
               class="flip-front border-2 border-gray-300 px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400"
             >
               <div class="flex flex-col items-center h-full gap-2">
                 <img
-                  src="/public/assets/fea/product-process.svg"
+                  src="https://cadrush.com/public/assets/2d-to-3d/readiness.svg"
                   alt="Experience Icon"
-                  class="w-20 mt-1"
+                  class="w-16 mt-1"
                 />
                 <h3
                   class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent"
@@ -1062,26 +1061,23 @@
         </div>
 
         <!-- Card 6 -->
-        <div
-          id="card-6"
-          class="flip-card rounded-xl relative h-[300px] md:max-w-[350px]"
-        >
+        <div id="card-6" class="flip-card rounded-xl relative md:max-w-[350px]">
           <div class="flip-inner">
             <div
               class="flip-front border-2 border-gray-300 px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400"
             >
               <div class="flex flex-col items-center h-full gap-2">
                 <img
-                  src="/public/assets/fea/risk-mitigation.svg"
+                  src="https://cadrush.com/public/assets/2d-to-3d/cost-efficiency1.svg"
                   alt="Experience Icon"
-                  class="w-20 mt-1"
+                  class="w-16 mt-1"
                 />
                 <h3
                   class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent"
                 >
                   Cost Efficiency
                 </h3>
-                <p class="text-center text-sm text-gray-700 mt-4 md:my-4">
+                <p class="text-center text-sm text-gray-700 mt-4 md:my-5">
                   Reduced rework, faster approvals, and streamlined production
                   processes save time and resources.
                 </p>
@@ -1092,9 +1088,9 @@
       </div>
     </section>
 
-    <!-- CTA -->
+    <!-- parner with us -->
     <section
-      class="bg-gradient-to-b from-white via-violet-200 to-white flex flex-col items-center h-[300px] md:h-[400px] justify-center my-12 md:my-6"
+      class="bg-gradient-to-b from-white via-violet-200 to-white flex flex-col items-center h-[250px] md:h-[400px] justify-center my-12 md:my-6"
     >
       <h2 class="font-bold text-center mb-4 text-[#7c6ee6] text-3xl py-4 px-16">
         Partner with Us
@@ -1104,14 +1100,18 @@
       >
         2D to 3D CAD Modeling is more than a digital exercise—it’s a strategic
         enabler for innovation, product performance, and lifecycle efficiency.
-        Whether you are modernizing legacy drawings or developing
-        next-generation designs, we deliver models that empower your teams to
-        design smarter, validate faster, and manufacture with confidence.
+        Whether you are
+        <span class="font-bold"
+          >modernizing legacy drawings or developing next-generation
+          designs,</span
+        >
+        we deliver models that empower your teams to design smarter, validate
+        faster, and manufacture with confidence.
         <br />
         <button
           class="bg-black text-white rounded-md px-6 py-2 w-1/2 md:w-44 lg:w-48 mx-auto my-6 font-semibold hover:bg-black/80 hover:bg-black/80"
         >
-          <a href="https://cadrush.com/app/#/signin" target="_blank">
+          <a href="https://cadrush.com/app/#/signup" target="_blank">
             START BUILDING</a
           >
         </button>
@@ -1119,10 +1119,10 @@
     </section>
 
     <!-- faq -->
-    <section class="py-10 md:py-20">
+    <section class="py-10">
       <div class="mx-auto max-w-4xl lg:max-w-5xl px-4 sm:px-6 lg:px-8">
         <h2
-          class="font-bold text-center mb-4 text-[#7c6ee6] text-3xl pb-4 md:pb-8"
+          class="font-bold text-center mb-4 text-[#7c6ee6] text-2xl md:text-3xl pb-4 md:pb-8"
         >
           Frequently asked questions
         </h2>
@@ -1143,7 +1143,7 @@
                 What is CAD Modeling and Conversion?
               </h5>
               <img
-                src="/public/assets/plus.svg"
+                src="https://cadrush.com/public/assets/plus.svg"
                 alt="Plus Icon"
                 class="w-6 h-6"
               />
@@ -1176,7 +1176,7 @@
                 What file formats do you support?
               </h5>
               <img
-                src="/public/assets/plus.svg"
+                src="https://cadrush.com/public/assets/plus.svg"
                 alt="Plus Icon"
                 class="w-6 h-6"
               />
@@ -1208,7 +1208,7 @@
                 Can you convert legacy paper drawings into 3D models?
               </h5>
               <img
-                src="/public/assets/plus.svg"
+                src="https://cadrush.com/public/assets/plus.svg"
                 alt="Plus Icon"
                 class="w-6 h-6"
               />
@@ -1241,7 +1241,7 @@
                 What software do you use?
               </h5>
               <img
-                src="/public/assets/plus.svg"
+                src="https://cadrush.com/public/assets/plus.svg"
                 alt="Plus Icon"
                 class="w-6 h-6"
               />
@@ -1273,7 +1273,7 @@
                 How do you ensure accuracy?
               </h5>
               <img
-                src="/public/assets/plus.svg"
+                src="https://cadrush.com/public/assets/plus.svg"
                 alt="Plus Icon"
                 class="w-6 h-6"
               />
@@ -1306,7 +1306,7 @@
                 What industries do you serve?
               </h5>
               <img
-                src="/public/assets/plus.svg"
+                src="https://cadrush.com/public/assets/plus.svg"
                 alt="Plus Icon"
                 class="w-6 h-6"
               />
@@ -1338,7 +1338,7 @@
                 What is the typical turnaround time?
               </h5>
               <img
-                src="/public/assets/plus.svg"
+                src="https://cadrush.com/public/assets/plus.svg"
                 alt="Plus Icon"
                 class="w-6 h-6"
               />
@@ -1368,7 +1368,11 @@
         class="container mx-auto px-6 md:px-12 lg:px-20 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left"
       >
         <div class="space-y-4 flex flex-col items-center md:items-start">
-          <img src="/public/assets/logo.svg" alt="CADRush Logo" class="w-32" />
+          <img
+            src="https://cadrush.com/public/assets/Logo2.png"
+            alt="CADRush Logo"
+            class="h-12"
+          />
           <p class="text-sm text-gray-400 inter font-bold">
             A product of MN Engineering Solutions.
           </p>
@@ -1379,13 +1383,16 @@
           <div
             class="flex items-center justify-center md:justify-start space-x-3"
           >
-            <img src="/public/assets/mail.svg" class="w-5" />
+            <img src="https://cadrush.com/public/assets/mail.svg" class="w-5" />
             <p class="font-normal">hello@cadrush.com</p>
           </div>
           <div
             class="flex items-center justify-center md:justify-start space-x-1"
           >
-            <img src="/public/assets/location.svg" class="w-5" />
+            <img
+              src="https://cadrush.com/public/assets/location.svg"
+              class="w-5"
+            />
             <p class="font-normal">
               MN Engineering Solutions Inc.<br />
               332 Michigan Avenue, Chicago, IL 60604, USA
@@ -1400,19 +1407,28 @@
               href="https://www.instagram.com/cadrush_mnes?igsh=MXZ5cTk0eTJsa2FtcQ==&utm_source=ig_contact_invite"
               class="bg-white w-10 h-10 flex items-center justify-center rounded-full shadow-md"
             >
-              <img src="/public/assets/instagram.svg" class="w-5" />
+              <img
+                src="https://cadrush.com/public/assets/instagram.svg"
+                class="w-5"
+              />
             </a>
             <a
               href="https://www.facebook.com/share/1D9pVsDCYJ/?mibextid=wwXIfr"
               class="bg-white w-10 h-10 flex items-center justify-center rounded-full shadow-md"
             >
-              <img src="/public/assets/facebook.svg" class="w-5" />
+              <img
+                src="https://cadrush.com/public/assets/facebook.svg"
+                class="w-5"
+              />
             </a>
             <a
               href="https://www.linkedin.com/company/cadrush/"
               class="bg-white w-10 h-10 flex items-center justify-center rounded-full shadow-md"
             >
-              <img src="/public/assets/linkedin.svg" class="w-5" />
+              <img
+                src="https://cadrush.com/public/assets/linkedin.svg"
+                class="w-5"
+              />
             </a>
           </div>
         </div>
@@ -1593,9 +1609,9 @@
       </div>
     </div>
 
-    <script src="/public/js/index.js"></script>
-    <script src="/public/js/service-cards-animate.js"></script>
-    <script src="/public/js/fea.js"></script>
+    <script src="https://cadrush.com/public/js/index.js"></script>
+    <script src="https://cadrush.com/public/js/service-cards-animate.js"></script>
+    <script src="https://cadrush.com/public/js/fea.js"></script>
     <script>
       gsap.registerPlugin(MotionPathPlugin);
       window.addEventListener("load", () => {

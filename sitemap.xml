@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <!-- Homepage -->
     <url>
-        <loc>https://www.cadrush.com/</loc>
+        <loc>https://cadrush.com/</loc>
         <lastmod>2025-08-13</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
@@ -10,37 +10,37 @@
     
     <!-- Main Service Pages -->
     <url>
-        <loc>https://www.cadrush.com/paper-to-cad.html</loc>
+        <loc>https://cadrush.com/paper-to-cad.html</loc>
         <lastmod>2025-08-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://www.cadrush.com/2d-cad-to-3d-model.html</loc>
+        <loc>https://cadrush.com/2d-cad-to-3d-model.html</loc>
         <lastmod>2025-08-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://www.cadrush.com/electrical-drawing-panel-layout.html</loc>
+        <loc>https://cadrush.com/electrical-drawing-panel-layout.html</loc>
         <lastmod>2025-08-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://www.cadrush.com/plc-programming-migration.html</loc>
+        <loc>https://cadrush.com/plc-programming-migration.html</loc>
         <lastmod>2025-08-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.cadrush.com/fea-cfd.html</loc>
+        <loc>https://cadrush.com/fea-cfd.html</loc>
         <lastmod>2025-08-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.cadrush.com/manufacturing-drawing.html</loc>
+        <loc>https://cadrush.com/manufacturing-drawing.html</loc>
         <lastmod>2025-08-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
