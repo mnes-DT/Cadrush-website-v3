@@ -1,369 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CADRush - Manufacturing Drawing</title>
-    <meta
-      name="description"
-      content="CADRush offers innovative CAD solutions from concept to manufacturing. Efficient, transparent, and high-quality services for your business needs."
-    />
-    <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://cadrush.com/" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="manifest" href="/manifest.json" />
-    <!-- Open Graph / Facebook -->
-    <meta property="og:title" content="CADRush - Manufacturing Drawing" />
-    <meta
-      property="og:description"
-      content="CADRush offers innovative CAD solutions from concept to manufacturing. Efficient, transparent, and high-quality services for your business needs."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://cadrush.com/" />
-    <meta
-      property="og:image"
-      content="https://cadrush.com/public/assets/logo.svg"
-    />
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="CADRush - Manufacturing Drawing" />
-    <meta
-      name="twitter:description"
-      content="CADRush offers innovative CAD solutions from concept to manufacturing. Efficient, transparent, and high-quality services for your business needs."
-    />
-    <meta
-      name="twitter:image"
-      content="https://cadrush.com/public/assets/logo.svg"
-    />
 
-    <!-- gsap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CADRush - Manufacturing Drawing</title>
+  <meta name="description"
+    content="CADRush offers innovative CAD solutions from concept to manufacturing. Efficient, transparent, and high-quality services for your business needs." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://cadrush.com/" />
+  <link rel="icon" type="image/x-icon" href="/public/assets/Logo.png" />
+  <link rel="manifest" href="/manifest.json" />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="CADRush - Manufacturing Drawing" />
+  <meta property="og:description"
+    content="CADRush offers innovative CAD solutions from concept to manufacturing. Efficient, transparent, and high-quality services for your business needs." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://cadrush.com/" />
+  <meta property="og:image" content="https://cadrush.com/public/assets/Logo2.png" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CADRush - Manufacturing Drawing" />
+  <meta name="twitter:description"
+    content="CADRush offers innovative CAD solutions from concept to manufacturing. Efficient, transparent, and high-quality services for your business needs." />
+  <meta name="twitter:image" content="https://cadrush.com/public/assets/Logo2.png" />
 
-    <link rel="stylesheet" href="/public/css/style.css" />
-    <link rel="stylesheet" href="/public/css/services.css" />
-    <script
-      defer
-      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
-    ></script>
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
 
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="stylesheet" href="/public/css/style.css" />
+  <link rel="stylesheet" href="/public/css/services.css" />
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet" />
 
-    <style>
-      @keyframes fadeInUp {
-        from {
-          opacity: 0;
-          transform: translateY(20px);
-        }
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
 
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
+  <style>
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
       }
 
-      .animate-fadeInUp {
-        animation: fadeInUp 0.6s ease-out forwards;
+      to {
+        opacity: 1;
+        transform: translateY(0);
       }
+    }
 
-      .card-hover-effect {
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      }
+    .animate-fadeInUp {
+      animation: fadeInUp 0.6s ease-out forwards;
+    }
 
-      .card-hover-effect:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-          0 10px 10px -5px rgba(0, 0, 0, 0.04);
-      }
+    .card-hover-effect {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
-      .gradient-text {
-        background: linear-gradient(90deg, #4b9adb 0%, #9747ff 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-    </style>
-    <script src="https://cadrush.com/public/js/services.js"></script>
-    <script src="https://cadrush.com/public/js/tailwind.js"></script>
+    .card-hover-effect:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
 
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              funnel: ['"Funnel Sans"', "sans-serif"],
-              outfit: ['"Outfit"', "sans-serif"],
-            },
+    .gradient-text {
+      background: linear-gradient(90deg, #4b9adb 0%, #9747ff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+  <script src="https://cadrush.com/public/js/services.js"></script>
+  <script src="https://cadrush.com/public/js/tailwind.js"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            funnel: ['"Funnel Sans"', "sans-serif"],
+            outfit: ['"Outfit"', "sans-serif"],
           },
         },
-      };
-    </script>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-K25BHMETBS"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-K25BHMETBS");
-    </script>
-  </head>
+      },
+    };
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K25BHMETBS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-K25BHMETBS");
+  </script>
+</head>
 
-  <body class="bg-white h-dvh md:h-screen">
-    <!-- Header -->
-    <header
-      id="main-header"
-      class="fixed top-0 left-0 w-full z-50 bg-transparent transition-colors duration-300"
-    >
-      <!-- Desktop Navbar -->
-      <div
-        class="hidden md:flex items-center justify-between py-4 px-8 w-full z-40"
-      >
-        <!-- Logo at far left -->
-        <a href="https://cadrush.com/" class="flex items-center">
-          <img
-            src="https://cadrush.com/public/assets/Logo2.png"
-            alt="CADRush Logo"
-            class="h-20"
-          />
-        </a>
-        <!-- Centered Nav -->
-        <div class="flex items-center bg-white text-black py-2 px-12 rounded">
-          <nav class="flex py-2 space-x-12 mx-auto items-center">
-            <!-- Services Dropdown -->
-            <div class="relative group">
-              <button
-                class="flex items-center text-black font-medium hover:text-blue-800 focus:outline-none"
-              >
-                SERVICES
-                <svg
-                  class="w-4 h-4 ml-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M19 9l-7 7-7-7"
-                  ></path>
-                </svg>
-              </button>
-              <div
-                class="absolute left-0 mt-2 w-56 bg-white rounded-md shadow-lg py-1 z-50 hidden group-hover:block"
-                style="pointer-events: auto"
-              >
-                <!-- Invisible padding to prevent dropdown from closing when moving cursor -->
-                <div class="absolute -top-4 left-0 right-0 h-4"></div>
-                <a
-                  href="https://cadrush.com/paper-to-cad.html"
-                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  >Paper to CAD Conversion</a
-                >
-                <a
-                  href="https://cadrush.com/2d-cad-to-3d-model.html"
-                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  >2D CAD to 3D Model</a
-                >
-                <a
-                  href="https://cadrush.com/electrical-drawing-panel-layout.html"
-                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  >Electrical Drawing & Panel Layout</a
-                >
-                <a
-                  href="https://cadrush.com/plc-programming-migration.html"
-                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                >
-                  PLC Programming & Migration</a
-                >
-                <a
-                  href="https://cadrush.com/fea-cfd.html"
-                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  >FEA & CFD</a
-                >
-                <a
-                  href="https://cadrush.com/manufacturing-drawing.html"
-                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  >Manufacturing Drawing</a
-                >
-                <!-- Invisible padding to prevent dropdown from closing when moving cursor -->
-                <div class="absolute -bottom-4 left-0 right-0 h-4"></div>
-              </div>
+<body class="bg-white h-dvh md:h-screen">
+  <!-- Header -->
+  <header id="main-header" class="fixed top-0 left-0 w-full z-50 bg-transparent transition-colors duration-300">
+    <!-- Desktop Navbar -->
+    <div class="hidden md:flex items-center justify-between py-4 px-8 w-full z-40">
+      <!-- Logo at far left -->
+      <a href="https://cadrush.com/" class="flex items-center">
+        <img src="https://cadrush.com/public/assets/Logo2.png" alt="CADRush Logo" class="h-20" />
+      </a>
+      <!-- Centered Nav -->
+      <div class="flex items-center bg-white text-black py-2 px-12 rounded">
+        <nav class="flex py-2 space-x-12 mx-auto items-center">
+          <!-- Services Dropdown -->
+          <div class="relative group">
+            <button class="flex items-center text-black font-medium hover:text-blue-800 focus:outline-none">
+              SERVICES
+              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="absolute left-0 mt-2 w-56 bg-white rounded-md shadow-lg py-1 z-50 hidden group-hover:block"
+              style="pointer-events: auto">
+              <!-- Invisible padding to prevent dropdown from closing when moving cursor -->
+              <div class="absolute -top-4 left-0 right-0 h-4"></div>
+              <a href="https://cadrush.com/paper-to-cad.html"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Paper to CAD Conversion</a>
+              <a href="https://cadrush.com/2d-cad-to-3d-model.html"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">2D CAD to 3D Model</a>
+              <a href="https://cadrush.com/electrical-drawing-panel-layout.html"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Electrical Drawing & Panel Layout</a>
+              <a href="https://cadrush.com/plc-programming-migration.html"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                PLC Programming & Migration</a>
+              <a href="https://cadrush.com/fea-cfd.html"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">FEA & CFD</a>
+              <a href="https://cadrush.com/manufacturing-drawing.html"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Manufacturing Drawing</a>
+              <!-- Invisible padding to prevent dropdown from closing when moving cursor -->
+              <div class="absolute -bottom-4 left-0 right-0 h-4"></div>
             </div>
-            <!-- <a href="https://cadrush.com/case-studies"
+          </div>
+          <!-- <a href="https://cadrush.com/case-studies"
                         class="text-black font-medium hover:text-blue-800">CASE STUDIES</a>
                     <a href="https://cadrush.com/faq"
                         class="text-black font-medium hover:text-blue-800">FAQ</a> -->
-            <button
-              id="contactBtn-menu"
-              class="text-black font-medium hover:text-blue-800"
-            >
-              CONTACT
-            </button>
-          </nav>
-        </div>
-
-        <!-- Register button at far right -->
-        <a
-          class="bg-black text-white px-6 py-2 rounded-lg font-semibold shadow hover:bg-gray-800 transition"
-          href="https://cadrush.com/app/#/signup"
-          target="_blank"
-        >
-          REGISTER
-        </a>
-      </div>
-
-      <!-- Mobile Navbar -->
-      <div class="flex md:hidden justify-between items-center py-3 px-3 z-40">
-        <a href="https://cadrush.com/" class="text-white font-bold text-xl"
-          ><img
-            src="https://cadrush.com/public/assets/Logo2.png"
-            alt="CADRush Logo"
-            class="h-12"
-        /></a>
-        <div class="flex flex-row space-x-2">
-          <button
-            class="bg-black text-white px-4 py-1 rounded-lg font-normal text-sm shadow hover:bg-gray-800 transition"
-          >
-            <a href="https://cadrush.com/app/#/signup" target="_blank"
-              >REGISTER</a
-            >
+          <button id="contactBtn-menu" class="text-black font-medium hover:text-blue-800">
+            CONTACT
           </button>
-          <button id="hamburger" onclick="openDrawer()">
-            <img
-              src="https://cadrush.com/public/assets/hamburger.svg"
-              alt="Open menu"
-              class="w-8 h-8"
-            />
-          </button>
-        </div>
-      </div>
-
-      <!-- Right Side Drawer for Mobile -->
-      <div
-        id="mobile-drawer"
-        class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg z-50 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden"
-      >
-        <div class="flex justify-end p-4">
-          <button onclick="closeDrawer()">
-            <img
-              src="https://cadrush.com/public/assets/close-x.svg"
-              alt="Close menu"
-              class="w-6 h-6"
-            />
-          </button>
-        </div>
-        <nav class="flex flex-col space-y-4 px-8 mt-8">
-          <div class="relative">
-            <button
-              id="mobile-services-toggle"
-              class="flex items-center w-full py-2 text-gray-700 font-medium hover:text-blue-800 justify-between"
-            >
-              <span>SERVICES</span>
-              <svg
-                class="w-4 h-4 ml-2 transform transition-transform"
-                id="services-arrow"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                ></path>
-              </svg>
-            </button>
-            <div id="mobile-services-menu" class="hidden pl-4 mt-1 space-y-2">
-              <a
-                href="https://cadrush.com/paper-to-cad.html"
-                class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
-                >Paper to CAD</a
-              >
-              <a
-                href="https://cadrush.com/2d-cad-to-3d-model.html"
-                class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
-                >2D CAD to 3D Model</a
-              >
-              <a
-                href="https://cadrush.com/electrical-drawing-panel-layout.html"
-                class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
-                >Electrical Drawing & Panel Layout</a
-              >
-              <a
-                href="https://cadrush.com/plc-programming-migration.html"
-                class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
-              >
-                PLC Programming & Migration</a
-              >
-              <a
-                href="https://cadrush.com/fea-cfd.html"
-                class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
-                >FEA & CFD</a
-              >
-              <a
-                href="https://cadrush.com/manufacturing-drawing.html"
-                class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800"
-                >Manufacturing Drawing</a
-              >
-            </div>
-          </div>
         </nav>
+      </div>
+
+      <!-- Register button at far right -->
+      <a class="bg-black text-white px-6 py-2 rounded-lg font-semibold shadow hover:bg-gray-800 transition"
+        href="https://cadrush.com/app/#/signup" target="_blank">
+        REGISTER
+      </a>
+    </div>
+
+    <!-- Mobile Navbar -->
+    <div class="flex md:hidden justify-between items-center py-3 px-3 z-40">
+      <a href="https://cadrush.com/" class="text-white font-bold text-xl"><img
+          src="https://cadrush.com/public/assets/Logo2.png" alt="CADRush Logo" class="h-12" /></a>
+      <div class="flex flex-row space-x-2">
         <button
-          id="contactBtn-menu"
-          class="text-black font-medium hover:text-blue-800 px-8 mt-10"
-        >
-          CONTACT
+          class="bg-black text-white px-4 py-1 rounded-lg font-normal text-sm shadow hover:bg-gray-800 transition">
+          <a href="https://cadrush.com/app/#/signup" target="_blank">REGISTER</a>
+        </button>
+        <button id="hamburger" onclick="openDrawer()">
+          <img src="https://cadrush.com/public/assets/hamburger.svg" alt="Open menu" class="w-8 h-8" />
         </button>
       </div>
+    </div>
 
-      <!-- Overlay for Drawer (optional, improves UX) -->
-      <div
-        id="drawer-overlay"
-        class="fixed inset-0 bg-black bg-opacity-30 z-40 hidden md:hidden"
-        onclick="closeDrawer()"
-      ></div>
-    </header>
+    <!-- Right Side Drawer for Mobile -->
+    <div id="mobile-drawer"
+      class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg z-50 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden">
+      <div class="flex justify-end p-4">
+        <button onclick="closeDrawer()">
+          <img src="https://cadrush.com/public/assets/close-x.svg" alt="Close menu" class="w-6 h-6" />
+        </button>
+      </div>
+      <nav class="flex flex-col space-y-4 px-8 mt-8">
+        <div class="relative">
+          <button id="mobile-services-toggle"
+            class="flex items-center w-full py-2 text-gray-700 font-medium hover:text-blue-800 justify-between">
+            <span>SERVICES</span>
+            <svg class="w-4 h-4 ml-2 transform transition-transform" id="services-arrow" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div id="mobile-services-menu" class="hidden pl-4 mt-1 space-y-2">
+            <a href="https://cadrush.com/paper-to-cad.html"
+              class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800">Paper to CAD</a>
+            <a href="https://cadrush.com/2d-cad-to-3d-model.html"
+              class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800">2D CAD to 3D Model</a>
+            <a href="https://cadrush.com/electrical-drawing-panel-layout.html"
+              class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800">Electrical Drawing & Panel Layout</a>
+            <a href="https://cadrush.com/plc-programming-migration.html"
+              class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800">
+              PLC Programming & Migration</a>
+            <a href="https://cadrush.com/fea-cfd.html"
+              class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800">FEA & CFD</a>
+            <a href="https://cadrush.com/manufacturing-drawing.html"
+              class="block w-full py-2 text-sm text-gray-600 hover:text-blue-800">Manufacturing Drawing</a>
+          </div>
+        </div>
+      </nav>
+      <button id="contactBtn-menu" class="text-black font-medium hover:text-blue-800 px-8 mt-10">
+        CONTACT
+      </button>
+    </div>
 
-    <!-- Hero Section -->
-    <section
-      class="h-[60vh] bg-gradient-to-br from-[#4B9ADB] to-[#9747FF] animated-gradient header-scrolled py-10 md:py-12 lg:py-12 md:px-10"
-    >
-      <div
-        class="flex flex-col md:flex-row items-center justify-between h-full"
-      >
-        <!-- Left: Text Content -->
-        <div class="max-w-5xl">
-          <h1
-            class="text-2xl md:text-3xl font-bold text-white mt-10 md:mt-1 text-center md:text-left"
-          >
-            Manufacturing Drawing
-          </h1>
-          <!-- bouncing down arrow
+    <!-- Overlay for Drawer (optional, improves UX) -->
+    <div id="drawer-overlay" class="fixed inset-0 bg-black bg-opacity-30 z-40 hidden md:hidden" onclick="closeDrawer()">
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section
+    class="h-[60vh] bg-gradient-to-br from-[#4B9ADB] to-[#9747FF] animated-gradient header-scrolled py-10 md:py-12 lg:py-12 md:px-10">
+    <div class="flex flex-col md:flex-row items-center justify-between h-full">
+      <!-- Left: Text Content -->
+      <div class="max-w-5xl">
+        <h1 class="text-2xl md:text-3xl font-bold text-white mt-10 md:mt-1 text-center md:text-left">
+          Manufacturing Drawing
+        </h1>
+        <!-- bouncing down arrow
             <span class="animate-bounce relative top-12 md:top-20">
                 <img src="/public/assets/down.svg" alt="Bounce down arrow" class="w-12 h-12">
             </span> -->
-          <!-- <div
+        <!-- <div
                 class="flex items-center justify-center flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-12 relative top-20">
                 <button
                     class="bg-transparent text-white flex items-center px-6 py-2 justify-between rounded-lg font-light border border-white hover:bg-gray-800/50 transition w-[200px] text-sm animate-bounce"><span
@@ -375,1531 +247,1071 @@
                         PROJECT</a></button>
 
             </div> -->
-          <p class="text-white mt-5 text-center md:text-left">
-            2D Manufacturing Drawing Design & Engineering Services deliver
-            accurate, production-ready documentation that connects engineering
-            concepts to shop-floor execution. From detailed technical drawings
-            to assembly views, CADRush ensures clarity, precision, and
-            compliance with international standards.
-          </p>
-        </div>
-        <!-- Right: Image -->
-        <div class="mt-6 md:mt-20 md:ml-10 flex-shrink-0">
-          <img
-            src="https://cadrush.com/public/assets/manufacturing-drawing.webp"
-            alt="FEA Hero"
-            class="w-64 md:w-70 lg:w-[23rem]"
-          />
-        </div>
+        <p class="text-white mt-5 text-center md:text-left">
+          Expert engineering drawings and CAD detailing for production. CADRush create precise 2D/3D models to ensure
+          smooth manufacturing, better quality, and faster product delivery. From detailed technical drawings to
+          assembly views, we ensures clarity, precision, and compliance with international standards.
+        </p>
       </div>
-    </section>
-
-    <!-- FEA Solutions Mobile -->
-    <section
-      class="py-10 md:py-16 lg:py-20 bg-gradient-to-b from-white to-gray-50 overflow-hidden"
-    >
-      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div
-          class="max-w-4xl mx-auto text-center mb-12 md:mb-16"
-          x-data="{ shown: false }"
-          x-intersect="$el.classList.add('animate-fadeInUp')"
-        >
-          <h2 class="font-bold text-center mb-4 text-[#7c6ee6] text-3xl">
-            Industries We Serve
-          </h2>
-          <p
-            class="text-center text-sm max-w-[600px] mx-auto my-2 md:my-4 md:text-base"
-          >
-            Our manufacturing drawing services support a broad range of
-            engineering domains:
-          </p>
-        </div>
-
-        <!-- FEA Services Grid -->
-        <div
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 px-4 justify-center"
-        >
-          <!-- Card 1 -->
-          <div
-            class="card-hover-effect group hover:bg-black relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
-            x-data="{ show: false }"
-            x-init="setTimeout(() => show = true, 100)"
-            x-transition:enter="transition ease-out duration-700 transform"
-            x-transition:enter-start="opacity-0 translate-y-10"
-            x-transition:enter-end="opacity-100 translate-y-0"
-            x-show="show"
-          >
-            <div
-              class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-            ></div>
-            <div class="relative p-10 h-full flex flex-col">
-              <div class="flex items-center mb-4">
-                <div
-                  class="w-12 h-12 rounded-full bg-[#EDEDED] group-hover:bg-gray-400 flex items-center justify-center text-white text-xl font-bold mr-4"
-                >
-                  <img
-                    src="https://cadrush.com/public/assets/manufacturing/automobile.svg"
-                    alt="Img"
-                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200 w-8"
-                  />
-                </div>
-                <h3
-                  class="text-xl font-bold text-gray-900 group-hover:text-white transition-colors duration-300"
-                >
-                  Automobile
-                </h3>
-              </div>
-              <p
-                class="text-gray-600 flex-grow group-hover:text-white transition-colors duration-300"
-              >
-                Component drawings for engine parts, chassis systems, and
-                sub-assemblies.
-              </p>
-            </div>
-          </div>
-
-          <!-- Card 2 -->
-          <div
-            class="card-hover-effect group hover:bg-black relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
-            x-data="{ show: false }"
-            x-init="setTimeout(() => show = true, 200)"
-            x-transition:enter="transition ease-out duration-700 transform"
-            x-transition:enter-start="opacity-0 translate-y-10"
-            x-transition:enter-end="opacity-100 translate-y-0"
-            x-show="show"
-          >
-            <div
-              class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-            ></div>
-            <div class="relative p-10 h-full flex flex-col">
-              <div class="flex items-center mb-4">
-                <div
-                  class="w-12 h-12 rounded-full bg-[#EDEDED] group-hover:bg-gray-400 flex items-center justify-center text-white text-xl font-bold mr-4"
-                >
-                  <img
-                    src="https://cadrush.com/public/assets/manufacturing/heavy-equipment.svg"
-                    alt="Img"
-                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200 w-7"
-                  />
-                </div>
-                <h3
-                  class="text-xl font-bold text-gray-900 group-hover:text-white transition-colors duration-300"
-                >
-                  Heavy Equipment
-                </h3>
-              </div>
-              <p
-                class="text-gray-600 flex-grow group-hover:text-white transition-colors duration-300"
-              >
-                Structural and load-bearing element detailing for industrial
-                machinery.
-              </p>
-            </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div
-            class="card-hover-effect group hover:bg-black relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
-            x-data="{ show: false }"
-            x-init="setTimeout(() => show = true, 300)"
-            x-transition:enter="transition ease-out duration-700 transform"
-            x-transition:enter-start="opacity-0 translate-y-10"
-            x-transition:enter-end="opacity-100 translate-y-0"
-            x-show="show"
-          >
-            <div
-              class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-            ></div>
-            <div class="relative p-10 h-full flex flex-col">
-              <div class="flex items-center mb-4">
-                <div
-                  class="w-12 h-12 rounded-full bg-[#EDEDED] group-hover:bg-gray-400 flex items-center justify-center text-white text-xl font-bold mr-4"
-                >
-                  <img
-                    src="https://cadrush.com/public/assets/manufacturing/machine-parts.svg"
-                    alt="Img"
-                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200 w-10"
-                  />
-                </div>
-                <h3
-                  class="text-xl font-bold text-gray-900 group-hover:text-white transition-colors duration-300"
-                >
-                  Machine Parts & Tools
-                </h3>
-              </div>
-              <p
-                class="text-gray-600 flex-grow group-hover:text-white transition-colors duration-300"
-              >
-                Tooling and fixture design drawings for high-precision parts.
-              </p>
-            </div>
-          </div>
-
-          <!-- Card 4 -->
-          <div
-            class="card-hover-effect group hover:bg-black relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
-            x-data="{ show: false }"
-            x-init="setTimeout(() => show = true, 400)"
-            x-transition:enter="transition ease-out duration-700 transform"
-            x-transition:enter-start="opacity-0 translate-y-10"
-            x-transition:enter-end="opacity-100 translate-y-0"
-            x-show="show"
-          >
-            <div
-              class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-            ></div>
-            <div class="relative p-10 h-full flex flex-col">
-              <div class="flex items-center mb-4">
-                <div
-                  class="w-12 h-12 rounded-full bg-[#EDEDED] group-hover:bg-gray-400 flex items-center justify-center text-white text-xl font-bold mr-4"
-                >
-                  <img
-                    src="https://cadrush.com/public/assets/manufacturing/medical-devices.svg"
-                    alt="Img"
-                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200 w-8"
-                  />
-                </div>
-                <h3
-                  class="text-xl font-bold text-gray-900 group-hover:text-white transition-colors duration-300"
-                >
-                  Medical Devices
-                </h3>
-              </div>
-              <p
-                class="text-gray-600 flex-grow group-hover:text-white transition-colors duration-300"
-              >
-                Documentation aligned with regulatory and quality system
-                requirements
-              </p>
-            </div>
-          </div>
-
-          <!-- Card 5 -->
-          <div
-            class="card-hover-effect group hover:bg-black relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
-            x-data="{ show: false }"
-            x-init="setTimeout(() => show = true, 500)"
-            x-transition:enter="transition ease-out duration-700 transform"
-            x-transition:enter-start="opacity-0 translate-y-10"
-            x-transition:enter-end="opacity-100 translate-y-0"
-            x-show="show"
-          >
-            <div
-              class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-            ></div>
-            <div class="relative p-10 h-full flex flex-col">
-              <div class="flex items-center mb-4">
-                <div
-                  class="w-12 h-12 rounded-full bg-[#EDEDED] group-hover:bg-gray-400 flex items-center justify-center text-white text-xl font-bold mr-4"
-                >
-                  <img
-                    src="https://cadrush.com/public/assets/manufacturing/speciality-car.svg"
-                    alt="Img"
-                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200 w-8"
-                  />
-                </div>
-                <h3
-                  class="text-xl font-bold text-gray-900 group-hover:text-white transition-colors duration-300"
-                >
-                  Speciality Vehicles
-                </h3>
-              </div>
-              <p
-                class="text-gray-600 flex-grow group-hover:text-white transition-colors duration-300"
-              >
-                Assembly and part-level drawings for fire trucks, ambulances,
-                and off-road vehicles.
-              </p>
-            </div>
-          </div>
-
-          <!-- Card 6 -->
-          <div
-            class="card-hover-effect group hover:bg-black relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
-            x-data="{ show: false }"
-            x-init="setTimeout(() => show = true, 500)"
-            x-transition:enter="transition ease-out duration-700 transform"
-            x-transition:enter-start="opacity-0 translate-y-10"
-            x-transition:enter-end="opacity-100 translate-y-0"
-            x-show="show"
-          >
-            <div
-              class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-            ></div>
-            <div class="relative p-10 h-full flex flex-col">
-              <div class="flex items-center mb-4">
-                <div
-                  class="w-12 h-12 rounded-full bg-[#EDEDED] group-hover:bg-gray-400 flex items-center justify-center text-white text-xl font-bold mr-4"
-                >
-                  <img
-                    src="https://cadrush.com/public/assets/manufacturing/industrial-machines.svg"
-                    alt="Img"
-                    class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200 w-8"
-                  />
-                </div>
-                <h3
-                  class="text-xl font-bold text-gray-900 group-hover:text-white transition-colors duration-300"
-                >
-                  Industrial machines and equipment
-                </h3>
-              </div>
-              <p
-                class="text-gray-600 flex-grow group-hover:text-white transition-colors duration-300"
-              >
-                Full-scale service to make the process industry machine line
-                from parts, assembly, 3D/2D floor plans.
-              </p>
-            </div>
-          </div>
-        </div>
+      <!-- Right: Image -->
+      <div class="mt-6 md:mt-20 md:ml-10 flex-shrink-0">
+        <img src="https://cadrush.com/public/assets/manufacturing-drawing.webp" alt="FEA Hero"
+          class="w-64 md:w-70 lg:w-[23rem]" />
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- our expertise -->
-    <section
-      class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 md:gap-8 px-4 md:px-20 py-8 md:mt-12"
-    >
-      <!-- Left text block -->
-      <div class="flex-1 text-center md:text-left">
-        <h1
-          class="text-2xl md:text-3xl font-bold bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent"
-        >
-          Software and Standards Expertise
-        </h1>
-        <p class="mt-4 text-[#747474]">
-          To ensure accuracy and compatibility, we utilize leading CAD platforms
-          and adhere to recognized standards:
+  <!-- FEA Solutions Mobile -->
+  <section class="py-10 md:py-16 lg:py-20 bg-gradient-to-b from-white to-gray-50 overflow-hidden">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto text-center mb-12 md:mb-16" x-data="{ shown: false }"
+        x-intersect="$el.classList.add('animate-fadeInUp')">
+        <h2 class="font-bold text-center mb-4 text-[#7c6ee6] text-3xl">
+          Industries We Serve
+        </h2>
+        <p class="text-center text-sm max-w-[600px] mx-auto my-2 md:my-4 md:text-base">
+          Our manufacturing drawing services support a broad range of
+          engineering domains:
         </p>
       </div>
 
-      <!-- Right bordered div -->
-      <div class="flex-1 border-2 p-10 rounded-xl md:py-10">
-        <div class="flex items-center mt-2">
-          <img
-            src="https://cadrush.com/public/assets/fea/tick.svg"
-            alt="tick"
-            class="w-5 h-5 mr-2"
-          />
-          <h2 class="font-semibold text-xl">SolidWorks</h2>
-        </div>
-        <!-- <h3 class="ml-7 mt-1">
-          ANYSYS, Abaqus, NASTRAN, SolidWorks Simulation, Creo, Inventor.
-        </h3> -->
-
-        <div class="flex items-center mt-6">
-          <img
-            src="https://cadrush.com/public/assets/fea/tick.svg"
-            alt="tick"
-            class="w-5 h-5 mr-2"
-          />
-          <h2 class="font-semibold text-xl">Autodesk Inventor</h2>
-        </div>
-        <!-- <h3 class="ml-7 mt-1">
-          ANSYS Fluent, ANSYS CFX, STAR-CCM+, COMSOL Multiphysics, Autodesk CFD,
-          SolidWorks Flow Simulation.
-        </h3> -->
-
-        <div class="flex items-center mt-6">
-          <img
-            src="https://cadrush.com/public/assets/fea/tick.svg"
-            alt="tick"
-            class="w-5 h-5 mr-2"
-          />
-          <h2 class="font-semibold text-xl">PTC Creo</h2>
-        </div>
-        <div class="flex items-center mt-6">
-          <img
-            src="https://cadrush.com/public/assets/fea/tick.svg"
-            alt="tick"
-            class="w-5 h-5 mr-2"
-          />
-          <h2 class="font-semibold text-xl">Solid Edge</h2>
-        </div>
-        <div class="flex items-center mt-6">
-          <img
-            src="https://cadrush.com/public/assets/fea/tick.svg"
-            alt="tick"
-            class="w-5 h-5 mr-2"
-          />
-          <h2 class="font-semibold text-xl">CATIA</h2>
-        </div>
-        <div class="flex items-center mt-6">
-          <img
-            src="https://cadrush.com/public/assets/fea/tick.svg"
-            alt="tick"
-            class="w-5 h-5 mr-2"
-          />
-          <h2 class="font-semibold text-xl">NX-CAD</h2>
-        </div>
-        <div class="flex items-center mt-6">
-          <img
-            src="https://cadrush.com/public/assets/fea/tick.svg"
-            alt="tick"
-            class="w-5 h-5 mr-2"
-          />
-          <h2 class="font-semibold text-xl">ASME Y14.5 / ISO 2768 standards</h2>
-        </div>
-        <div class="flex items-center mt-6">
-          <img
-            src="https://cadrush.com/public/assets/fea/tick.svg"
-            alt="tick"
-            class="w-5 h-5 mr-2"
-          />
-          <h2 class="font-semibold text-xl">
-            GD&T application and verification
-          </h2>
-        </div>
-
-        <!-- <p class="mt-10 text-[#747474]">
-          This flexibility ensures seamless integration with your CAD ecosystem
-          and compatibility with your design-to-production workflows.
-        </p> -->
-      </div>
-    </section>
-
-    <!-- Why Choose Us for Manufacturing Drawing Services -->
-    <section
-      class="max-w-md mx-auto my-4 md:my-8 md:p-6 p-10 md:max-w-full md:mx-52 md:mt-20"
-    >
-      <h2
-        class="font-bold text-center mb-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent text-2xl md:text-3xl"
-      >
-        Why Choose Us for Manufacturing Drawing Services?
-      </h2>
-
-      <div
-        class="grid grid-cols-1 md:grid-cols-3 md:gap-12 gap-6 md:mt-12 items-stretch"
-      >
+      <!-- FEA Services Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 px-4 justify-center">
         <!-- Card 1 -->
         <div
-          class="flip-card rounded-xl group relative card-container min-h-[320px]"
-          tabindex="0"
-        >
-          <div class="flip-inner h-full">
-            <div
-              class="flip-front border border-[#c3b7fd] px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400 group-hover:scale-[1.03] group-hover:shadow-2xl group-hover:z-10 group-hover:ring-2 group-hover:ring-purple-300 focus-within:scale-[1.03] focus-within:shadow-2xl focus-within:z-10 focus-within:ring-2 focus-within:ring-purple-300 h-full"
-              style="transform-origin: center"
-            >
-              <div class="card-content">
-                <div class="card-header">
-                  <div class="bg-white text-[#7c6ee6] font-bold text-xl">
-                    01
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h3 class="text-lg font-semibold text-center mb-4">
-                    Engineering-Driven Drafting Expertise
-                  </h3>
-                  <img
-                    src="https://cadrush.com/public/assets/manufacturing/engineering-depth.svg"
-                    alt="Experience Icon"
-                    class="w-22 h-22 mb-4"
-                  />
-                </div>
-                <div class="card-footer">
-                  <p class="card-para text-center text-sm text-gray-700">
-                    Our team combines deep mechanical engineering knowledge with
-                    CAD drafting precision to produce production-ready drawings
-                    that meet real-world manufacturing standards.
-                  </p>
-                </div>
+          class="card-hover-effect group hover:bg-black relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
+          x-data="{ show: false }" x-init="setTimeout(() => show = true, 100)"
+          x-transition:enter="transition ease-out duration-700 transform"
+          x-transition:enter-start="opacity-0 translate-y-10" x-transition:enter-end="opacity-100 translate-y-0"
+          x-show="show">
+          <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="relative p-10 h-full flex flex-col">
+            <div class="flex items-center mb-4">
+              <div
+                class="w-12 h-12 rounded-full bg-[#EDEDED] group-hover:bg-gray-400 flex items-center justify-center text-white text-xl font-bold mr-4">
+                <img src="https://cadrush.com/public/assets/manufacturing/automobile.svg"
+                  alt="Manufacturing drawings for automotive components ensuring precision, clarity, and production readiness."
+                  class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200 w-8" />
               </div>
+              <h3 class="text-xl font-bold text-gray-900 group-hover:text-white transition-colors duration-300">
+                Automobile
+              </h3>
             </div>
-          </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div
-          class="flip-card group rounded-xl relative card-container min-h-[300px]"
-          tabindex="0"
-        >
-          <div class="flip-inner h-full">
-            <div
-              class="flip-front border border-[#c3b7fd] px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400 group-hover:scale-[1.03] group-hover:shadow-2xl group-hover:z-10 group-hover:ring-2 group-hover:ring-purple-300 focus-within:scale-[1.03] focus-within:shadow-2xl focus-within:z-10 focus-within:ring-2 focus-within:ring-purple-300 h-full"
-              style="transform-origin: center"
-            >
-              <div class="card-content">
-                <div class="card-header">
-                  <div class="bg-white text-[#7c6ee6] font-bold text-xl">
-                    02
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h3 class="text-lg font-semibold text-center mb-4">
-                    Industry-Specific Understanding
-                  </h3>
-                  <img
-                    src="https://cadrush.com/public/assets/manufacturing/industry-specific.svg"
-                    alt="Experience Icon"
-                    class="w-22 h-22 mb-4"
-                  />
-                </div>
-                <div class="card-footer">
-                  <p class="card-para text-center text-sm text-gray-700">
-                    We deliver drawing solutions tailored to the specific needs
-                    of industries such as automotive, heavy machinery, medical
-                    devices, specialty vehicles, and tooling.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div
-          class="flip-card group rounded-xl relative card-container min-h-[320px]"
-          tabindex="0"
-        >
-          <div class="flip-inner h-full">
-            <div
-              class="flip-front border border-[#c3b7fd] px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400 group-hover:scale-[1.03] group-hover:shadow-2xl group-hover:z-10 group-hover:ring-2 group-hover:ring-purple-300 focus-within:scale-[1.03] focus-within:shadow-2xl focus-within:z-10 focus-within:ring-2 focus-within:ring-purple-300 h-full"
-              style="transform-origin: center"
-            >
-              <div class="card-content">
-                <div class="card-header">
-                  <div class="bg-white text-[#7c6ee6] font-bold text-xl">
-                    03
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h3 class="text-lg font-semibold text-center mb-4">
-                    Standards Compliance and Quality Focus
-                  </h3>
-                  <img
-                    src="https://cadrush.com/public/assets/manufacturing/standards-compliance.svg"
-                    alt="Experience Icon"
-                    class="w-22 h-22 mb-4"
-                  />
-                </div>
-                <div class="card-footer">
-                  <p class="card-para text-center text-sm text-gray-700">
-                    All drawings are created in adherence to industry-standard
-                    practices, including proper dimensioning, GD&T, and BOM
-                    structuring—ensuring every drawing support inspection and
-                    assembly.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div
-          class="flip-card group rounded-xl relative card-container min-h-[300px]"
-          tabindex="0"
-        >
-          <div class="flip-inner h-full">
-            <div
-              class="flip-front border border-[#c3b7fd] px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400 group-hover:scale-[1.03] group-hover:shadow-2xl group-hover:z-10 group-hover:ring-2 group-hover:ring-purple-300 focus-within:scale-[1.03] focus-within:shadow-2xl focus-within:z-10 focus-within:ring-2 focus-within:ring-purple-300 h-full"
-              style="transform-origin: center"
-            >
-              <div class="card-content">
-                <div class="card-header">
-                  <div class="bg-white text-[#7c6ee6] font-bold text-xl">
-                    04
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h3 class="text-lg font-semibold text-center mb-4">
-                    Collaboration with Manufacturers
-                  </h3>
-                  <img
-                    src="https://cadrush.com/public/assets/manufacturing/collaboration1.svg"
-                    alt="Experience Icon"
-                    class="w-22 h-22 mb-4"
-                  />
-                </div>
-                <div class="card-footer">
-                  <p class="card-para text-center text-sm text-gray-700">
-                    We work closely with production teams and vendors to confirm
-                    feasibility, manufacturability, and compliance—reducing the
-                    likelihood of delays or rework.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 5 -->
-        <div
-          class="flip-card group rounded-xl relative card-container min-h-[300px]"
-          tabindex="0"
-        >
-          <div class="flip-inner h-full">
-            <div
-              class="flip-front border border-[#c3b7fd] px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400 group-hover:scale-[1.03] group-hover:shadow-2xl group-hover:z-10 group-hover:ring-2 group-hover:ring-purple-300 focus-within:scale-[1.03] focus-within:shadow-2xl focus-within:z-10 focus-within:ring-2 focus-within:ring-purple-300 h-full"
-              style="transform-origin: center"
-            >
-              <div class="card-content">
-                <div class="card-header">
-                  <div class="bg-white text-[#7c6ee6] font-bold text-xl">
-                    05
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h3 class="text-lg font-semibold text-center mb-4">
-                    Flexibility in Input Sources
-                  </h3>
-                  <img
-                    src="https://cadrush.com/public/assets/manufacturing/flexible-in-input.svg"
-                    alt="Experience Icon"
-                    class="w-22 h-22 mb-4"
-                  />
-                </div>
-                <div class="card-footer">
-                  <p class="card-para text-center text-sm text-gray-700">
-                    Whether starting from legacy paper drawings, existing
-                    components, or conceptual sketches, we can create complete
-                    manufacturing documentation to your required format and
-                    level of detail.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Why Manufacturing Drawings? -->
-    <section
-      class="max-w-md mx-auto my-4 md:my-8 p-6 md:max-w-full md:mx-44 md:mt-20"
-    >
-      <h2
-        class="font-bold text-center mb-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent text-2xl md:text-3xl"
-      >
-        Why Manufacturing Drawings?
-      </h2>
-      <p
-        class="text-center text-sm max-w-[500px] mx-auto my-2 md:my-4 md:text-base"
-      >
-        Well-prepared manufacturing drawings are essential for ensuring product
-        quality, manufacturability, and cost-effective production. Key
-        advantages include:
-      </p>
-
-      <!-- grid container -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-        <!-- Card 1 -->
-        <div
-          id="card-1"
-          class="flip-card rounded-xl relative md:max-w-[350px] xl:w-[450px]"
-        >
-          <div class="flip-inner">
-            <div
-              class="flip-front border-2 border-gray-300 px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400"
-            >
-              <div class="flex flex-col items-center h-full gap-2">
-                <img
-                  src="https://cadrush.com/public/assets/manufacturing/comprehensive-performance.svg"
-                  alt="Experience Icon"
-                  class="w-16"
-                />
-                <h3
-                  class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent"
-                >
-                  Comprehensive Performance Insights
-                </h3>
-                <p class="text-center text-sm text-gray-700 mt-4">
-                  Manufacturing drawings deliver precise, unambiguous
-                  instructions to machinists, fabricators, and
-                  assemblers—minimizing the risk of misinterpretation during
-                  production.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div
-          id="card-2"
-          class="flip-card rounded-xl relative md:max-w-[350px] xl:w-[450px]"
-        >
-          <div class="flip-inner">
-            <div
-              class="flip-front border-2 border-gray-300 px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400"
-            >
-              <div class="flex flex-col items-center h-full gap-2">
-                <img
-                  src="https://cadrush.com/public/assets/manufacturing/design-to-production.svg"
-                  alt="Experience Icon"
-                  class="w-20"
-                />
-                <h3
-                  class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent"
-                >
-                  Design-to-Production Continuity
-                </h3>
-
-                <p
-                  class="text-center text-sm text-gray-700 mt-4 md:mb-5 md:mt-2"
-                >
-                  They ensure alignment between the engineering design and the
-                  shop floor execution by detailing how each component should be
-                  made, finished, and assembled.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div
-          id="card-3"
-          class="flip-card rounded-xl relative md:max-w-[350px] xl:w-[450px]"
-        >
-          <div class="flip-inner">
-            <div
-              class="flip-front border-2 border-gray-300 px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400"
-            >
-              <div class="flex flex-col items-center h-full gap-2">
-                <img
-                  src="https://cadrush.com/public/assets/manufacturing/standardization-compliance.svg"
-                  alt="Experience Icon"
-                  class="w-16 mt-2"
-                />
-                <h3
-                  class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent"
-                >
-                  Standardization and Compliance
-                </h3>
-                <p class="text-center text-sm text-gray-700 mt-4 md:mb-5">
-                  Drawings are developed in accordance with industry standards
-                  such as ASME Y14.5 and ISO GD&T conventions, ensuring
-                  compliance and interoperability across suppliers and teams.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div id="card-4" class="flip-card rounded-xl relative md:max-w-[350px]">
-          <div class="flip-inner">
-            <div
-              class="flip-front border-2 border-gray-300 px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400"
-            >
-              <div class="flex flex-col items-center h-full gap-2">
-                <img
-                  src="https://cadrush.com/public/assets/manufacturing/optimized-realworld.svg"
-                  alt="Experience Icon"
-                  class="w-16"
-                />
-                <h3
-                  class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent"
-                >
-                  Optimized for Real-World Manufacturing
-                </h3>
-                <p class="text-center text-sm text-gray-700 mt-4">
-                  By incorporating correct tolerances, machining features, and
-                  material specifications, manufacturing drawings reduce the
-                  likelihood of costly errors, scrap, or rework.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 5 -->
-        <div id="card-5" class="flip-card rounded-xl relative md:max-w-[350px]">
-          <div class="flip-inner">
-            <div
-              class="flip-front border-2 border-gray-300 px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400"
-            >
-              <div class="flex flex-col items-center h-full gap-2">
-                <img
-                  src="https://cadrush.com/public/assets/manufacturing/support-procurement.svg"
-                  alt="Experience Icon"
-                  class="w-16 mt-1"
-                />
-                <h3
-                  class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent"
-                >
-                  Support for Procurement and Quality Control
-                </h3>
-                <p class="text-center text-sm text-gray-700 mt-4">
-                  Well-structured drawings include part numbers, supplier
-                  references, and quality checkpoints—supporting procurement and
-                  inspection teams throughout the manufacturing process.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Our Manufacturing Drawing Services Include: -->
-    <section
-      class="max-w-md mx-auto my-4 md:my-8 p-6 md:max-w-full md:mx-44 md:mt-20"
-    >
-      <h2
-        class="font-bold text-center mb-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent md:text-3xl text-2xl"
-      >
-        Our Manufacturing Drawing Services Include:
-      </h2>
-
-      <!-- grid container -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-        <!-- Card 1 -->
-        <div
-          id="card-1"
-          class="flip-card rounded-xl relative md:max-w-[350px] xl:w-[450px]"
-        >
-          <div class="flip-inner">
-            <div
-              class="flip-front border-2 border-gray-300 px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400"
-            >
-              <div class="flex flex-col items-center h-full gap-2">
-                <img
-                  src="https://cadrush.com/public/assets/manufacturing/component-drawings.svg"
-                  alt="Experience Icon"
-                  class="w-16"
-                />
-                <h3
-                  class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent"
-                >
-                  Component Drawings
-                </h3>
-                <p class="text-center text-sm text-gray-700 mt-4 md:my-6">
-                  Individual part documentation with full dimensions,
-                  tolerances, materials, and machining notes.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div
-          id="card-2"
-          class="flip-card rounded-xl relative md:max-w-[350px] xl:w-[450px]"
-        >
-          <div class="flip-inner">
-            <div
-              class="flip-front border-2 border-gray-300 px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400"
-            >
-              <div class="flex flex-col items-center h-full gap-2">
-                <img
-                  src="https://cadrush.com/public/assets/manufacturing/assembly-drwaings.svg"
-                  alt="Experience Icon"
-                  class="w-16"
-                />
-                <h3
-                  class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent"
-                >
-                  Assembly Drawings
-                </h3>
-
-                <p
-                  class="text-center text-sm text-gray-700 mt-4 md:mb-5 md:mt-6"
-                >
-                  Complete BOMs, exploded views, and sub-assembly structures
-                  with fastener details and annotations.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div
-          id="card-3"
-          class="flip-card rounded-xl relative md:max-w-[350px] xl:w-[450px]"
-        >
-          <div class="flip-inner">
-            <div
-              class="flip-front border-2 border-gray-300 px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400"
-            >
-              <div class="flex flex-col items-center h-full gap-2">
-                <img
-                  src="https://cadrush.com/public/assets/manufacturing/welding-fabrication.svg"
-                  alt="Experience Icon"
-                  class="w-16 mt-2"
-                />
-                <h3
-                  class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent"
-                >
-                  Welding and Fabrication Drawings
-                </h3>
-                <p class="text-center text-sm text-gray-700 mt-4 md:my-7">
-                  Clearly marked weld symbols, joining instructions, and
-                  fabrication notes.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div id="card-4" class="flip-card rounded-xl relative md:max-w-[350px]">
-          <div class="flip-inner">
-            <div
-              class="flip-front border-2 border-gray-300 px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400"
-            >
-              <div class="flex flex-col items-center h-full gap-2">
-                <img
-                  src="https://cadrush.com/public/assets/manufacturing/revision-update.svg"
-                  alt="Experience Icon"
-                  class="w-16"
-                />
-                <h3
-                  class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent"
-                >
-                  Revision and Update Services
-                </h3>
-                <p class="text-center text-sm text-gray-700 mt-4 md:my-6">
-                  Updating existing drawings to match design modifications or
-                  regulatory changes.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 5 -->
-        <div id="card-5" class="flip-card rounded-xl relative md:max-w-[350px]">
-          <div class="flip-inner">
-            <div
-              class="flip-front border-2 border-gray-300 px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400"
-            >
-              <div class="flex flex-col items-center h-full gap-2">
-                <img
-                  src="https://cadrush.com/public/assets/manufacturing/documentaion-packages.svg"
-                  alt="Experience Icon"
-                  class="w-16 mt-1"
-                />
-                <h3
-                  class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent"
-                >
-                  Documentation Packages
-                </h3>
-                <p class="text-center text-sm text-gray-700 mt-4 md:my-3">
-                  Delivery of comprehensive drawing sets for fabrication,
-                  inspection, and downstream workflows.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- partner with us -->
-    <section
-      class="bg-gradient-to-b from-white via-violet-200 to-white flex flex-col items-center h-[300px] md:h-[400px] justify-center my-12 md:my-6"
-    >
-      <h2 class="font-bold text-center mb-4 text-[#7c6ee6] text-3xl py-4 px-16">
-        Partner with Us
-      </h2>
-      <p
-        class="text-center text-sm max-w-[700px] mx-auto my-2 md:my-4 md:text-base px-4"
-      >
-        At CADRush, we view manufacturing drawings not just as deliverables, but
-        as enablers of smooth, high-quality production. Whether you're preparing
-        for large-scale manufacturing, developing a prototype, or updating
-        legacy documentation, our expert team ensures that your drawings are
-        complete, clear, and production-ready.
-      </p>
-      <p
-        class="text-center text-sm max-w-[700px] mx-auto my-2 md:my-4 md:text-base px-4"
-      >
-        Let us help you translate engineering intent into manufacturing
-        reality—accurately, efficiently, and with confidence.
-      </p>
-      <button
-        class="bg-black text-white rounded-md px-6 py-2 w-1/2 md:w-44 lg:w-48 mx-auto my-6 font-semibold hover:bg-black/80"
-      >
-        <a href="https://cadrush.com/app/#/signup" target="_blank">
-          START BUILDING</a
-        >
-      </button>
-    </section>
-
-    <!-- faq -->
-    <section class="py-4 md:py-20">
-      <div class="mx-auto max-w-4xl lg:max-w-5xl px-4 sm:px-6 lg:px-8">
-        <h2
-          class="font-bold text-center mb-4 text-[#7c6ee6] text-3xl pb-4 md:pb-8"
-        >
-          Frequently asked questions
-        </h2>
-
-        <div
-          class="accordion-group flex flex-col gap-2"
-          data-accordion="default-accordion"
-        >
-          <div
-            class="accordion py-2 px-4 md:px-8 border border-solid border-gray-300 transition-all duration-500 rounded-md accordion-active:bg-indigo-50 active"
-            id="basic-heading-one-with-arrow"
-          >
-            <button
-              class="accordion-toggle group inline-flex items-center justify-between leading-8 text-gray-900 w-full transition duration-500 text-left hover:text-indigo-600 accordion-active:font-semibold accordion-active:text-indigo-600 text-base md:text-lg"
-              aria-controls="basic-collapse-one-with-arrow"
-            >
-              <h5 class="text-base md:text-lg font-normal">
-                What is a 2D Manufacturing Drawing?
-              </h5>
-              <img
-                src="https://cadrush.com/public/assets/plus.svg"
-                alt="Plus Icon"
-                class="w-6 h-6"
-              />
-            </button>
-            <div
-              id="basic-collapse-one-with-arrow"
-              class="accordion-content w-full px-0 overflow-hidden"
-              aria-labelledby="basic-heading-one-with-arrow"
-              style="max-height: 0"
-            >
-              <p
-                class="text-gray-900 leading-6 text-base md:text-lg my-2 font-light md:font-thin"
-              >
-                A 2D Manufacturing Drawing is a detailed technical
-                representation derived from a 3D model, containing dimensions,
-                tolerances, materials, surface finishes, and other critical
-                information required for fabrication and inspection.
-              </p>
-            </div>
-          </div>
-
-          <div
-            class="accordion py-2 px-4 md:px-8 border border-solid border-gray-300 transition-all duration-500 rounded-md accordion-active:bg-indigo-50 active"
-            id="basic-heading-one-with-arrow"
-          >
-            <button
-              class="accordion-toggle group inline-flex items-center justify-between leading-8 text-gray-900 w-full transition duration-500 text-left hover:text-indigo-600 accordion-active:font-semibold accordion-active:text-indigo-600 text-base md:text-lg"
-              aria-controls="basic-collapse-one-with-arrow"
-            >
-              <h5 class="text-base md:text-lg font-normal">
-                Can you convert a 3D model to manufacturing drawings?
-              </h5>
-              <img
-                src="https://cadrush.com/public/assets/plus.svg"
-                alt="Plus Icon"
-                class="w-6 h-6"
-              />
-            </button>
-            <div
-              id="basic-collapse-one-with-arrow"
-              class="accordion-content w-full px-0 overflow-hidden"
-              aria-labelledby="basic-heading-one-with-arrow"
-              style="max-height: 0"
-            >
-              <p
-                class="text-gray-900 leading-6 text-base md:text-lg my-2 font-light md:font-thin"
-              >
-                Yes, we specialize in converting 3D models to manufacturing
-                drawings, ensuring that every part and assembly is accurately
-                represented for production, machining, or fabrication.
-              </p>
-            </div>
-          </div>
-
-          <div
-            class="accordion py-2 px-4 md:px-8 border border-solid border-gray-300 transition-all duration-500 rounded-md accordion-active:bg-indigo-50 active"
-            id="basic-heading-one-with-arrow"
-          >
-            <button
-              class="accordion-toggle group inline-flex items-center justify-between leading-8 text-gray-900 w-full transition duration-500 text-left hover:text-indigo-600 accordion-active:font-semibold accordion-active:text-indigo-600 text-base md:text-lg"
-              aria-controls="basic-collapse-one-with-arrow"
-            >
-              <h5 class="text-base md:text-lg font-normal">
-                What is included in your manufacturing drawing services?
-              </h5>
-              <img
-                src="https://cadrush.com/public/assets/plus.svg"
-                alt="Plus Icon"
-                class="w-6 h-6"
-              />
-            </button>
-            <div
-              id="basic-collapse-one-with-arrow"
-              class="accordion-content w-full px-0 overflow-hidden"
-              aria-labelledby="basic-heading-one-with-arrow"
-              style="max-height: 0"
-            >
-              <p
-                class="text-gray-900 leading-6 text-base md:text-lg my-2 font-light md:font-thin"
-              >
-                Our services include part drawings, assembly drawings, exploded
-                views, GD&T annotations, BOM (Bill of Materials) generation, and
-                tolerance analysis—based on industry standards and
-                client-specific guidelines.
-              </p>
-            </div>
-          </div>
-
-          <div
-            class="accordion py-2 px-4 md:px-8 border border-solid border-gray-300 transition-all duration-500 rounded-md accordion-active:bg-indigo-50 active"
-            id="basic-heading-one-with-arrow"
-          >
-            <button
-              class="accordion-toggle group inline-flex items-center justify-between leading-8 text-gray-900 w-full transition duration-500 text-left hover:text-indigo-600 accordion-active:font-semibold accordion-active:text-indigo-600 text-base md:text-lg"
-              aria-controls="basic-collapse-one-with-arrow"
-            >
-              <h5 class="text-base md:text-lg font-normal">
-                Which file formats do you support for drawings?
-              </h5>
-              <img
-                src="https://cadrush.com/public/assets/plus.svg"
-                alt="Plus Icon"
-                class="w-6 h-6"
-              />
-            </button>
-            <div
-              id="basic-collapse-one-with-arrow"
-              class="accordion-content w-full px-0 overflow-hidden"
-              aria-labelledby="basic-heading-one-with-arrow"
-              style="max-height: 0"
-            >
-              <p
-                class="text-gray-900 leading-6 text-base md:text-lg my-2 font-light md:font-thin"
-              >
-                We deliver drawings in formats such as DWG, DXF, PDF, and native
-                CAD formats (SLDDRW, IDW, etc.), depending on your software
-                preference and manufacturing needs.
-              </p>
-            </div>
-          </div>
-
-          <div
-            class="accordion py-2 px-4 md:px-8 border border-solid border-gray-300 transition-all duration-500 rounded-md accordion-active:bg-indigo-50 active"
-            id="basic-heading-one-with-arrow"
-          >
-            <button
-              class="accordion-toggle group inline-flex items-center justify-between leading-8 text-gray-900 w-full transition duration-500 text-left hover:text-indigo-600 accordion-active:font-semibold accordion-active:text-indigo-600 text-base md:text-lg"
-              aria-controls="basic-collapse-one-with-arrow"
-            >
-              <h5 class="text-base md:text-lg font-normal">
-                Do you follow any specific drafting standards?
-              </h5>
-              <img
-                src="https://cadrush.com/public/assets/plus.svg"
-                alt="Plus Icon"
-                class="w-6 h-6"
-              />
-            </button>
-            <div
-              id="basic-collapse-one-with-arrow"
-              class="accordion-content w-full px-0 overflow-hidden"
-              aria-labelledby="basic-heading-one-with-arrow"
-              style="max-height: 0"
-            >
-              <p
-                class="text-gray-900 leading-6 text-base md:text-lg my-2 font-light md:font-thin"
-              >
-                Yes, our drawings adhere to standards like ISO, ASME Y14.5, DIN,
-                or customer-defined templates and layer conventions.
-              </p>
-            </div>
-          </div>
-
-          <div
-            class="accordion py-2 px-4 md:px-8 border border-solid border-gray-300 transition-all duration-500 rounded-md accordion-active:bg-indigo-50 active"
-            id="basic-heading-one-with-arrow"
-          >
-            <button
-              class="accordion-toggle group inline-flex items-center justify-between leading-8 text-gray-900 w-full transition duration-500 text-left hover:text-indigo-600 accordion-active:font-semibold accordion-active:text-indigo-600 text-base md:text-lg"
-              aria-controls="basic-collapse-one-with-arrow"
-            >
-              <h5 class="text-base md:text-lg font-normal">
-                Can you create manufacturing drawings for complex assemblies?
-              </h5>
-              <img
-                src="https://cadrush.com/public/assets/plus.svg"
-                alt="Plus Icon"
-                class="w-6 h-6"
-              />
-            </button>
-            <div
-              id="basic-collapse-one-with-arrow"
-              class="accordion-content w-full px-0 overflow-hidden"
-              aria-labelledby="basic-heading-one-with-arrow"
-              style="max-height: 0"
-            >
-              <p
-                class="text-gray-900 leading-6 text-base md:text-lg my-2 font-light md:font-thin"
-              >
-                Yes, we can generate detailed multi-sheet drawings for large
-                assemblies, including exploded views and part-level
-                documentation.
-              </p>
-            </div>
-          </div>
-
-          <div
-            class="accordion py-2 px-4 md:px-8 border border-solid border-gray-300 transition-all duration-500 rounded-md accordion-active:bg-indigo-50 active"
-            id="basic-heading-one-with-arrow"
-          >
-            <button
-              class="accordion-toggle group inline-flex items-center justify-between leading-8 text-gray-900 w-full transition duration-500 text-left hover:text-indigo-600 accordion-active:font-semibold accordion-active:text-indigo-600 text-base md:text-lg"
-              aria-controls="basic-collapse-one-with-arrow"
-            >
-              <h5 class="text-base md:text-lg font-normal">
-                Do you provide revision control and drawing updates?
-              </h5>
-              <img
-                src="https://cadrush.com/public/assets/plus.svg"
-                alt="Plus Icon"
-                class="w-6 h-6"
-              />
-            </button>
-            <div
-              id="basic-collapse-one-with-arrow"
-              class="accordion-content w-full px-0 overflow-hidden"
-              aria-labelledby="basic-heading-one-with-arrow"
-              style="max-height: 0"
-            >
-              <p
-                class="text-gray-900 leading-6 text-base md:text-lg my-2 font-light md:font-thin"
-              >
-                Yes. We maintain version control and can revise existing 2D
-                manufacturing drawings as per engineering changes or updated 3D
-                models.
-              </p>
-            </div>
-          </div>
-
-          <div
-            class="accordion py-2 px-4 md:px-8 border border-solid border-gray-300 transition-all duration-500 rounded-md accordion-active:bg-indigo-50 active"
-            id="basic-heading-one-with-arrow"
-          >
-            <button
-              class="accordion-toggle group inline-flex items-center justify-between leading-8 text-gray-900 w-full transition duration-500 text-left hover:text-indigo-600 accordion-active:font-semibold accordion-active:text-indigo-600 text-base md:text-lg"
-              aria-controls="basic-collapse-one-with-arrow"
-            >
-              <h5 class="text-base md:text-lg font-normal">
-                How do I request your 3D model to manufacturing drawing
-                services?
-              </h5>
-              <img
-                src="https://cadrush.com/public/assets/plus.svg"
-                alt="Plus Icon"
-                class="w-6 h-6"
-              />
-            </button>
-            <div
-              id="basic-collapse-one-with-arrow"
-              class="accordion-content w-full px-0 overflow-hidden"
-              aria-labelledby="basic-heading-one-with-arrow"
-              style="max-height: 0"
-            >
-              <p
-                class="text-gray-900 leading-6 text-base md:text-lg my-2 font-light md:font-thin"
-              >
-                You can send us your 3D CAD models (STEP, IGES, SLDPRT, etc.)
-                along with manufacturing requirements, and we’ll create precise,
-                production-ready 2D manufacturing drawings.
-              </p>
-            </div>
-          </div>
-
-          <div
-            class="accordion py-2 px-4 md:px-8 border border-solid border-gray-300 transition-all duration-500 rounded-md accordion-active:bg-indigo-50 active"
-            id="basic-heading-one-with-arrow"
-          >
-            <button
-              class="accordion-toggle group inline-flex items-center justify-between leading-8 text-gray-900 w-full transition duration-500 text-left hover:text-indigo-600 accordion-active:font-semibold accordion-active:text-indigo-600 text-base md:text-lg"
-              aria-controls="basic-collapse-one-with-arrow"
-            >
-              <h5 class="text-base md:text-lg font-normal">
-                Do you support multiple CAD platforms?
-              </h5>
-              <img
-                src="https://cadrush.com/public/assets/plus.svg"
-                alt="Plus Icon"
-                class="w-6 h-6"
-              />
-            </button>
-            <div
-              id="basic-collapse-one-with-arrow"
-              class="accordion-content w-full px-0 overflow-hidden"
-              aria-labelledby="basic-heading-one-with-arrow"
-              style="max-height: 0"
-            >
-              <p
-                class="text-gray-900 leading-6 text-base md:text-lg my-2 font-light md:font-thin"
-              >
-                Yes, we work with leading CAD tools such as SolidWorks, AutoCAD,
-                Inventor, Creo, and Siemens NX to generate accurate and
-                standardized manufacturing drawings.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- footer -->
-    <footer class="bg-gray-900 text-white py-10 w-full md:pl-[10%]">
-      <div
-        class="container mx-auto px-6 md:px-12 lg:px-20 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left"
-      >
-        <div class="space-y-4 flex flex-col items-center md:items-start">
-          <img
-            src="https://cadrush.com/public/assets/Logo2.png"
-            alt="CADRush Logo"
-            class="h-12"
-          />
-          <p class="text-sm text-gray-400 inter font-bold">
-            A product of MN Engineering Solutions.
-          </p>
-        </div>
-
-        <div class="space-y-4">
-          <h3 class="text-lg font-semibold">Contact</h3>
-          <div
-            class="flex items-center justify-center md:justify-start space-x-3"
-          >
-            <img src="https://cadrush.com/public/assets/mail.svg" class="w-5" />
-            <p class="font-normal">hello@cadrush.com</p>
-          </div>
-          <div
-            class="flex items-center justify-center md:justify-start space-x-1"
-          >
-            <img
-              src="https://cadrush.com/public/assets/location.svg"
-              class="w-5"
-            />
-            <p class="font-normal">
-              MN Engineering Solutions Inc.<br />
-              332 Michigan Avenue, Chicago, IL 60604, USA
+            <p class="text-gray-600 flex-grow group-hover:text-white transition-colors duration-300">
+              Component drawings for engine parts, chassis systems, and
+              sub-assemblies.
             </p>
           </div>
         </div>
 
-        <div class="space-y-4">
-          <h3 class="text-lg font-semibold">Follow Us</h3>
-          <div class="flex justify-center md:justify-start space-x-4">
-            <a
-              href="https://www.instagram.com/cadrush_mnes?igsh=MXZ5cTk0eTJsa2FtcQ==&utm_source=ig_contact_invite"
-              class="bg-white w-10 h-10 flex items-center justify-center rounded-full shadow-md"
-            >
-              <img
-                src="https://cadrush.com/public/assets/instagram.svg"
-                class="w-5"
-              />
-            </a>
-            <a
-              href="https://www.facebook.com/share/1D9pVsDCYJ/?mibextid=wwXIfr"
-              class="bg-white w-10 h-10 flex items-center justify-center rounded-full shadow-md"
-            >
-              <img
-                src="https://cadrush.com/public/assets/facebook.svg"
-                class="w-5"
-              />
-            </a>
-            <a
-              href="https://www.linkedin.com/company/cadrush/"
-              class="bg-white w-10 h-10 flex items-center justify-center rounded-full shadow-md"
-            >
-              <img
-                src="https://cadrush.com/public/assets/linkedin.svg"
-                class="w-5"
-              />
-            </a>
+        <!-- Card 2 -->
+        <div
+          class="card-hover-effect group hover:bg-black relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
+          x-data="{ show: false }" x-init="setTimeout(() => show = true, 200)"
+          x-transition:enter="transition ease-out duration-700 transform"
+          x-transition:enter-start="opacity-0 translate-y-10" x-transition:enter-end="opacity-100 translate-y-0"
+          x-show="show">
+          <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="relative p-10 h-full flex flex-col">
+            <div class="flex items-center mb-4">
+              <div
+                class="w-12 h-12 rounded-full bg-[#EDEDED] group-hover:bg-gray-400 flex items-center justify-center text-white text-xl font-bold mr-4">
+                <img src="https://cadrush.com/public/assets/manufacturing/heavy-equipment.svg"
+                  alt="Detailed manufacturing drawings for heavy equipment supporting accurate fabrication and assembly."
+                  class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200 w-7" />
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 group-hover:text-white transition-colors duration-300">
+                Heavy Equipment
+              </h3>
+            </div>
+            <p class="text-gray-600 flex-grow group-hover:text-white transition-colors duration-300">
+              Structural and load-bearing element detailing for industrial
+              machinery.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="card-hover-effect group hover:bg-black relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
+          x-data="{ show: false }" x-init="setTimeout(() => show = true, 300)"
+          x-transition:enter="transition ease-out duration-700 transform"
+          x-transition:enter-start="opacity-0 translate-y-10" x-transition:enter-end="opacity-100 translate-y-0"
+          x-show="show">
+          <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="relative p-10 h-full flex flex-col">
+            <div class="flex items-center mb-4">
+              <div
+                class="w-12 h-12 rounded-full bg-[#EDEDED] group-hover:bg-gray-400 flex items-center justify-center text-white text-xl font-bold mr-4">
+                <img src="https://cadrush.com/public/assets/manufacturing/machine-parts.svg"
+                  alt="Engineering drawings for machine parts and tools designed for manufacturability and quality control."
+                  class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200 w-10" />
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 group-hover:text-white transition-colors duration-300">
+                Machine Parts & Tools
+              </h3>
+            </div>
+            <p class="text-gray-600 flex-grow group-hover:text-white transition-colors duration-300">
+              Tooling and fixture design drawings for high-precision parts.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div
+          class="card-hover-effect group hover:bg-black relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
+          x-data="{ show: false }" x-init="setTimeout(() => show = true, 400)"
+          x-transition:enter="transition ease-out duration-700 transform"
+          x-transition:enter-start="opacity-0 translate-y-10" x-transition:enter-end="opacity-100 translate-y-0"
+          x-show="show">
+          <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="relative p-10 h-full flex flex-col">
+            <div class="flex items-center mb-4">
+              <div
+                class="w-12 h-12 rounded-full bg-[#EDEDED] group-hover:bg-gray-400 flex items-center justify-center text-white text-xl font-bold mr-4">
+                <img src="https://cadrush.com/public/assets/manufacturing/medical-devices.svg"
+                  alt="Precise manufacturing drawings for medical devices meeting regulatory and industry standards."
+                  class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200 w-8" />
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 group-hover:text-white transition-colors duration-300">
+                Medical Devices
+              </h3>
+            </div>
+            <p class="text-gray-600 flex-grow group-hover:text-white transition-colors duration-300">
+              Documentation aligned with regulatory and quality system
+              requirements
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div
+          class="card-hover-effect group hover:bg-black relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
+          x-data="{ show: false }" x-init="setTimeout(() => show = true, 500)"
+          x-transition:enter="transition ease-out duration-700 transform"
+          x-transition:enter-start="opacity-0 translate-y-10" x-transition:enter-end="opacity-100 translate-y-0"
+          x-show="show">
+          <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="relative p-10 h-full flex flex-col">
+            <div class="flex items-center mb-4">
+              <div
+                class="w-12 h-12 rounded-full bg-[#EDEDED] group-hover:bg-gray-400 flex items-center justify-center text-white text-xl font-bold mr-4">
+                <img src="https://cadrush.com/public/assets/manufacturing/speciality-car.svg"
+                  alt="Manufacturing drafting services for specialty vehicles ensuring accuracy and design integrity."
+                  class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200 w-8" />
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 group-hover:text-white transition-colors duration-300">
+                Speciality Vehicles
+              </h3>
+            </div>
+            <p class="text-gray-600 flex-grow group-hover:text-white transition-colors duration-300">
+              Assembly and part-level drawings for fire trucks, ambulances,
+              and off-road vehicles.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div
+          class="card-hover-effect group hover:bg-black relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
+          x-data="{ show: false }" x-init="setTimeout(() => show = true, 500)"
+          x-transition:enter="transition ease-out duration-700 transform"
+          x-transition:enter-start="opacity-0 translate-y-10" x-transition:enter-end="opacity-100 translate-y-0"
+          x-show="show">
+          <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="relative p-10 h-full flex flex-col">
+            <div class="flex items-center mb-4">
+              <div
+                class="w-12 h-12 rounded-full bg-[#EDEDED] group-hover:bg-gray-400 flex items-center justify-center text-white text-xl font-bold mr-4">
+                <img src="https://cadrush.com/public/assets/manufacturing/industrial-machines.svg"
+                  alt="Comprehensive manufacturing drawings for industrial machinery and equipment production."
+                  class="transition duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200 w-8" />
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 group-hover:text-white transition-colors duration-300">
+                Industrial machines and equipment
+              </h3>
+            </div>
+            <p class="text-gray-600 flex-grow group-hover:text-white transition-colors duration-300">
+              Full-scale service to make the process industry machine line
+              from parts, assembly, 3D/2D floor plans.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- our expertise -->
+  <section
+    class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 md:gap-8 px-4 md:px-20 py-8 md:mt-12">
+    <!-- Left text block -->
+    <div class="flex-1 text-center md:text-left">
+      <h1
+        class="text-2xl md:text-3xl font-bold bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent">
+        Software and Standards Expertise
+      </h1>
+      <p class="mt-4 text-[#747474]">
+        To ensure accuracy and compatibility, we utilize leading CAD platforms
+        and adhere to recognized standards:
+      </p>
+    </div>
+
+    <!-- Right bordered div -->
+    <div class="flex-1 border-2 p-10 rounded-xl md:py-10">
+      <div class="flex items-center mt-2">
+        <img src="https://cadrush.com/public/assets/fea/tick.svg" alt="tick" class="w-5 h-5 mr-2" />
+        <h2 class="font-semibold text-xl">SolidWorks</h2>
+      </div>
+      <!-- <h3 class="ml-7 mt-1">
+          ANYSYS, Abaqus, NASTRAN, SolidWorks Simulation, Creo, Inventor.
+        </h3> -->
+
+      <div class="flex items-center mt-6">
+        <img src="https://cadrush.com/public/assets/fea/tick.svg" alt="tick" class="w-5 h-5 mr-2" />
+        <h2 class="font-semibold text-xl">Autodesk Inventor</h2>
+      </div>
+      <!-- <h3 class="ml-7 mt-1">
+          ANSYS Fluent, ANSYS CFX, STAR-CCM+, COMSOL Multiphysics, Autodesk CFD,
+          SolidWorks Flow Simulation.
+        </h3> -->
+
+      <div class="flex items-center mt-6">
+        <img src="https://cadrush.com/public/assets/fea/tick.svg" alt="tick" class="w-5 h-5 mr-2" />
+        <h2 class="font-semibold text-xl">PTC Creo</h2>
+      </div>
+      <div class="flex items-center mt-6">
+        <img src="https://cadrush.com/public/assets/fea/tick.svg" alt="tick" class="w-5 h-5 mr-2" />
+        <h2 class="font-semibold text-xl">Solid Edge</h2>
+      </div>
+      <div class="flex items-center mt-6">
+        <img src="https://cadrush.com/public/assets/fea/tick.svg" alt="tick" class="w-5 h-5 mr-2" />
+        <h2 class="font-semibold text-xl">CATIA</h2>
+      </div>
+      <div class="flex items-center mt-6">
+        <img src="https://cadrush.com/public/assets/fea/tick.svg" alt="tick" class="w-5 h-5 mr-2" />
+        <h2 class="font-semibold text-xl">NX-CAD</h2>
+      </div>
+      <div class="flex items-center mt-6">
+        <img src="https://cadrush.com/public/assets/fea/tick.svg" alt="tick" class="w-5 h-5 mr-2" />
+        <h2 class="font-semibold text-xl">ASME Y14.5 / ISO 2768 standards</h2>
+      </div>
+      <div class="flex items-center mt-6">
+        <img src="https://cadrush.com/public/assets/fea/tick.svg" alt="tick" class="w-5 h-5 mr-2" />
+        <h2 class="font-semibold text-xl">
+          GD&T application and verification
+        </h2>
+      </div>
+
+      <!-- <p class="mt-10 text-[#747474]">
+          This flexibility ensures seamless integration with your CAD ecosystem
+          and compatibility with your design-to-production workflows.
+        </p> -->
+    </div>
+  </section>
+
+  <!-- Why Choose Us for Manufacturing Drawing Services -->
+  <section class="max-w-md mx-auto my-4 md:my-8 md:p-6 p-10 md:max-w-full md:mx-52 md:mt-20">
+    <h2
+      class="font-bold text-center mb-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent text-2xl md:text-3xl">
+      Why Choose Us for Manufacturing Drawing Services?
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 md:gap-12 gap-6 md:mt-12 items-stretch">
+      <!-- Card 1 -->
+      <div class="flip-card rounded-xl group relative card-container min-h-[320px]" tabindex="0">
+        <div class="flip-inner h-full">
+          <div
+            class="flip-front border border-[#c3b7fd] px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400 group-hover:scale-[1.03] group-hover:shadow-2xl group-hover:z-10 group-hover:ring-2 group-hover:ring-purple-300 focus-within:scale-[1.03] focus-within:shadow-2xl focus-within:z-10 focus-within:ring-2 focus-within:ring-purple-300 h-full"
+            style="transform-origin: center">
+            <div class="card-content">
+              <div class="card-header">
+                <div class="bg-white text-[#7c6ee6] font-bold text-xl">
+                  01
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="text-lg font-semibold text-center mb-4">
+                  Engineering-Driven Drafting Expertise
+                </h3>
+                <img src="https://cadrush.com/public/assets/manufacturing/engineering-depth.svg"
+                  alt="Engineering-based drafting expertise ensuring accuracy and functionality in every drawing."
+                  class="w-22 h-22 mb-4" />
+              </div>
+              <div class="card-footer">
+                <p class="card-para text-center text-sm text-gray-700">
+                  Our team combines deep mechanical engineering knowledge with
+                  CAD drafting precision to produce production-ready drawings
+                  that meet real-world manufacturing standards.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Horizontal Line -->
-      <hr class="border-gray-700 my-4" />
-
-      <!-- Copyright -->
-      <div
-        class="text-center md:text-right text-sm text-gray-400 px-6 inter font-normal"
-      >
-        Copyright &copy; 2024 Cadrush. All rights reserved.
-      </div>
-    </footer>
-
-    <!-- Floating Scroll-to-Top Button -->
-    <button
-      id="scrollToTopBtn"
-      onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
-      class="fixed bottom-6 right-6 z-50 bg-white border border-gray-300 shadow-lg rounded-full p-3 flex items-center justify-center transition-opacity duration-300 opacity-0 hover:bg-blue-100 hover:border-blue-400"
-      aria-label="Scroll to top"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="w-6 h-6 text-blue-600"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M5 15l7-7 7 7"
-        />
-      </svg>
-    </button>
-
-    <!-- Contact Form Popup -->
-    <div
-      id="contactPopup"
-      class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 p-4"
-    >
-      <div
-        class="bg-white rounded-xl shadow-2xl w-full max-w-md relative overflow-hidden"
-      >
-        <!-- Header -->
-        <div class="bg-[#7c6ee6] text-white p-6">
-          <div class="flex justify-between items-center">
-            <h3 class="text-xl font-bold">Get in Touch</h3>
-            <button
-              id="closeContact"
-              class="text-white hover:text-gray-200 focus:outline-none"
-            >
-              <svg
-                class="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
+      <!-- Card 2 -->
+      <div class="flip-card group rounded-xl relative card-container min-h-[300px]" tabindex="0">
+        <div class="flip-inner h-full">
+          <div
+            class="flip-front border border-[#c3b7fd] px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400 group-hover:scale-[1.03] group-hover:shadow-2xl group-hover:z-10 group-hover:ring-2 group-hover:ring-purple-300 focus-within:scale-[1.03] focus-within:shadow-2xl focus-within:z-10 focus-within:ring-2 focus-within:ring-purple-300 h-full"
+            style="transform-origin: center">
+            <div class="card-content">
+              <div class="card-header">
+                <div class="bg-white text-[#7c6ee6] font-bold text-xl">
+                  02
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="text-lg font-semibold text-center mb-4">
+                  Industry-Specific Understanding
+                </h3>
+                <img src="https://cadrush.com/public/assets/manufacturing/industry-specific.svg"
+                  alt="Manufacturing drawing services tailored with deep industry-specific knowledge and expertise."
+                  class="w-22 h-22 mb-4" />
+              </div>
+              <div class="card-footer">
+                <p class="card-para text-center text-sm text-gray-700">
+                  We deliver drawing solutions tailored to the specific needs
+                  of industries such as automotive, heavy machinery, medical
+                  devices, specialty vehicles, and tooling.
+                </p>
+              </div>
+            </div>
           </div>
-          <p class="text-sm mt-1 text-gray-100">
-            We'll get back to you as soon as possible
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="flip-card group rounded-xl relative card-container min-h-[320px]" tabindex="0">
+        <div class="flip-inner h-full">
+          <div
+            class="flip-front border border-[#c3b7fd] px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400 group-hover:scale-[1.03] group-hover:shadow-2xl group-hover:z-10 group-hover:ring-2 group-hover:ring-purple-300 focus-within:scale-[1.03] focus-within:shadow-2xl focus-within:z-10 focus-within:ring-2 focus-within:ring-purple-300 h-full"
+            style="transform-origin: center">
+            <div class="card-content">
+              <div class="card-header">
+                <div class="bg-white text-[#7c6ee6] font-bold text-xl">
+                  03
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="text-lg font-semibold text-center mb-4">
+                  Standards Compliance and Quality Focus
+                </h3>
+                <img src="https://cadrush.com/public/assets/manufacturing/standards-compliance.svg"
+                  alt="Drawings prepared with strict adherence to global standards and quality assurance."
+                  class="w-22 h-22 mb-4" />
+              </div>
+              <div class="card-footer">
+                <p class="card-para text-center text-sm text-gray-700">
+                  All drawings are created in adherence to industry-standard
+                  practices, including proper dimensioning, GD&T, and BOM
+                  structuring—ensuring every drawing support inspection and
+                  assembly.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="flip-card group rounded-xl relative card-container min-h-[300px]" tabindex="0">
+        <div class="flip-inner h-full">
+          <div
+            class="flip-front border border-[#c3b7fd] px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400 group-hover:scale-[1.03] group-hover:shadow-2xl group-hover:z-10 group-hover:ring-2 group-hover:ring-purple-300 focus-within:scale-[1.03] focus-within:shadow-2xl focus-within:z-10 focus-within:ring-2 focus-within:ring-purple-300 h-full"
+            style="transform-origin: center">
+            <div class="card-content">
+              <div class="card-header">
+                <div class="bg-white text-[#7c6ee6] font-bold text-xl">
+                  04
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="text-lg font-semibold text-center mb-4">
+                  Collaboration with Manufacturers
+                </h3>
+                <img src="https://cadrush.com/public/assets/manufacturing/collaboration1.svg" alt="Experience Icon"
+                  class="w-22 h-22 mb-4" />
+              </div>
+              <div class="card-footer">
+                <p class="card-para text-center text-sm text-gray-700">
+                  We work closely with production teams and vendors to confirm
+                  feasibility, manufacturability, and compliance—reducing the
+                  likelihood of delays or rework.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="flip-card group rounded-xl relative card-container min-h-[300px]" tabindex="0">
+        <div class="flip-inner h-full">
+          <div
+            class="flip-front border border-[#c3b7fd] px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400 group-hover:scale-[1.03] group-hover:shadow-2xl group-hover:z-10 group-hover:ring-2 group-hover:ring-purple-300 focus-within:scale-[1.03] focus-within:shadow-2xl focus-within:z-10 focus-within:ring-2 focus-within:ring-purple-300 h-full"
+            style="transform-origin: center">
+            <div class="card-content">
+              <div class="card-header">
+                <div class="bg-white text-[#7c6ee6] font-bold text-xl">
+                  05
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="text-lg font-semibold text-center mb-4">
+                  Flexibility in Input Sources
+                </h3>
+                <img src="https://cadrush.com/public/assets/manufacturing/flexible-in-input.svg" alt="Experience Icon"
+                  class="w-22 h-22 mb-4" />
+              </div>
+              <div class="card-footer">
+                <p class="card-para text-center text-sm text-gray-700">
+                  Whether starting from legacy paper drawings, existing
+                  components, or conceptual sketches, we can create complete
+                  manufacturing documentation to your required format and
+                  level of detail.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Manufacturing Drawings? -->
+  <section class="max-w-md mx-auto my-4 md:my-8 p-6 md:max-w-full md:mx-44 md:mt-20">
+    <h2
+      class="font-bold text-center mb-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent text-2xl md:text-3xl">
+      Why Manufacturing Drawings?
+    </h2>
+    <p class="text-center text-sm max-w-[500px] mx-auto my-2 md:my-4 md:text-base">
+      Well-prepared manufacturing drawings are essential for ensuring product
+      quality, manufacturability, and cost-effective production. Key
+      advantages include:
+    </p>
+
+    <!-- grid container -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+      <!-- Card 1 -->
+      <div id="card-1" class="flip-card rounded-xl relative md:max-w-[350px] xl:w-[450px]">
+        <div class="flip-inner">
+          <div
+            class="flip-front border-2 border-gray-300 px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400">
+            <div class="flex flex-col items-center h-full gap-2">
+              <img src="https://cadrush.com/public/assets/manufacturing/comprehensive-performance.svg"
+                alt="Experience Icon" class="w-16" />
+              <h3
+                class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent">
+                Comprehensive Performance Insights
+              </h3>
+              <p class="text-center text-sm text-gray-700 mt-4">
+                Manufacturing drawings deliver precise, unambiguous
+                instructions to machinists, fabricators, and
+                assemblers—minimizing the risk of misinterpretation during
+                production.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div id="card-2" class="flip-card rounded-xl relative md:max-w-[350px] xl:w-[450px]">
+        <div class="flip-inner">
+          <div
+            class="flip-front border-2 border-gray-300 px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400">
+            <div class="flex flex-col items-center h-full gap-2">
+              <img src="https://cadrush.com/public/assets/manufacturing/design-to-production.svg" alt="Experience Icon"
+                class="w-20" />
+              <h3
+                class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent">
+                Design-to-Production Continuity
+              </h3>
+
+              <p class="text-center text-sm text-gray-700 mt-4 md:mb-5 md:mt-2">
+                They ensure alignment between the engineering design and the
+                shop floor execution by detailing how each component should be
+                made, finished, and assembled.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div id="card-3" class="flip-card rounded-xl relative md:max-w-[350px] xl:w-[450px]">
+        <div class="flip-inner">
+          <div
+            class="flip-front border-2 border-gray-300 px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400">
+            <div class="flex flex-col items-center h-full gap-2">
+              <img src="https://cadrush.com/public/assets/manufacturing/standardization-compliance.svg"
+                alt="Standardized manufacturing drawings aligned with international design and production norms."
+                class="w-16 mt-2" />
+              <h3
+                class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent">
+                Standardization and Compliance
+              </h3>
+              <p class="text-center text-sm text-gray-700 mt-4 md:mb-5">
+                Drawings are developed in accordance with industry standards
+                such as ASME Y14.5 and ISO GD&T conventions, ensuring
+                compliance and interoperability across suppliers and teams.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div id="card-4" class="flip-card rounded-xl relative md:max-w-[350px]">
+        <div class="flip-inner">
+          <div
+            class="flip-front border-2 border-gray-300 px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400">
+            <div class="flex flex-col items-center h-full gap-2">
+              <img src="https://cadrush.com/public/assets/manufacturing/optimized-realworld.svg"
+                alt="Manufacturing drawings optimized for practical production, assembly, and cost efficiency."
+                class="w-16" />
+              <h3
+                class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent">
+                Optimized for Real-World Manufacturing
+              </h3>
+              <p class="text-center text-sm text-gray-700 mt-4">
+                By incorporating correct tolerances, machining features, and
+                material specifications, manufacturing drawings reduce the
+                likelihood of costly errors, scrap, or rework.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div id="card-5" class="flip-card rounded-xl relative md:max-w-[350px]">
+        <div class="flip-inner">
+          <div
+            class="flip-front border-2 border-gray-300 px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400">
+            <div class="flex flex-col items-center h-full gap-2">
+              <img src="https://cadrush.com/public/assets/manufacturing/support-procurement.svg"
+                alt="Detailed drawings supporting procurement accuracy and effective quality control processes."
+                class="w-16 mt-1" />
+              <h3
+                class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent">
+                Support for Procurement and Quality Control
+              </h3>
+              <p class="text-center text-sm text-gray-700 mt-4">
+                Well-structured drawings include part numbers, supplier
+                references, and quality checkpoints—supporting procurement and
+                inspection teams throughout the manufacturing process.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Manufacturing Drawing Services Include: -->
+  <section class="max-w-md mx-auto my-4 md:my-8 p-6 md:max-w-full md:mx-44 md:mt-20">
+    <h2
+      class="font-bold text-center mb-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent md:text-3xl text-2xl">
+      Our Manufacturing Drawing Services Include:
+    </h2>
+
+    <!-- grid container -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+      <!-- Card 1 -->
+      <div id="card-1" class="flip-card rounded-xl relative md:max-w-[350px] xl:w-[450px]">
+        <div class="flip-inner">
+          <div
+            class="flip-front border-2 border-gray-300 px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400">
+            <div class="flex flex-col items-center h-full gap-2">
+              <img src="https://cadrush.com/public/assets/manufacturing/component-drawings.svg" alt="Experience Icon"
+                class="w-16" />
+              <h3
+                class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent">
+                Component Drawings
+              </h3>
+              <p class="text-center text-sm text-gray-700 mt-4 md:my-6">
+                Individual part documentation with full dimensions,
+                tolerances, materials, and machining notes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div id="card-2" class="flip-card rounded-xl relative md:max-w-[350px] xl:w-[450px]">
+        <div class="flip-inner">
+          <div
+            class="flip-front border-2 border-gray-300 px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400">
+            <div class="flex flex-col items-center h-full gap-2">
+              <img src="https://cadrush.com/public/assets/manufacturing/assembly-drwaings.svg" alt="Experience Icon"
+                class="w-16" />
+              <h3
+                class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent">
+                Assembly Drawings
+              </h3>
+
+              <p class="text-center text-sm text-gray-700 mt-4 md:mb-5 md:mt-6">
+                Complete BOMs, exploded views, and sub-assembly structures
+                with fastener details and annotations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div id="card-3" class="flip-card rounded-xl relative md:max-w-[350px] xl:w-[450px]">
+        <div class="flip-inner">
+          <div
+            class="flip-front border-2 border-gray-300 px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400">
+            <div class="flex flex-col items-center h-full gap-2">
+              <img src="https://cadrush.com/public/assets/manufacturing/welding-fabrication.svg" alt="Experience Icon"
+                class="w-16 mt-2" />
+              <h3
+                class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent">
+                Welding and Fabrication Drawings
+              </h3>
+              <p class="text-center text-sm text-gray-700 mt-4 md:my-7">
+                Clearly marked weld symbols, joining instructions, and
+                fabrication notes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div id="card-4" class="flip-card rounded-xl relative md:max-w-[350px]">
+        <div class="flip-inner">
+          <div
+            class="flip-front border-2 border-gray-300 px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400">
+            <div class="flex flex-col items-center h-full gap-2">
+              <img src="https://cadrush.com/public/assets/manufacturing/revision-update.svg" alt="Experience Icon"
+                class="w-16" />
+              <h3
+                class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent">
+                Revision and Update Services
+              </h3>
+              <p class="text-center text-sm text-gray-700 mt-4 md:my-6">
+                Updating existing drawings to match design modifications or
+                regulatory changes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div id="card-5" class="flip-card rounded-xl relative md:max-w-[350px]">
+        <div class="flip-inner">
+          <div
+            class="flip-front border-2 border-gray-300 px-6 py-4 shadow-sm rounded-xl bg-white hover:shadow-md transition-all duration-300 hover:border-purple-400">
+            <div class="flex flex-col items-center h-full gap-2">
+              <img src="https://cadrush.com/public/assets/manufacturing/documentaion-packages.svg" alt="Experience Icon"
+                class="w-16 mt-1" />
+              <h3
+                class="text-lg font-semibold text-center mt-4 bg-gradient-to-r from-[#4B9ADB] to-[#9747FF] bg-clip-text text-transparent">
+                Documentation Packages
+              </h3>
+              <p class="text-center text-sm text-gray-700 mt-4 md:my-3">
+                Delivery of comprehensive drawing sets for fabrication,
+                inspection, and downstream workflows.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- partner with us -->
+  <section
+    class="bg-gradient-to-b from-white via-violet-200 to-white flex flex-col items-center h-[300px] md:h-[400px] justify-center my-12 md:my-6">
+    <h2 class="font-bold text-center mb-4 text-[#7c6ee6] text-3xl py-4 px-16">
+      Partner with Us
+    </h2>
+    <p class="text-center text-sm max-w-[700px] mx-auto my-2 md:my-4 md:text-base px-4">
+      At CADRush, we view manufacturing drawings not just as deliverables, but
+      as enablers of smooth, high-quality production. Whether you're preparing
+      for large-scale manufacturing, developing a prototype, or updating
+      legacy documentation, our expert team ensures that your drawings are
+      complete, clear, and production-ready.
+    </p>
+    <p class="text-center text-sm max-w-[700px] mx-auto my-2 md:my-4 md:text-base px-4">
+      Let us help you translate engineering intent into manufacturing
+      reality—accurately, efficiently, and with confidence.
+    </p>
+    <button
+      class="bg-black text-white rounded-md px-6 py-2 w-1/2 md:w-44 lg:w-48 mx-auto my-6 font-semibold hover:bg-black/80">
+      <a href="https://cadrush.com/app/#/signup" target="_blank">
+        START BUILDING</a>
+    </button>
+  </section>
+
+  <!-- faq -->
+  <section class="py-4 md:py-20">
+    <div class="mx-auto max-w-4xl lg:max-w-5xl px-4 sm:px-6 lg:px-8">
+      <h2 class="font-bold text-center mb-4 text-[#7c6ee6] text-3xl pb-4 md:pb-8">
+        Frequently asked questions
+      </h2>
+
+      <div class="accordion-group flex flex-col gap-2" data-accordion="default-accordion">
+        <div
+          class="accordion py-2 px-4 md:px-8 border border-solid border-gray-300 transition-all duration-500 rounded-md accordion-active:bg-indigo-50 active"
+          id="basic-heading-one-with-arrow">
+          <button
+            class="accordion-toggle group inline-flex items-center justify-between leading-8 text-gray-900 w-full transition duration-500 text-left hover:text-indigo-600 accordion-active:font-semibold accordion-active:text-indigo-600 text-base md:text-lg"
+            aria-controls="basic-collapse-one-with-arrow">
+            <h5 class="text-base md:text-lg font-normal">
+              What is a 2D Manufacturing Drawing?
+            </h5>
+            <img src="https://cadrush.com/public/assets/plus.svg" alt="Plus Icon" class="w-6 h-6" />
+          </button>
+          <div id="basic-collapse-one-with-arrow" class="accordion-content w-full px-0 overflow-hidden"
+            aria-labelledby="basic-heading-one-with-arrow" style="max-height: 0">
+            <p class="text-gray-900 leading-6 text-base md:text-lg my-2 font-light md:font-thin">
+              A 2D Manufacturing Drawing is a detailed technical
+              representation derived from a 3D model, containing dimensions,
+              tolerances, materials, surface finishes, and other critical
+              information required for fabrication and inspection.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="accordion py-2 px-4 md:px-8 border border-solid border-gray-300 transition-all duration-500 rounded-md accordion-active:bg-indigo-50 active"
+          id="basic-heading-one-with-arrow">
+          <button
+            class="accordion-toggle group inline-flex items-center justify-between leading-8 text-gray-900 w-full transition duration-500 text-left hover:text-indigo-600 accordion-active:font-semibold accordion-active:text-indigo-600 text-base md:text-lg"
+            aria-controls="basic-collapse-one-with-arrow">
+            <h5 class="text-base md:text-lg font-normal">
+              Can you convert a 3D model to manufacturing drawings?
+            </h5>
+            <img src="https://cadrush.com/public/assets/plus.svg" alt="Plus Icon" class="w-6 h-6" />
+          </button>
+          <div id="basic-collapse-one-with-arrow" class="accordion-content w-full px-0 overflow-hidden"
+            aria-labelledby="basic-heading-one-with-arrow" style="max-height: 0">
+            <p class="text-gray-900 leading-6 text-base md:text-lg my-2 font-light md:font-thin">
+              Yes, we specialize in converting 3D models to manufacturing
+              drawings, ensuring that every part and assembly is accurately
+              represented for production, machining, or fabrication.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="accordion py-2 px-4 md:px-8 border border-solid border-gray-300 transition-all duration-500 rounded-md accordion-active:bg-indigo-50 active"
+          id="basic-heading-one-with-arrow">
+          <button
+            class="accordion-toggle group inline-flex items-center justify-between leading-8 text-gray-900 w-full transition duration-500 text-left hover:text-indigo-600 accordion-active:font-semibold accordion-active:text-indigo-600 text-base md:text-lg"
+            aria-controls="basic-collapse-one-with-arrow">
+            <h5 class="text-base md:text-lg font-normal">
+              What is included in your manufacturing drawing services?
+            </h5>
+            <img src="https://cadrush.com/public/assets/plus.svg" alt="Plus Icon" class="w-6 h-6" />
+          </button>
+          <div id="basic-collapse-one-with-arrow" class="accordion-content w-full px-0 overflow-hidden"
+            aria-labelledby="basic-heading-one-with-arrow" style="max-height: 0">
+            <p class="text-gray-900 leading-6 text-base md:text-lg my-2 font-light md:font-thin">
+              Our services include part drawings, assembly drawings, exploded
+              views, GD&T annotations, BOM (Bill of Materials) generation, and
+              tolerance analysis—based on industry standards and
+              client-specific guidelines.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="accordion py-2 px-4 md:px-8 border border-solid border-gray-300 transition-all duration-500 rounded-md accordion-active:bg-indigo-50 active"
+          id="basic-heading-one-with-arrow">
+          <button
+            class="accordion-toggle group inline-flex items-center justify-between leading-8 text-gray-900 w-full transition duration-500 text-left hover:text-indigo-600 accordion-active:font-semibold accordion-active:text-indigo-600 text-base md:text-lg"
+            aria-controls="basic-collapse-one-with-arrow">
+            <h5 class="text-base md:text-lg font-normal">
+              Which file formats do you support for drawings?
+            </h5>
+            <img src="https://cadrush.com/public/assets/plus.svg" alt="Plus Icon" class="w-6 h-6" />
+          </button>
+          <div id="basic-collapse-one-with-arrow" class="accordion-content w-full px-0 overflow-hidden"
+            aria-labelledby="basic-heading-one-with-arrow" style="max-height: 0">
+            <p class="text-gray-900 leading-6 text-base md:text-lg my-2 font-light md:font-thin">
+              We deliver drawings in formats such as DWG, DXF, PDF, and native
+              CAD formats (SLDDRW, IDW, etc.), depending on your software
+              preference and manufacturing needs.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="accordion py-2 px-4 md:px-8 border border-solid border-gray-300 transition-all duration-500 rounded-md accordion-active:bg-indigo-50 active"
+          id="basic-heading-one-with-arrow">
+          <button
+            class="accordion-toggle group inline-flex items-center justify-between leading-8 text-gray-900 w-full transition duration-500 text-left hover:text-indigo-600 accordion-active:font-semibold accordion-active:text-indigo-600 text-base md:text-lg"
+            aria-controls="basic-collapse-one-with-arrow">
+            <h5 class="text-base md:text-lg font-normal">
+              Do you follow any specific drafting standards?
+            </h5>
+            <img src="https://cadrush.com/public/assets/plus.svg" alt="Plus Icon" class="w-6 h-6" />
+          </button>
+          <div id="basic-collapse-one-with-arrow" class="accordion-content w-full px-0 overflow-hidden"
+            aria-labelledby="basic-heading-one-with-arrow" style="max-height: 0">
+            <p class="text-gray-900 leading-6 text-base md:text-lg my-2 font-light md:font-thin">
+              Yes, our drawings adhere to standards like ISO, ASME Y14.5, DIN,
+              or customer-defined templates and layer conventions.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="accordion py-2 px-4 md:px-8 border border-solid border-gray-300 transition-all duration-500 rounded-md accordion-active:bg-indigo-50 active"
+          id="basic-heading-one-with-arrow">
+          <button
+            class="accordion-toggle group inline-flex items-center justify-between leading-8 text-gray-900 w-full transition duration-500 text-left hover:text-indigo-600 accordion-active:font-semibold accordion-active:text-indigo-600 text-base md:text-lg"
+            aria-controls="basic-collapse-one-with-arrow">
+            <h5 class="text-base md:text-lg font-normal">
+              Can you create manufacturing drawings for complex assemblies?
+            </h5>
+            <img src="https://cadrush.com/public/assets/plus.svg" alt="Plus Icon" class="w-6 h-6" />
+          </button>
+          <div id="basic-collapse-one-with-arrow" class="accordion-content w-full px-0 overflow-hidden"
+            aria-labelledby="basic-heading-one-with-arrow" style="max-height: 0">
+            <p class="text-gray-900 leading-6 text-base md:text-lg my-2 font-light md:font-thin">
+              Yes, we can generate detailed multi-sheet drawings for large
+              assemblies, including exploded views and part-level
+              documentation.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="accordion py-2 px-4 md:px-8 border border-solid border-gray-300 transition-all duration-500 rounded-md accordion-active:bg-indigo-50 active"
+          id="basic-heading-one-with-arrow">
+          <button
+            class="accordion-toggle group inline-flex items-center justify-between leading-8 text-gray-900 w-full transition duration-500 text-left hover:text-indigo-600 accordion-active:font-semibold accordion-active:text-indigo-600 text-base md:text-lg"
+            aria-controls="basic-collapse-one-with-arrow">
+            <h5 class="text-base md:text-lg font-normal">
+              Do you provide revision control and drawing updates?
+            </h5>
+            <img src="https://cadrush.com/public/assets/plus.svg" alt="Plus Icon" class="w-6 h-6" />
+          </button>
+          <div id="basic-collapse-one-with-arrow" class="accordion-content w-full px-0 overflow-hidden"
+            aria-labelledby="basic-heading-one-with-arrow" style="max-height: 0">
+            <p class="text-gray-900 leading-6 text-base md:text-lg my-2 font-light md:font-thin">
+              Yes. We maintain version control and can revise existing 2D
+              manufacturing drawings as per engineering changes or updated 3D
+              models.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="accordion py-2 px-4 md:px-8 border border-solid border-gray-300 transition-all duration-500 rounded-md accordion-active:bg-indigo-50 active"
+          id="basic-heading-one-with-arrow">
+          <button
+            class="accordion-toggle group inline-flex items-center justify-between leading-8 text-gray-900 w-full transition duration-500 text-left hover:text-indigo-600 accordion-active:font-semibold accordion-active:text-indigo-600 text-base md:text-lg"
+            aria-controls="basic-collapse-one-with-arrow">
+            <h5 class="text-base md:text-lg font-normal">
+              How do I request your 3D model to manufacturing drawing
+              services?
+            </h5>
+            <img src="https://cadrush.com/public/assets/plus.svg" alt="Plus Icon" class="w-6 h-6" />
+          </button>
+          <div id="basic-collapse-one-with-arrow" class="accordion-content w-full px-0 overflow-hidden"
+            aria-labelledby="basic-heading-one-with-arrow" style="max-height: 0">
+            <p class="text-gray-900 leading-6 text-base md:text-lg my-2 font-light md:font-thin">
+              You can send us your 3D CAD models (STEP, IGES, SLDPRT, etc.)
+              along with manufacturing requirements, and we’ll create precise,
+              production-ready 2D manufacturing drawings.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="accordion py-2 px-4 md:px-8 border border-solid border-gray-300 transition-all duration-500 rounded-md accordion-active:bg-indigo-50 active"
+          id="basic-heading-one-with-arrow">
+          <button
+            class="accordion-toggle group inline-flex items-center justify-between leading-8 text-gray-900 w-full transition duration-500 text-left hover:text-indigo-600 accordion-active:font-semibold accordion-active:text-indigo-600 text-base md:text-lg"
+            aria-controls="basic-collapse-one-with-arrow">
+            <h5 class="text-base md:text-lg font-normal">
+              Do you support multiple CAD platforms?
+            </h5>
+            <img src="https://cadrush.com/public/assets/plus.svg" alt="Plus Icon" class="w-6 h-6" />
+          </button>
+          <div id="basic-collapse-one-with-arrow" class="accordion-content w-full px-0 overflow-hidden"
+            aria-labelledby="basic-heading-one-with-arrow" style="max-height: 0">
+            <p class="text-gray-900 leading-6 text-base md:text-lg my-2 font-light md:font-thin">
+              Yes, we work with leading CAD tools such as SolidWorks, AutoCAD,
+              Inventor, Creo, and Siemens NX to generate accurate and
+              standardized manufacturing drawings.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="bg-gray-900 text-white py-10 w-full md:pl-[10%]">
+    <div
+      class="container mx-auto px-6 md:px-12 lg:px-20 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+      <div class="space-y-4 flex flex-col items-center md:items-start">
+        <img src="https://cadrush.com/public/assets/Logo2.png" alt="CADRush Logo" class="h-12" />
+        <p class="text-sm text-gray-400 inter font-bold">
+          A product of MN Engineering Solutions.
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        <h3 class="text-lg font-semibold">Contact</h3>
+        <div class="flex items-center justify-center md:justify-start space-x-3">
+          <img src="https://cadrush.com/public/assets/mail.svg" class="w-5" />
+          <p class="font-normal">hello@cadrush.com</p>
+        </div>
+        <div class="flex items-center justify-center md:justify-start space-x-1">
+          <img src="https://cadrush.com/public/assets/location.svg" class="w-5" />
+          <p class="font-normal">
+            MN Engineering Solutions Inc.<br />
+            332 Michigan Avenue, Chicago, IL 60604, USA
           </p>
         </div>
+      </div>
 
-        <!-- Form -->
-        <form id="contactForm" class="p-6 space-y-4">
-          <!-- Success Message -->
-          <div
-            id="successMessage"
-            class="hidden bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative"
-          >
-            Thank you! Your message has been sent successfully.
-          </div>
-
-          <!-- Error Message -->
-          <div
-            id="errorMessage"
-            class="hidden bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative"
-          ></div>
-
-          <!-- Form Fields -->
-          <div id="formFields">
-            <!-- Name Field -->
-            <div class="mb-4">
-              <label
-                for="name"
-                class="block text-gray-700 text-sm font-medium mb-2"
-                >Name*</label
-              >
-              <input
-                type="text"
-                id="name"
-                name="name"
-                required
-                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#7c6ee6] focus:border-transparent"
-              />
-              <p id="nameError" class="hidden text-red-500 text-xs mt-1"></p>
-            </div>
-
-            <!-- Email Field -->
-            <div class="mb-4">
-              <label
-                for="email"
-                class="block text-gray-700 text-sm font-medium mb-2"
-                >Email*</label
-              >
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#7c6ee6] focus:border-transparent"
-              />
-              <p id="emailError" class="hidden text-red-500 text-xs mt-1"></p>
-            </div>
-
-            <!-- Phone Field -->
-            <div class="mb-6">
-              <label
-                for="phone"
-                class="block text-gray-700 text-sm font-medium mb-2"
-                >Contact Number*</label
-              >
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                required
-                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#7c6ee6] focus:border-transparent"
-              />
-              <p id="phoneError" class="hidden text-red-500 text-xs mt-1"></p>
-            </div>
-
-            <!-- Submit Button -->
-            <button
-              type="submit"
-              id="submitBtn"
-              class="w-full bg-[#7c6ee6] hover:bg-[#6a5acd] text-white font-medium py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#7c6ee6] disabled:opacity-50 disabled:cursor-not-allowed transition duration-150 ease-in-out"
-            >
-              <span id="submitText">Send Message</span>
-              <span id="loadingSpinner" class="hidden">
-                <svg
-                  class="animate-spin -ml-1 mr-3 h-5 w-5 text-white inline-block"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
-                  <circle
-                    class="opacity-25"
-                    cx="12"
-                    cy="12"
-                    r="10"
-                    stroke="currentColor"
-                    stroke-width="4"
-                  ></circle>
-                  <path
-                    class="opacity-75"
-                    fill="currentColor"
-                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                  ></path>
-                </svg>
-                Sending...
-              </span>
-            </button>
-          </div>
-        </form>
+      <div class="space-y-4">
+        <h3 class="text-lg font-semibold">Follow Us</h3>
+        <div class="flex justify-center md:justify-start space-x-4">
+          <a href="https://www.instagram.com/cadrush_mnes?igsh=MXZ5cTk0eTJsa2FtcQ==&utm_source=ig_contact_invite"
+            class="bg-white w-10 h-10 flex items-center justify-center rounded-full shadow-md">
+            <img src="https://cadrush.com/public/assets/instagram.svg" class="w-5" />
+          </a>
+          <a href="https://www.facebook.com/share/1D9pVsDCYJ/?mibextid=wwXIfr"
+            class="bg-white w-10 h-10 flex items-center justify-center rounded-full shadow-md">
+            <img src="https://cadrush.com/public/assets/facebook.svg" class="w-5" />
+          </a>
+          <a href="https://www.linkedin.com/company/cadrush/"
+            class="bg-white w-10 h-10 flex items-center justify-center rounded-full shadow-md">
+            <img src="https://cadrush.com/public/assets/linkedin.svg" class="w-5" />
+          </a>
+        </div>
       </div>
     </div>
 
-    <script src="https://cadrush.com/public/js/index.js"></script>
-    <script src="https://cadrush.com/public/js/service-cards-animate.js"></script>
-    <script src="https://cadrush.com/public/js/fea.js"></script>
-    <script>
-      gsap.registerPlugin(MotionPathPlugin);
-      window.addEventListener("load", () => {
-        gsap.to("#ball", {
-          duration: 8,
-          repeat: -1,
-          yoyo: true,
-          ease: "power1.inOut",
-          motionPath: {
-            path: "#mainPath",
-            align: "#mainPath",
-            autoRotate: false,
-          },
-        });
+    <!-- Horizontal Line -->
+    <hr class="border-gray-700 my-4" />
+
+    <!-- Copyright -->
+    <div class="text-center md:text-right text-sm text-gray-400 px-6 inter font-normal">
+      Copyright &copy; 2024 Cadrush. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Floating Scroll-to-Top Button -->
+  <button id="scrollToTopBtn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+    class="fixed bottom-6 right-6 z-50 bg-white border border-gray-300 shadow-lg rounded-full p-3 flex items-center justify-center transition-opacity duration-300 opacity-0 hover:bg-blue-100 hover:border-blue-400"
+    aria-label="Scroll to top">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24"
+      stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+    </svg>
+  </button>
+
+  <!-- Contact Form Popup -->
+  <div id="contactPopup" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 p-4">
+    <div class="bg-white rounded-xl shadow-2xl w-full max-w-md relative overflow-hidden">
+      <!-- Header -->
+      <div class="bg-[#7c6ee6] text-white p-6">
+        <div class="flex justify-between items-center">
+          <h3 class="text-xl font-bold">Get in Touch</h3>
+          <button id="closeContact" class="text-white hover:text-gray-200 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <p class="text-sm mt-1 text-gray-100">
+          We'll get back to you as soon as possible
+        </p>
+      </div>
+
+      <!-- Form -->
+      <form id="contactForm" class="p-6 space-y-4">
+        <!-- Success Message -->
+        <div id="successMessage"
+          class="hidden bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative">
+          Thank you! Your message has been sent successfully.
+        </div>
+
+        <!-- Error Message -->
+        <div id="errorMessage" class="hidden bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative">
+        </div>
+
+        <!-- Form Fields -->
+        <div id="formFields">
+          <!-- Name Field -->
+          <div class="mb-4">
+            <label for="name" class="block text-gray-700 text-sm font-medium mb-2">Name*</label>
+            <input type="text" id="name" name="name" required
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#7c6ee6] focus:border-transparent" />
+            <p id="nameError" class="hidden text-red-500 text-xs mt-1"></p>
+          </div>
+
+          <!-- Email Field -->
+          <div class="mb-4">
+            <label for="email" class="block text-gray-700 text-sm font-medium mb-2">Email*</label>
+            <input type="email" id="email" name="email" required
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#7c6ee6] focus:border-transparent" />
+            <p id="emailError" class="hidden text-red-500 text-xs mt-1"></p>
+          </div>
+
+          <!-- Phone Field -->
+          <div class="mb-6">
+            <label for="phone" class="block text-gray-700 text-sm font-medium mb-2">Contact Number*</label>
+            <input type="tel" id="phone" name="phone" required
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#7c6ee6] focus:border-transparent" />
+            <p id="phoneError" class="hidden text-red-500 text-xs mt-1"></p>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" id="submitBtn"
+            class="w-full bg-[#7c6ee6] hover:bg-[#6a5acd] text-white font-medium py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#7c6ee6] disabled:opacity-50 disabled:cursor-not-allowed transition duration-150 ease-in-out">
+            <span id="submitText">Send Message</span>
+            <span id="loadingSpinner" class="hidden">
+              <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white inline-block" xmlns="http://www.w3.org/2000/svg"
+                fill="none" viewBox="0 0 24 24">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                <path class="opacity-75" fill="currentColor"
+                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+                </path>
+              </svg>
+              Sending...
+            </span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cadrush.com/public/js/index.js"></script>
+  <script src="https://cadrush.com/public/js/service-cards-animate.js"></script>
+  <script src="https://cadrush.com/public/js/fea.js"></script>
+  <script>
+    gsap.registerPlugin(MotionPathPlugin);
+    window.addEventListener("load", () => {
+      gsap.to("#ball", {
+        duration: 8,
+        repeat: -1,
+        yoyo: true,
+        ease: "power1.inOut",
+        motionPath: {
+          path: "#mainPath",
+          align: "#mainPath",
+          autoRotate: false,
+        },
       });
-    </script>
-  </body>
+    });
+  </script>
+</body>
+
 </html>
