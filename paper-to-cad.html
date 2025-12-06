@@ -2,6 +2,37 @@
 <html lang="en">
 
 <head>
+  <!-- Google Analytics (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K25BHMETBS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-K25BHMETBS');
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MJPKMXMG');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Google ADWORDS tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17778762313"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-17778762313');
+  </script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CADRush - Paper to CAD Conversion</title>
@@ -104,6 +135,12 @@
 </head>
 
 <body class="bg-white h-dvh md:h-screen">
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJPKMXMG" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
   <!-- Header -->
   <header id="main-header" class="fixed top-0 left-0 w-full z-50 bg-transparent transition-colors duration-300">
     <!-- Desktop Navbar -->
@@ -157,8 +194,8 @@
 
       <!-- Register button at far right -->
       <a class="bg-black text-white px-6 py-2 rounded-lg font-semibold shadow hover:bg-gray-800 transition"
-        href="https://cadrush.com/app/#/signup" target="_blank">
-        REGISTER
+        href="https://cadrush.com/app/#/signin" target="_blank">
+        LOGIN
       </a>
     </div>
 
@@ -169,7 +206,7 @@
       <div class="flex flex-row space-x-2">
         <button
           class="bg-black text-white px-4 py-1 rounded-lg font-normal text-sm shadow hover:bg-gray-800 transition">
-          <a href="https://cadrush.com/app/#/signup" target="_blank">REGISTER</a>
+          <a href="https://cadrush.com/app/#/signin" target="_blank">LOGIN</a>
         </button>
         <button id="hamburger" onclick="openDrawer()">
           <img src="https://cadrush.com/public/assets/hamburger.svg" alt="Open menu" class="w-8 h-8" />
@@ -960,13 +997,24 @@
           <img src="https://cadrush.com/public/assets/mail.svg" class="w-5" />
           <p class="font-normal">hello@cadrush.com</p>
         </div>
-        <div class="flex items-center justify-center md:justify-start space-x-1">
-          <img src="https://cadrush.com/public/assets/location.svg" class="w-5" />
+
+        <!-- Phone Numbers -->
+        <div class="flex items-center justify-center md:justify-start space-x-3">
+          <svg viewBox="0 0 1024 1024" class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="#ffffff">
+            <path
+              d="M834.133333 149.333333h-78.933333C473.6 153.6 151.466667 514.133333 149.333333 755.2v78.933333c0 21.333333 17.066667 40.533333 40.533334 40.533334l160-2.133334c21.333333 0 40.533333-19.2 40.533333-40.533333l4.266667-174.933333-100.266667-85.333334c0-55.466667 224-279.466667 281.6-281.6l91.733333 100.266667 168.533334-4.266667c21.333333 0 40.533333-19.2 40.533333-40.533333L874.666667 189.866667c0-23.466667-17.066667-40.533333-40.533334-40.533334z">
+            </path>
+          </svg>
+          <p class="font-normal">+1 (773) 461-0493 / +1 (773) 800-2536</p>
+        </div>
+
+        <div class="flex md:justify-start md:space-x-3 space-x-1">
+          <img src="https://cadrush.com/public/assets/location.svg" class="w-5 h-5" />
           <p class="font-normal">
-            MN Engineering Solutions Inc.<br />
             332 Michigan Avenue, Chicago, IL 60604, USA
           </p>
         </div>
+
       </div>
 
       <div class="space-y-4">
